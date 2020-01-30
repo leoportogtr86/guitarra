@@ -1,0 +1,23 @@
+setInterval(function () {
+
+    setTimeout (function () {
+        
+        console.log('Dm7')
+
+    }, 4000)
+
+    setTimeout (function () {
+        
+        console.log('G7')
+
+    }, 4000)
+
+    setTimeout (function () {
+        
+        console.log('C7M')
+
+    }, 8000)
+
+    
+    
+}, 1000*16)

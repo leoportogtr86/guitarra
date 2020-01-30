@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+<script>
+
+    let div = document.getElementsByTagName('div')[0]
+    let y = 1
+    let x = 1 * y
+
+
+    function andar() {
+
+        div.style.left = x + 'px'
+        x += 2
+
+
+        if (x >= 500) {
+
+            
+            console.log('0')
+            div.style.left = x + 'px'
+            x -= 2
+
+
+        }
+
+        requestAnimationFrame(andar)
+
+    }
+
+    andar()
+
+
+</script>
+
+</html>

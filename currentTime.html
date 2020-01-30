@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #play {
+            width: 25px;
+            position: absolute;
+            left: 85px;
+            top: 40px;
+        }
+
+        #pause {
+
+            width: 25px;
+            position: absolute;
+            left: 85px;
+            top: 40px;
+            display: none;
+
+
+        }
+
+        #mais {
+
+            width: 25px;
+            position: absolute;
+            left: 140px;
+            top: 40px;
+
+
+
+        }
+
+        #menos {
+
+            width: 25px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+
+
+
+        }
+
+        #camada1 {
+
+            background-color: rgb(36, 35, 35);
+            background-image: linear-gradient(90deg, black, rgb(71, 68, 68), rgb(49, 46, 46), black);
+            width: 180px;
+            height: 75px;
+            border-radius: 10px;
+        }
+
+
+
+        #click {
+
+            margin-top: 50px;
+        }
+
+        #andamento {
+
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: 75px;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='camada1'>
+
+
+        <img id='play' src="play.svg" alt="">
+        <audio id = 'click' src=""></audio>
+        <div id='andamento'>60 BPM</div>
+        <img id='pause' src="pause.svg" alt="">
+        <img id='menos' src="menos.svg" alt="">
+        <img id='mais' src="mais.svg" alt="">
+
+
+    </div>
+
+</body>
+<script>
+
+    let click = document.getElementById('click')
+    let play = document.getElementsByTagName('img')[0]
+    let pause = document.getElementsByTagName('img')[1]
+    let mais = document.getElementById('mais')
+    let menos = document.getElementById('menos')
+    let andamento = document.getElementById('andamento')
+    let bpm = 60
+
+    andamento.innerHTML = bpm + ' BPM'
+
+    click.src = bpm + ' BPM.mp3'
+
+    function verificaBpm() {
+
+        if(bpm <= 55){
+
+            bpm = 60
+            andamento.innerHTML = '60 BPM'
+            click.src = '60 BPM.mp3'
+            click.play()
+
+        }
+
+        if (bpm >= 285){
+
+            bpm = 280
+            andamento.innerHTML = '280 BPM'
+            click.src = '280 BPM.mp3'
+            click.play()
+
+        }
+        
+    }
+
+    play.onclick = function () {
+
+        click.play()
+        play.style.display = 'none'
+        pause.style.display = 'block'
+        click.currentTime = 10
+
+
+    }
+
+    pause.onclick = function () {
+
+        click.pause()
+        click.currentTime = 10
+        play.style.display = 'block'
+        pause.style.display = 'none'
+        
+
+
+    }
+
+    mais.onclick = function () {
+
+        bpm += 5
+        andamento.innerHTML = bpm + ' BPM'
+        click.src = bpm + ' BPM.mp3'
+        click.currentTime = 10
+        click.play()
+        verificaBpm()
+
+    }
+
+    menos.onclick = function () {
+
+        
+
+        bpm -= 5
+        andamento.innerHTML = bpm + ' BPM'
+        click.src = bpm + ' BPM.mp3'
+        click.currentTime = 10
+        click.play()
+        verificaBpm()
+
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</html>

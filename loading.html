@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste Método GetEelements...</title>
+    <style>
+
+        @keyframes progresso{
+
+            100%{
+
+                width: 300px;
+            }
+        }
+
+        @keyframes pisca {
+
+            50%{
+
+                opacity: 0;
+            }
+        }
+
+
+        body {
+
+            background-color: rgb(31, 30, 30);
+        }
+
+        #barra {
+
+            width: 300px;
+            height: 30px;
+            border: 2px solid wheat;
+            border-radius: 3px;
+            position: absolute;
+            top: 50%;
+            left: 30%;
+
+        }
+
+        #load {
+
+            font-family: 'roboto';
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 60%;
+            left: 35%;
+            animation: pisca 0.5s linear 10;
+        }
+
+        #barraInterna{
+
+            width: 1px;
+            height: 30px;
+            background-color: aqua;
+            animation: progresso 5s linear;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='barra'>
+
+        <div id='barraInterna'></div>
+
+    </div>
+    <div id='load'>Loading...</div>
+
+
+</body>
+<script>
+
+
+
+
+
+</script>
+
+</html>

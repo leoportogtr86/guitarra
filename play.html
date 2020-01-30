@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play</title>
+    <style>
+        #fundo {
+
+            background-color: #031C26;
+            width: 600px;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        #barra0 {
+
+            width: 500px;
+            height: 6px;
+            background-color: rgb(14, 54, 70);
+            border-radius: 2px;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 220px;
+            left: 50px;
+
+        }
+
+        #barra1 {
+
+
+            width: 0px;
+            height: 6px;
+            background-color: #05DBF2;
+            border-radius: 2px;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 220px;
+            left: 50px;
+
+
+
+        }
+
+        #play {
+
+            position: absolute;
+            top: 160px;
+            left: 250px;
+            width: 50px;
+            
+        }
+
+        #triangulo {
+
+            cursor: pointer;
+            fill: red;
+        }
+
+        #triangulo:hover {
+
+            fill: rebeccapurple;
+        }
+
+
+
+        @keyframes barra {
+
+            100% {
+
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='fundo'>
+
+        <div id='barra0'></div>
+        <div id='barra1'></div>
+        <img id = 'play' src="play.svg" alt="">
+
+
+    </div>
+
+    
+
+    <audio id = 'audio' src="audio.mp3"></audio>
+
+
+
+
+
+</body>
+<script>
+
+    let tocar = document.getElementById('play')
+    let barra1 = document.getElementById('barra1')
+    let audio = document.getElementById('audio')
+
+    play.onclick = function () {
+
+        barra1.style.animation = 'barra 60s linear'
+        audio.play()
+        console.log('play')
+
+    }
+
+    let x = 0
+
+    setInterval(function () {
+
+        x += 1
+        barra1.style.width = x + 'px'
+        
+        console.log(barra1.style.width)
+
+        if (x >= 500){
+
+            x = x -1
+            
+        }
+        
+    }, 10)
+
+
+
+
+
+
+
+
+</script>
+
+</html>
