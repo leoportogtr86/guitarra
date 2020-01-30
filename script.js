@@ -68,6 +68,9 @@ let speedOn = false
 let listaSemanas = document.getElementById('listaSemanas')
 let semana1 = document.getElementById('semana1')
 let css = document.getElementById('css')
+let video1 = document.getElementById('video1')
+
+video1.play()
 
 semana1.onclick = function () {
 
@@ -1229,6 +1232,8 @@ ex1.onclick = function () {
     lista.style.top = '-580px'
 
     ex1.style.backgroundColor = 'orange'
+    pdf.src = 'precisao1.pdf'
+    video1.style.display = 'block'
 }
 
 for (i = 0; i < bolinha.length; i++) {
@@ -1237,6 +1242,8 @@ for (i = 0; i < bolinha.length; i++) {
 
 
 }
+
+
 
 console.log(all.length)
 

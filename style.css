@@ -4,6 +4,16 @@
     margin-top: 0;
 }
 
+#video1 {
+
+    position: absolute;
+    top: 600px;
+    cursor: pointer;
+    right: -10px;
+    display: none;
+    z-index: 50;
+}
+
 
 
 #play {
