@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speed Guitar Trainer</title>
+    <style>
+        body {
+
+            background-color: rgb(37, 36, 36);
+        }
+
+
+
+        .botao {
+
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+        }
+
+        #inicio {
+
+            position: absolute;
+            left: 100px;
+            top: 380px;
+            background-color: chartreuse;
+        }
+
+        #fim {
+
+            position: absolute;
+            background-color: crimson;
+            left: 250px;
+            top: 380px;
+        }
+
+        #limpar {
+
+            position: absolute;
+            background-color: rgb(128, 114, 117);
+            left: 400px;
+            top: 380px;
+        }
+
+        #speed {
+
+            position: absolute;
+            top: 450px;
+            left: 150px;
+            background-color: darkblue;
+        }
+
+        #speedTxt {
+
+            color: whitesmoke;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 480px;
+            left: 180px;
+        }
+
+        #inicioTxt {
+
+            color: chartreuse;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 520px;
+            left: 180px;
+
+        }
+
+        #video {
+
+            border-radius: 20px;
+        }
+
+        #fimTxt {
+
+            color: crimson;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 560px;
+            left: 180px;
+        }
+
+        #pdf {
+
+            width: 55%;
+            position: absolute;
+            top: 0;
+            height: 1000px;
+            margin-left: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <video id='video' src="still.mp4" controls></video>
+    <iframe id='pdf' src="still.pdf" frameborder="0"></iframe>
+
+    <abbr title="Clique aqui no momento exato para indicar onde o loop começará. Atalho de teclado: A"><button
+            class="botao" id='inicio'>Início</button></abbr>
+    <abbr title="Clique aqui no momento exato para indicar onde o loop terminará. Atalho de teclado: B"><button
+            class="botao" id='fim'>Fim</button></abbr>
+    <abbr title="Limpar os marcos de início e fim de loop. Atalho de teclado: C"><button class="botao"
+            id='limpar'>Limpar</button></abbr>
+    <input id='speed' min='1' max='120' type="range" value='100'>
+    <div id='speedTxt'>Speed:</div>
+    <div id=inicioTxt>Início: </div>
+    <div id='fimTxt'>Fim: </div>
+
+</body>
+<script>
+
+    let video = document.getElementById('video')
+    let inicioBt = document.getElementById('inicio')
+    let fimBt = document.getElementById('fim')
+    let limpar = document.getElementById('limpar')
+    let inicio = 0
+    let fim
+    let speedTxt = document.getElementById('speedTxt')
+    let inicioTxt = document.getElementById('inicioTxt')
+    let fimTxt = document.getElementById('fimTxt')
+    let speed = document.getElementById('speed')
+
+    video.playbackRate = 0.5
+
+    video.currentTime = inicio
+
+    limpar.onclick = function () {
+
+        //window.location.reload()
+        inicio = video.currentTime
+        fim = video.duration
+        inicioTxt.innerHTML = 'Início:'
+        fimTxt.innerHTML = 'Fim: '
+
+    }
+
+    inicioBt.onclick = function () {
+
+        console.log('Início do trecho: ' + video.currentTime)
+        inicio = video.currentTime
+        inicioTxt.innerHTML = 'Início: ' + parseInt(inicio) + 's'
+
+
+    }
+
+    fimBt.onclick = function () {
+
+        console.log('Início do trecho: ' + video.currentTime)
+        fim = video.currentTime
+        fimTxt.innerHTML = 'Fim: ' + parseInt(fim) + 's'
+
+
+    }
+
+    setInterval(() => {
+
+
+
+        console.log('Velocidade: ' + speed.value)
+
+        video.playbackRate = speed.value / 100
+        speedTxt.innerHTML = 'Speed: ' + speed.value + '%'
+
+        document.addEventListener('keypress', function (e) {
+
+            if (e.key == 'a') {
+
+                console.log('Início do trecho: ' + parseInt(video.currentTime))
+                inicio = parseInt(video.currentTime)
+                inicioTxt.innerHTML = 'Início: ' + inicio + 's'
+
+
+            } else if (e.key == 'b') {
+
+                console.log('Fim do trecho: ' + parseInt(video.currentTime))
+                fim = parseInt(video.currentTime)
+                fimTxt.innerHTML = 'Fim: ' + fim + 's'
+
+
+            } else if (e.key == 'c') {
+
+                inicio = video.currentTime
+                fim = video.duration
+                inicioTxt.innerHTML = 'Início:'
+                fimTxt.innerHTML = 'Fim: '
+
+
+            }
+
+        })
+
+        if (video.currentTime >= fim) {
+
+            video.currentTime = inicio
+
+
+        }
+
+    }, 100);
+
+</script>
+
+</html>

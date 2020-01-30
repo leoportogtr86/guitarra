@@ -1,3 +1,4 @@
+let still = document.getElementById('still')
 let calendario = document.getElementById('calendario')
 let abrCorda = document.getElementById('abrCorda')
 let speed = document.getElementById('speed')
@@ -70,24 +71,30 @@ let semana1 = document.getElementById('semana1')
 let css = document.getElementById('css')
 let video1 = document.getElementById('video1')
 
+still.onclick = function () {
+
+    window.location = 'still.html'
+    
+}
+
 video1.play()
 
 semana1.onclick = function () {
 
     listaSemanas.style.top = '-580px'
-    
-    
+
+
 }
 
 calendario.onclick = function () {
-    
+
     listaSemanas.style.top = '10px'
 }
 
 listaSemanas.onmouseleave = function () {
 
     listaSemanas.style.top = '-580px'
-    
+
 }
 
 speed.onclick = function () {
@@ -852,37 +859,13 @@ ex5.onclick = function () {
     lista.style.top = '-580px'
     base.style.display = 'block'
     base.play()
+    base.src = 'am.mp3'
 
     setInterval(function () {
 
-        if (base.currentTime < 39) {
+        if (base.currentTime < 71) {
 
             console.log('shape 1')
-
-            apagar()
-            corda6[3].style.display = 'block'
-            corda6[5].style.display = 'block'
-            corda6[7].style.display = 'block'
-            corda5[3].style.display = 'block'
-            corda5[5].style.display = 'block'
-            corda5[7].style.display = 'block'
-            corda4[4].style.display = 'block'
-            corda4[5].style.display = 'block'
-            corda4[7].style.display = 'block'
-            corda3[4].style.display = 'block'
-            corda3[5].style.display = 'block'
-            corda3[7].style.display = 'block'
-            corda2[5].style.display = 'block'
-            corda2[7].style.display = 'block'
-            corda2[8].style.display = 'block'
-            corda1[5].style.display = 'block'
-            corda1[7].style.display = 'block'
-            corda1[8].style.display = 'block'
-
-
-        } else if (base.currentTime < 78) {
-
-            console.log('shape 2')
 
             apagar()
             corda6[5].style.display = 'block'
@@ -890,39 +873,40 @@ ex5.onclick = function () {
             corda6[8].style.display = 'block'
             corda5[5].style.display = 'block'
             corda5[7].style.display = 'block'
-            corda5[9].style.display = 'block'
-            corda4[5].style.display = 'block'
+            corda5[8].style.display = 'block'
+            corda4[6].style.display = 'block'
             corda4[7].style.display = 'block'
             corda4[9].style.display = 'block'
             corda3[5].style.display = 'block'
             corda3[7].style.display = 'block'
             corda3[9].style.display = 'block'
-            corda2[7].style.display = 'block'
-            corda2[8].style.display = 'block'
+            corda2[6].style.display = 'block'
+            corda2[9].style.display = 'block'
             corda2[10].style.display = 'block'
             corda1[7].style.display = 'block'
             corda1[8].style.display = 'block'
             corda1[10].style.display = 'block'
 
 
-        } else if (base.currentTime < 117) {
 
-            console.log('shape 3')
+        } else if (base.currentTime < 142) {
+
+            console.log('shape 2')
 
             apagar()
             corda6[7].style.display = 'block'
             corda6[8].style.display = 'block'
             corda6[10].style.display = 'block'
             corda5[7].style.display = 'block'
-            corda5[9].style.display = 'block'
-            corda5[10].style.display = 'block'
+            corda5[8].style.display = 'block'
+            corda5[11].style.display = 'block'
             corda4[7].style.display = 'block'
             corda4[9].style.display = 'block'
             corda4[10].style.display = 'block'
             corda3[7].style.display = 'block'
             corda3[9].style.display = 'block'
-            corda3[11].style.display = 'block'
-            corda2[8].style.display = 'block'
+            corda3[10].style.display = 'block'
+            corda2[9].style.display = 'block'
             corda2[10].style.display = 'block'
             corda2[12].style.display = 'block'
             corda1[8].style.display = 'block'
@@ -930,104 +914,136 @@ ex5.onclick = function () {
             corda1[12].style.display = 'block'
 
 
-        } else if (base.currentTime < 156) {
+        } else if (base.currentTime < 213) {
 
-            console.log('shape 4')
+            console.log('shape 3')
 
             apagar()
             corda6[8].style.display = 'block'
             corda6[10].style.display = 'block'
             corda6[12].style.display = 'block'
-            corda5[9].style.display = 'block'
-            corda5[10].style.display = 'block'
+            corda5[8].style.display = 'block'
+            corda5[11].style.display = 'block'
             corda5[12].style.display = 'block'
             corda4[9].style.display = 'block'
             corda4[10].style.display = 'block'
             corda4[12].style.display = 'block'
             corda3[9].style.display = 'block'
-            corda3[11].style.display = 'block'
-            corda3[12].style.display = 'block'
+            corda3[10].style.display = 'block'
+            corda3[13].style.display = 'block'
             corda2[10].style.display = 'block'
             corda2[12].style.display = 'block'
             corda2[13].style.display = 'block'
             corda1[10].style.display = 'block'
             corda1[12].style.display = 'block'
-            corda1[14].style.display = 'block'
+            corda1[13].style.display = 'block'
 
 
-        } else if (base.currentTime < 195) {
 
-            console.log('shape 5')
+        } else if (base.currentTime < 284) {
+
+            console.log('shape 4')
 
             apagar()
             corda6[10].style.display = 'block'
             corda6[12].style.display = 'block'
-            corda6[14].style.display = 'block'
-            corda5[10].style.display = 'block'
+            corda6[13].style.display = 'block'
+            corda5[11].style.display = 'block'
             corda5[12].style.display = 'block'
             corda5[14].style.display = 'block'
             corda4[10].style.display = 'block'
             corda4[12].style.display = 'block'
             corda4[14].style.display = 'block'
-            corda3[11].style.display = 'block'
-            corda3[12].style.display = 'block'
+            corda3[10].style.display = 'block'
+            corda3[13].style.display = 'block'
             corda3[14].style.display = 'block'
             corda2[12].style.display = 'block'
             corda2[13].style.display = 'block'
             corda2[15].style.display = 'block'
             corda1[12].style.display = 'block'
-            corda1[14].style.display = 'block'
-            corda1[15].style.display = 'block'
+            corda1[13].style.display = 'block'
+            corda1[16].style.display = 'block'
 
 
-        } else if (base.currentTime < 234) {
 
-            console.log('shape 6')
+        } else if (base.currentTime < 355) {
+
+            console.log('shape 5')
 
             apagar()
             corda6[0].style.display = 'block'
-            corda6[2].style.display = 'block'
-            corda6[3].style.display = 'block'
+            corda6[1].style.display = 'block'
+            corda6[4].style.display = 'block'
             corda5[0].style.display = 'block'
             corda5[2].style.display = 'block'
             corda5[3].style.display = 'block'
             corda4[0].style.display = 'block'
             corda4[2].style.display = 'block'
-            corda4[4].style.display = 'block'
-            corda3[0].style.display = 'block'
+            corda4[3].style.display = 'block'
+            corda3[1].style.display = 'block'
             corda3[2].style.display = 'block'
             corda3[4].style.display = 'block'
             corda2[1].style.display = 'block'
             corda2[3].style.display = 'block'
             corda2[5].style.display = 'block'
-            corda1[2].style.display = 'block'
-            corda1[3].style.display = 'block'
+            corda1[1].style.display = 'block'
+            corda1[4].style.display = 'block'
             corda1[5].style.display = 'block'
 
 
-        } else if (base.currentTime < 273) {
 
-            console.log('shape 7')
+        } else if (base.currentTime < 426) {
+
+            console.log('shape 6')
 
             apagar()
-            corda6[2].style.display = 'block'
-            corda6[3].style.display = 'block'
+            corda6[1].style.display = 'block'
+            corda6[4].style.display = 'block'
             corda6[5].style.display = 'block'
             corda5[2].style.display = 'block'
             corda5[3].style.display = 'block'
             corda5[5].style.display = 'block'
             corda4[2].style.display = 'block'
-            corda4[4].style.display = 'block'
-            corda4[5].style.display = 'block'
+            corda4[3].style.display = 'block'
+            corda4[6].style.display = 'block'
             corda3[2].style.display = 'block'
             corda3[4].style.display = 'block'
             corda3[5].style.display = 'block'
             corda2[3].style.display = 'block'
             corda2[5].style.display = 'block'
-            corda2[7].style.display = 'block'
-            corda1[3].style.display = 'block'
+            corda2[6].style.display = 'block'
+            corda1[4].style.display = 'block'
             corda1[5].style.display = 'block'
             corda1[7].style.display = 'block'
+
+
+
+
+
+        } else if (base.currentTime < 497) {
+
+            console.log('shape 7')
+
+            apagar()
+            corda6[4].style.display = 'block'
+            corda6[5].style.display = 'block'
+            corda6[7].style.display = 'block'
+            corda5[3].style.display = 'block'
+            corda5[5].style.display = 'block'
+            corda5[7].style.display = 'block'
+            corda4[3].style.display = 'block'
+            corda4[6].style.display = 'block'
+            corda4[7].style.display = 'block'
+            corda3[4].style.display = 'block'
+            corda3[5].style.display = 'block'
+            corda3[7].style.display = 'block'
+            corda2[5].style.display = 'block'
+            corda2[6].style.display = 'block'
+            corda2[9].style.display = 'block'
+            corda1[5].style.display = 'block'
+            corda1[7].style.display = 'block'
+            corda1[8].style.display = 'block'
+
 
 
         }
@@ -1232,7 +1248,7 @@ ex1.onclick = function () {
     lista.style.top = '-580px'
 
     ex1.style.backgroundColor = 'orange'
-   
+
 }
 
 for (i = 0; i < bolinha.length; i++) {
@@ -1328,7 +1344,7 @@ ex1.onclick = function () {
         corda1[i].style.backgroundColor = 'greeyellow'
     }
 
-   
+
 
 
 }
@@ -1403,7 +1419,7 @@ ex3.onclick = function () {
     lista.style.top = '-580px'
     video.style.display = 'block'
     video.src = 'https://www.youtube.com/embed/OyV6Y5StgZw?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
-    pdf.style.display = 'none'
+    pdf.style.display = 'inline'
     video1.style.display = 'none'
 
     mostrarG()
@@ -1421,7 +1437,7 @@ ex4.onclick = function () {
     lista.style.top = '-580px'
     video.style.display = 'block'
     video.src = 'https://www.youtube.com/embed/rEUQSj7mcR8?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
-    pdf.style.display = 'none'
+    pdf.style.display = 'inline'
     video1.style.display = 'none'
 
     mostrarG()
@@ -1628,7 +1644,7 @@ botao0.onclick = function () {
         corda3[7].style.display = 'block'
         corda2[5].style.display = 'block'
         corda2[6].style.display = 'block'
-        corda2[8].style.display = 'block'
+        corda2[9].style.display = 'block'
         corda1[5].style.display = 'block'
         corda1[7].style.display = 'block'
         corda1[8].style.display = 'block'
@@ -4066,7 +4082,7 @@ let funcaoVelocidade = function treinarVelocidade(batidas = 10, minutos = 1) {
 
 for (i = 0; i < corda.length; i++) {
 
-    
+
     corda[i].style.zIndex = 11
     corda[i].style.transition = 'all 2s'
 
@@ -4083,7 +4099,7 @@ for (i = 0; i < traste.length; i++) {
 
 for (i = 0; i < nota.length; i++) {
 
-    
+
     nota[i].style.zIndex = 13
     nota[i].style.transition = 'all 2s'
 
@@ -4091,14 +4107,14 @@ for (i = 0; i < nota.length; i++) {
 
 for (i = 0; i < bolinha.length; i++) {
 
-    
+
     bolinha[i].style.zIndex = 11
     bolinha[i].style.transition = 'all 2s'
 
 }
 
-for (i = 0; i < bolinha.length; i++){
-    
+for (i = 0; i < bolinha.length; i++) {
+
     bolinha[i].style.backgroundColor = 'gray'
 
 }
@@ -4197,3 +4213,4 @@ setInterval(function () {
 */
 
 console.log('teste')
+
