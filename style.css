@@ -7,11 +7,13 @@
 #video1 {
 
     position: absolute;
-    top: 600px;
+    top: 580px;
     cursor: pointer;
-    right: -10px;
-    display: none;
+    left: 750px;
     z-index: 50;
+    width: 550px;
+    display: none;
+    
 }
 
 
@@ -2697,6 +2699,8 @@ body{
     position: absolute;
     top: 580px;
     left: -10px;
+    margin-left: 0;
+    display: none;
 }
 
 #posicao1, #posicao2, #posicao3, #posicao4, #posicao5{
@@ -2746,7 +2750,7 @@ body{
     top: 100px;
     left: 120px;
     background-image: url('madeira.jpg');
-    position: fixed;
+    
     z-index: 10;
     box-shadow: 0px 0px 70px black;
     
