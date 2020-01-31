@@ -1254,6 +1254,8 @@ timerSvg.onclick = function () {
     setTimeout(function () {
 
         window.location.reload()
+        video1.pause()
+        video1.currentTime = 0
 
     }, 1000 * 60 * 10 + 3)
 
