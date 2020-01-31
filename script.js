@@ -860,14 +860,19 @@ ex5.onclick = function () {
     apagar()
     lista.style.top = '-580px'
     base.style.display = 'block'
+
     base.play()
-    mostrarG()
+    
+   
+    mostrarGS()
     mostrarA()
     mostrarB()
     mostrarC()
     mostrarD()
     mostrarE()
     mostrarFS()
+
+    
 
 
 
