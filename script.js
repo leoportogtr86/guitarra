@@ -1021,6 +1021,7 @@ ex5.onclick = function () {
 
 
 
+            
 
         } else if (base.currentTime >= 497) {
 
