@@ -856,14 +856,16 @@ menos.onclick = function () {
 ex5.onclick = function () {
 
     console.log('ex5')
+    apagar()
     lista.style.top = '-580px'
     base.style.display = 'block'
     base.play()
-    base.src = 'am.mp3'
+    
+    
 
     setInterval(function () {
 
-        if (base.currentTime < 71) {
+        if (base.currentTime >= 71) {
 
             console.log('shape 1')
 
@@ -889,7 +891,7 @@ ex5.onclick = function () {
 
 
 
-        } else if (base.currentTime < 142) {
+        } else if (base.currentTime >= 142) {
 
             console.log('shape 2')
 
@@ -914,7 +916,7 @@ ex5.onclick = function () {
             corda1[12].style.display = 'block'
 
 
-        } else if (base.currentTime < 213) {
+        } else if (base.currentTime >= 213) {
 
             console.log('shape 3')
 
@@ -940,7 +942,7 @@ ex5.onclick = function () {
 
 
 
-        } else if (base.currentTime < 284) {
+        } else if (base.currentTime >= 284) {
 
             console.log('shape 4')
 
@@ -966,7 +968,7 @@ ex5.onclick = function () {
 
 
 
-        } else if (base.currentTime < 355) {
+        } else if (base.currentTime >= 355) {
 
             console.log('shape 5')
 
@@ -992,7 +994,7 @@ ex5.onclick = function () {
 
 
 
-        } else if (base.currentTime < 426) {
+        } else if (base.currentTime >= 426) {
 
             console.log('shape 6')
 
@@ -1020,7 +1022,7 @@ ex5.onclick = function () {
 
 
 
-        } else if (base.currentTime < 497) {
+        } else if (base.currentTime >= 497) {
 
             console.log('shape 7')
 
@@ -1313,6 +1315,9 @@ function molduraF(casa) {
 ex1.onclick = function () {
 
     apagar()
+    clearInterval()
+    base.pause()
+    base.currentTime = 0
 
     lista.style.top = '-580px'
     pdf.src = 'precisao1.pdf'
@@ -1320,6 +1325,7 @@ ex1.onclick = function () {
     pdf.style.zIndex = '50'
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
+    base.style.display = 'none'
 
 
 
@@ -1354,12 +1360,17 @@ ex1.onclick = function () {
 ex2.onclick = function () {
 
     apagar()
+    clearInterval()
 
+    base.pause()
+    base.currentTime = 0
+    clearInterval()
     contadorPosicao = 0
     lista.style.top = '-580px'
     pdf.style.display = 'none'
     video1.style.display = 'none'
     video.style.display = 'block'
+    base.style.display = 'none'
 
 
 
@@ -1421,6 +1432,10 @@ ex3.onclick = function () {
     video.src = 'https://www.youtube.com/embed/OyV6Y5StgZw?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
     pdf.style.display = 'inline'
     video1.style.display = 'none'
+    base.style.display = 'none'
+    base.pause()
+    clearInterval()
+    base.currentTime = 0
 
     mostrarG()
     mostrarA()
@@ -1434,11 +1449,15 @@ ex3.onclick = function () {
 ex4.onclick = function () {
 
     pdf.src = '4em4.pdf'
+    base.pause()
+    base.currentTime = 0
     lista.style.top = '-580px'
     video.style.display = 'block'
     video.src = 'https://www.youtube.com/embed/rEUQSj7mcR8?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
     pdf.style.display = 'inline'
     video1.style.display = 'none'
+    clearInterval()
+    base.style.display = 'none'
 
     mostrarG()
     mostrarA()
