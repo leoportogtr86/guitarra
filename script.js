@@ -1,3 +1,4 @@
+let permissao = document.getElementById('permissao')
 let still = document.getElementById('still')
 let calendario = document.getElementById('calendario')
 let abrCorda = document.getElementById('abrCorda')
@@ -4296,4 +4297,13 @@ function clearFret() {
     
 }
 
+window.onload = Notification.requestPermission()
 
+
+if(Notification.permission == 'granted'){
+
+    console.log('Notificação permitida')
+
+}
+
+N
