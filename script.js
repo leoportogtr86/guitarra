@@ -71,6 +71,19 @@ let semana1 = document.getElementById('semana1')
 let css = document.getElementById('css')
 let video1 = document.getElementById('video1')
 
+
+
+console.log('Número de elementos da pág: ' + all.length)
+console.log('Cordas: ' + corda.length)
+console.log('Casas: ' + traste.length)
+
+
+document.onclick = function () {
+
+    console.log('X: ' + event.clientX + '\n' + 'Y: ' + event.clientY)
+    
+}
+
 still.onclick = function () {
 
     window.location = 'still.html'
@@ -857,6 +870,7 @@ menos.onclick = function () {
 ex5.onclick = function () {
 
     console.log('ex5')
+    video1.pause()
     apagar()
     lista.style.top = '-580px'
     base.style.display = 'block'
@@ -1386,6 +1400,7 @@ ex2.onclick = function () {
 
     base.pause()
     base.currentTime = 0
+    video1.pause()
     
     contadorPosicao = 0
     lista.style.top = '-580px'
@@ -1449,6 +1464,7 @@ lista.onmouseleave = function () {
 ex3.onclick = function () {
 
     pdf.src = '3em3.pdf'
+    video1.pause()
     lista.style.top = '-580px'
     video.style.display = 'block'
     video.src = 'https://www.youtube.com/embed/OyV6Y5StgZw?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
@@ -1472,6 +1488,7 @@ ex4.onclick = function () {
 
     pdf.src = '4em4.pdf'
     base.pause()
+    video1.pause()
     base.currentTime = 0
     lista.style.top = '-580px'
     video.style.display = 'block'
@@ -4253,5 +4270,30 @@ setInterval(function () {
 }, 500)
 */
 
-console.log('teste')
+function clearFret() {
+
+    for (i = 0; i < corda.length; i++){
+
+        corda[i].style.display =  'none'
+
+    }
+
+    
+    for (i = 0; i < traste.length; i++){
+
+        traste[i].style.display =  'none'
+
+    }
+
+    fret.style.display = 'none'
+
+    
+    for (i = 0; i < bolinha.length; i++){
+
+        bolinha[i].style.display =  'none'
+
+    }
+    
+}
+
 
