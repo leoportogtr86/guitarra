@@ -4851,7 +4851,7 @@ nota[0].onclick = function () {
 */
 
 
-
+//onclick sobre os elementos do array 'nota'
 
 function markSelection() {
 
@@ -4868,4 +4868,51 @@ function markSelection() {
 
 for (i = 0; i < nota.length; i++) {
     nota[i].onclick = markSelection;
+}
+
+
+function bass(cordas) {
+
+    if (cordas == 4) {
+
+        corda[0].style.display = 'none'
+        corda[1].style.display = 'none'
+
+        for(i = 0; i < traste.length; i++){
+
+            traste[i].style.height = '150px'
+            traste[i].style.top = '200px'
+            fret.style.height = '150px'
+            fret.style.top = '200px'
+            traste[i].style.transition = 'none'     
+            
+            bolinha[0].style.top = '270px'
+            bolinha[1].style.top = '270px'
+            bolinha[2].style.top = '270px'
+            bolinha[3].style.top = '270px'
+            bolinha[4].style.top = '240px'
+            bolinha[5].style.top = '300px'
+            
+
+
+        }
+
+    }
+}
+
+//bass(4)
+
+for (i = 0; i < corda.length; i++){
+
+    corda[i].style.zIndex = '40'
+
+
+}
+
+
+for (i = 0; i < nota.length; i++){
+
+    nota[i].style.zIndex = '50'
+
+
 }
