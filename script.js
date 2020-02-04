@@ -82,7 +82,7 @@ console.log('Casas: ' + traste.length)
 document.onclick = function () {
 
     console.log('X: ' + event.clientX + '\n' + 'Y: ' + event.clientY)
-    
+
 }
 
 still.onclick = function () {
@@ -877,8 +877,8 @@ ex5.onclick = function () {
     base.style.display = 'block'
 
     base.play()
-    
-   
+
+
     mostrarGS()
     mostrarA()
     mostrarB()
@@ -887,207 +887,207 @@ ex5.onclick = function () {
     mostrarE()
     mostrarFS()
 
-    
 
 
 
-    
+
+
 
 
 }
 
 function shape() {
 
-   
-
-        if (base.currentTime <= 71) {
-
-            console.log('shape 1')
-
-            apagar()
-            corda6[5].style.display = 'block'
-            corda6[7].style.display = 'block'
-            corda6[8].style.display = 'block'
-            corda5[5].style.display = 'block'
-            corda5[7].style.display = 'block'
-            corda5[8].style.display = 'block'
-            corda4[6].style.display = 'block'
-            corda4[7].style.display = 'block'
-            corda4[9].style.display = 'block'
-            corda3[5].style.display = 'block'
-            corda3[7].style.display = 'block'
-            corda3[9].style.display = 'block'
-            corda2[6].style.display = 'block'
-            corda2[9].style.display = 'block'
-            corda2[10].style.display = 'block'
-            corda1[7].style.display = 'block'
-            corda1[8].style.display = 'block'
-            corda1[10].style.display = 'block'
 
 
+    if (base.currentTime <= 71) {
 
-        } else if (base.currentTime <= 142) {
+        console.log('shape 1')
 
-            console.log('shape 2')
-
-            apagar()
-            corda6[7].style.display = 'block'
-            corda6[8].style.display = 'block'
-            corda6[10].style.display = 'block'
-            corda5[7].style.display = 'block'
-            corda5[8].style.display = 'block'
-            corda5[11].style.display = 'block'
-            corda4[7].style.display = 'block'
-            corda4[9].style.display = 'block'
-            corda4[10].style.display = 'block'
-            corda3[7].style.display = 'block'
-            corda3[9].style.display = 'block'
-            corda3[10].style.display = 'block'
-            corda2[9].style.display = 'block'
-            corda2[10].style.display = 'block'
-            corda2[12].style.display = 'block'
-            corda1[8].style.display = 'block'
-            corda1[10].style.display = 'block'
-            corda1[12].style.display = 'block'
-
-
-        } else if (base.currentTime <= 213) {
-
-            console.log('shape 3')
-
-            apagar()
-            corda6[8].style.display = 'block'
-            corda6[10].style.display = 'block'
-            corda6[12].style.display = 'block'
-            corda5[8].style.display = 'block'
-            corda5[11].style.display = 'block'
-            corda5[12].style.display = 'block'
-            corda4[9].style.display = 'block'
-            corda4[10].style.display = 'block'
-            corda4[12].style.display = 'block'
-            corda3[9].style.display = 'block'
-            corda3[10].style.display = 'block'
-            corda3[13].style.display = 'block'
-            corda2[10].style.display = 'block'
-            corda2[12].style.display = 'block'
-            corda2[13].style.display = 'block'
-            corda1[10].style.display = 'block'
-            corda1[12].style.display = 'block'
-            corda1[13].style.display = 'block'
+        apagar()
+        corda6[5].style.display = 'block'
+        corda6[7].style.display = 'block'
+        corda6[8].style.display = 'block'
+        corda5[5].style.display = 'block'
+        corda5[7].style.display = 'block'
+        corda5[8].style.display = 'block'
+        corda4[6].style.display = 'block'
+        corda4[7].style.display = 'block'
+        corda4[9].style.display = 'block'
+        corda3[5].style.display = 'block'
+        corda3[7].style.display = 'block'
+        corda3[9].style.display = 'block'
+        corda2[6].style.display = 'block'
+        corda2[9].style.display = 'block'
+        corda2[10].style.display = 'block'
+        corda1[7].style.display = 'block'
+        corda1[8].style.display = 'block'
+        corda1[10].style.display = 'block'
 
 
 
-        } else if (base.currentTime <= 284) {
+    } else if (base.currentTime <= 142) {
 
-            console.log('shape 4')
+        console.log('shape 2')
 
-            apagar()
-            corda6[10].style.display = 'block'
-            corda6[12].style.display = 'block'
-            corda6[13].style.display = 'block'
-            corda5[11].style.display = 'block'
-            corda5[12].style.display = 'block'
-            corda5[14].style.display = 'block'
-            corda4[10].style.display = 'block'
-            corda4[12].style.display = 'block'
-            corda4[14].style.display = 'block'
-            corda3[10].style.display = 'block'
-            corda3[13].style.display = 'block'
-            corda3[14].style.display = 'block'
-            corda2[12].style.display = 'block'
-            corda2[13].style.display = 'block'
-            corda2[15].style.display = 'block'
-            corda1[12].style.display = 'block'
-            corda1[13].style.display = 'block'
-            corda1[16].style.display = 'block'
-
-
-
-        } else if (base.currentTime <= 355) {
-
-            console.log('shape 5')
-
-            apagar()
-            corda6[0].style.display = 'block'
-            corda6[1].style.display = 'block'
-            corda6[4].style.display = 'block'
-            corda5[0].style.display = 'block'
-            corda5[2].style.display = 'block'
-            corda5[3].style.display = 'block'
-            corda4[0].style.display = 'block'
-            corda4[2].style.display = 'block'
-            corda4[3].style.display = 'block'
-            corda3[1].style.display = 'block'
-            corda3[2].style.display = 'block'
-            corda3[4].style.display = 'block'
-            corda2[1].style.display = 'block'
-            corda2[3].style.display = 'block'
-            corda2[5].style.display = 'block'
-            corda1[1].style.display = 'block'
-            corda1[4].style.display = 'block'
-            corda1[5].style.display = 'block'
+        apagar()
+        corda6[7].style.display = 'block'
+        corda6[8].style.display = 'block'
+        corda6[10].style.display = 'block'
+        corda5[7].style.display = 'block'
+        corda5[8].style.display = 'block'
+        corda5[11].style.display = 'block'
+        corda4[7].style.display = 'block'
+        corda4[9].style.display = 'block'
+        corda4[10].style.display = 'block'
+        corda3[7].style.display = 'block'
+        corda3[9].style.display = 'block'
+        corda3[10].style.display = 'block'
+        corda2[9].style.display = 'block'
+        corda2[10].style.display = 'block'
+        corda2[12].style.display = 'block'
+        corda1[8].style.display = 'block'
+        corda1[10].style.display = 'block'
+        corda1[12].style.display = 'block'
 
 
+    } else if (base.currentTime <= 213) {
 
-        } else if (base.currentTime <= 426) {
+        console.log('shape 3')
 
-            console.log('shape 6')
-
-            apagar()
-            corda6[1].style.display = 'block'
-            corda6[4].style.display = 'block'
-            corda6[5].style.display = 'block'
-            corda5[2].style.display = 'block'
-            corda5[3].style.display = 'block'
-            corda5[5].style.display = 'block'
-            corda4[2].style.display = 'block'
-            corda4[3].style.display = 'block'
-            corda4[6].style.display = 'block'
-            corda3[2].style.display = 'block'
-            corda3[4].style.display = 'block'
-            corda3[5].style.display = 'block'
-            corda2[3].style.display = 'block'
-            corda2[5].style.display = 'block'
-            corda2[6].style.display = 'block'
-            corda1[4].style.display = 'block'
-            corda1[5].style.display = 'block'
-            corda1[7].style.display = 'block'
+        apagar()
+        corda6[8].style.display = 'block'
+        corda6[10].style.display = 'block'
+        corda6[12].style.display = 'block'
+        corda5[8].style.display = 'block'
+        corda5[11].style.display = 'block'
+        corda5[12].style.display = 'block'
+        corda4[9].style.display = 'block'
+        corda4[10].style.display = 'block'
+        corda4[12].style.display = 'block'
+        corda3[9].style.display = 'block'
+        corda3[10].style.display = 'block'
+        corda3[13].style.display = 'block'
+        corda2[10].style.display = 'block'
+        corda2[12].style.display = 'block'
+        corda2[13].style.display = 'block'
+        corda1[10].style.display = 'block'
+        corda1[12].style.display = 'block'
+        corda1[13].style.display = 'block'
 
 
+
+    } else if (base.currentTime <= 284) {
+
+        console.log('shape 4')
+
+        apagar()
+        corda6[10].style.display = 'block'
+        corda6[12].style.display = 'block'
+        corda6[13].style.display = 'block'
+        corda5[11].style.display = 'block'
+        corda5[12].style.display = 'block'
+        corda5[14].style.display = 'block'
+        corda4[10].style.display = 'block'
+        corda4[12].style.display = 'block'
+        corda4[14].style.display = 'block'
+        corda3[10].style.display = 'block'
+        corda3[13].style.display = 'block'
+        corda3[14].style.display = 'block'
+        corda2[12].style.display = 'block'
+        corda2[13].style.display = 'block'
+        corda2[15].style.display = 'block'
+        corda1[12].style.display = 'block'
+        corda1[13].style.display = 'block'
+        corda1[16].style.display = 'block'
+
+
+
+    } else if (base.currentTime <= 355) {
+
+        console.log('shape 5')
+
+        apagar()
+        corda6[0].style.display = 'block'
+        corda6[1].style.display = 'block'
+        corda6[4].style.display = 'block'
+        corda5[0].style.display = 'block'
+        corda5[2].style.display = 'block'
+        corda5[3].style.display = 'block'
+        corda4[0].style.display = 'block'
+        corda4[2].style.display = 'block'
+        corda4[3].style.display = 'block'
+        corda3[1].style.display = 'block'
+        corda3[2].style.display = 'block'
+        corda3[4].style.display = 'block'
+        corda2[1].style.display = 'block'
+        corda2[3].style.display = 'block'
+        corda2[5].style.display = 'block'
+        corda1[1].style.display = 'block'
+        corda1[4].style.display = 'block'
+        corda1[5].style.display = 'block'
+
+
+
+    } else if (base.currentTime <= 426) {
+
+        console.log('shape 6')
+
+        apagar()
+        corda6[1].style.display = 'block'
+        corda6[4].style.display = 'block'
+        corda6[5].style.display = 'block'
+        corda5[2].style.display = 'block'
+        corda5[3].style.display = 'block'
+        corda5[5].style.display = 'block'
+        corda4[2].style.display = 'block'
+        corda4[3].style.display = 'block'
+        corda4[6].style.display = 'block'
+        corda3[2].style.display = 'block'
+        corda3[4].style.display = 'block'
+        corda3[5].style.display = 'block'
+        corda2[3].style.display = 'block'
+        corda2[5].style.display = 'block'
+        corda2[6].style.display = 'block'
+        corda1[4].style.display = 'block'
+        corda1[5].style.display = 'block'
+        corda1[7].style.display = 'block'
 
 
 
 
-        } else if (base.currentTime <= 497) {
-
-            console.log('shape 7')
-
-            apagar()
-            corda6[4].style.display = 'block'
-            corda6[5].style.display = 'block'
-            corda6[7].style.display = 'block'
-            corda5[3].style.display = 'block'
-            corda5[5].style.display = 'block'
-            corda5[7].style.display = 'block'
-            corda4[3].style.display = 'block'
-            corda4[6].style.display = 'block'
-            corda4[7].style.display = 'block'
-            corda3[4].style.display = 'block'
-            corda3[5].style.display = 'block'
-            corda3[7].style.display = 'block'
-            corda2[5].style.display = 'block'
-            corda2[6].style.display = 'block'
-            corda2[9].style.display = 'block'
-            corda1[5].style.display = 'block'
-            corda1[7].style.display = 'block'
-            corda1[8].style.display = 'block'
 
 
+    } else if (base.currentTime <= 497) {
 
-        }
+        console.log('shape 7')
+
+        apagar()
+        corda6[4].style.display = 'block'
+        corda6[5].style.display = 'block'
+        corda6[7].style.display = 'block'
+        corda5[3].style.display = 'block'
+        corda5[5].style.display = 'block'
+        corda5[7].style.display = 'block'
+        corda4[3].style.display = 'block'
+        corda4[6].style.display = 'block'
+        corda4[7].style.display = 'block'
+        corda3[4].style.display = 'block'
+        corda3[5].style.display = 'block'
+        corda3[7].style.display = 'block'
+        corda2[5].style.display = 'block'
+        corda2[6].style.display = 'block'
+        corda2[9].style.display = 'block'
+        corda1[5].style.display = 'block'
+        corda1[7].style.display = 'block'
+        corda1[8].style.display = 'block'
+
 
 
     }
+
+
+}
 
 
 
@@ -1352,7 +1352,7 @@ function molduraF(casa) {
 ex1.onclick = function () {
 
     apagar()
-    
+
     base.pause()
     base.currentTime = 0
 
@@ -1397,12 +1397,12 @@ ex1.onclick = function () {
 ex2.onclick = function () {
 
     apagar()
-    
+
 
     base.pause()
     base.currentTime = 0
     video1.pause()
-    
+
     contadorPosicao = 0
     lista.style.top = '-580px'
     pdf.style.display = 'none'
@@ -1473,7 +1473,7 @@ ex3.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'none'
     base.pause()
-    
+
     base.currentTime = 0
 
     mostrarG()
@@ -1496,7 +1496,7 @@ ex4.onclick = function () {
     video.src = 'https://www.youtube.com/embed/rEUQSj7mcR8?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
     pdf.style.display = 'inline'
     video1.style.display = 'none'
-    
+
     base.style.display = 'none'
 
     mostrarG()
@@ -1903,7 +1903,7 @@ clear.onclick = function () {
     pestana.style.display = 'none'
     moldura.style.display = 'none'
     console.log('limpar')
-    
+
 
     apagar()
 }
@@ -2446,12 +2446,12 @@ function apagar() {
 
     pestana.style.display = 'none'
     moldura.style.display = 'none'
-    
+
 
 
     for (i = 0; i < nota.length; i++) {
 
-        
+
         nota[i].style.opacity = '0.001'
     }
 
@@ -4277,28 +4277,28 @@ setInterval(function () {
 
 function clearFret() {
 
-    for (i = 0; i < corda.length; i++){
+    for (i = 0; i < corda.length; i++) {
 
-        corda[i].style.display =  'none'
+        corda[i].style.display = 'none'
 
     }
 
-    
-    for (i = 0; i < traste.length; i++){
 
-        traste[i].style.display =  'none'
+    for (i = 0; i < traste.length; i++) {
+
+        traste[i].style.display = 'none'
 
     }
 
     fret.style.display = 'none'
 
-    
-    for (i = 0; i < bolinha.length; i++){
 
-        bolinha[i].style.display =  'none'
+    for (i = 0; i < bolinha.length; i++) {
+
+        bolinha[i].style.display = 'none'
 
     }
-    
+
 }
 
 
@@ -4306,21 +4306,566 @@ function clearFret() {
 
 
 
-for(i = 0; i < nota.length; i++){
+for (i = 0; i < nota.length; i++) {
 
 
     nota[i].style.opacity = '0.001'
     console.log(nota.length)
-    nota[i].style.display = 'block'   
+    nota[i].style.display = 'block'
     nota[i].style.transition = 'none'
-    
-    
+
+
 
 }
 
+/*
+
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[1].onclick = function () {
+
+    nota[1].style.opacity = '1'
+    
+}
+nota[2].onclick = function () {
+
+    nota[2].style.opacity = '1'
+    
+}
+nota[3].onclick = function () {
+
+    nota[3].style.opacity = '1'
+    
+}
+nota[4].onclick = function () {
+
+    nota[4].style.opacity = '1'
+    
+}
+nota[5].onclick = function () {
+
+    nota[5].style.opacity = '1'
+    
+}
+nota[6].onclick = function () {
+
+    nota[6].style.opacity = '1'
+    
+}
+nota[7].onclick = function () {
+
+    nota[7].style.opacity = '1'
+    
+}
+nota[8].onclick = function () {
+
+    nota[8].style.opacity = '1'
+    
+}
+nota[9].onclick = function () {
+
+    nota[9].style.opacity = '1'
+    
+}
+nota[10].onclick = function () {
+
+    nota[10].style.opacity = '1'
+    
+}
+nota[11].onclick = function () {
+
+    nota[11].style.opacity = '1'
+    
+}
+nota[12].onclick = function () {
+
+    nota[12].style.opacity = '1'
+    
+}
+nota[13].onclick = function () {
+
+    nota[13].style.opacity = '1'
+    
+}
+nota[14].onclick = function () {
+
+    nota[14].style.opacity = '1'
+    
+}
+nota[15].onclick = function () {
+
+    nota[15].style.opacity = '1'
+    
+}
+nota[16].onclick = function () {
+
+    nota[16].style.opacity = '1'
+    
+}
+nota[17].onclick = function () {
+
+    nota[17].style.opacity = '1'
+    
+}
+nota[18].onclick = function () {
+
+    nota[18].style.opacity = '1'
+    
+}
+nota[19].onclick = function () {
+
+    nota[19].style.opacity = '1'
+    
+}
+nota[20].onclick = function () {
+
+    nota[20].style.opacity = '1'
+    
+}
+
+nota[21].onclick = function () {
+
+    nota[21].style.opacity = '1'
+    
+}
+nota[22].onclick = function () {
+
+    nota[22].style.opacity = '1'
+    
+}
+nota[23].onclick = function () {
+
+    nota[23].style.opacity = '1'
+    
+}
+nota[24].onclick = function () {
+
+    nota[24].style.opacity = '1'
+    
+}
+nota[25].onclick = function () {
+
+    nota[25].style.opacity = '1'
+    
+}
+nota[26].onclick = function () {
+
+    nota[26].style.opacity = '1'
+    
+}
+nota[27].onclick = function () {
+
+    nota[27].style.opacity = '1'
+    
+}
+nota[28].onclick = function () {
+
+    nota[28].style.opacity = '1'
+    
+}
+nota[29].onclick = function () {
+
+    nota[29].style.opacity = '1'
+    
+}
+nota[30].onclick = function () {
+
+    nota[30].style.opacity = '1'
+    
+}
+nota[31].onclick = function () {
+
+    nota[31].style.opacity = '1'
+}
+nota[32].onclick = function () {
+
+    nota[32].style.opacity = '1'
+    
+}
+nota[33].onclick = function () {
+
+    nota[33].style.opacity = '1'
+    
+}
+nota[34].onclick = function () {
+
+    nota[34].style.opacity = '1'
+    
+}
+nota[35].onclick = function () {
+
+    nota[35].style.opacity = '1'
+    
+}
+nota[36].onclick = function () {
+
+    nota[36].style.opacity = '1'
+    
+}
+nota[37].onclick = function () {
+
+    nota[37].style.opacity = '1'
+    
+}
+nota[38].onclick = function () {
+
+    nota[38].style.opacity = '1'
+    
+}
+nota[39].onclick = function () {
+
+    nota[39].style.opacity = '1'
+    
+}
+nota[40].onclick = function () {
+
+    nota[40].style.opacity = '1'
+    
+}
+nota[41].onclick = function () {
+
+    nota[41].style.opacity = '1'
+    
+}
+
+nota[42].onclick = function () {
+
+    nota[42].style.opacity = '1'
+    
+}
+nota[43].onclick = function () {
+
+    nota[43].style.opacity = '1'
+    
+}
+nota[44].onclick = function () {
+
+    nota[44].style.opacity = '1'
+    
+}
+nota[45].onclick = function () {
+
+    nota[45].style.opacity = '1'
+    
+}
+nota[46].onclick = function () {
+
+    nota[46].style.opacity = '1'
+    
+}
+nota[47].onclick = function () {
+
+    nota[47].style.opacity = '1'
+    
+}
+nota[48].onclick = function () {
+
+    nota[48].style.opacity = '1'
+    
+}
+nota[49].onclick = function () {
+
+    nota[49].style.opacity = '1'
+    
+}
+nota[50].onclick = function () {
+
+    nota[50].style.opacity = '1'
+    
+}
+nota[51].onclick = function () {
+
+    nota[51].style.opacity = '1'
+    
+}
+nota[52].onclick = function () {
+
+    nota[52].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+    
+}
+*/
 
 
 
 
+function markSelection() {
+
+    if (this.style.opacity == '1') {
+
+        this.style.opacity = '0.001'
 
 
+    } else {
+
+        this.style.opacity = '1'
+    }
+}
+
+for (i = 0; i < nota.length; i++) {
+    nota[i].onclick = markSelection;
+}
