@@ -1903,6 +1903,7 @@ clear.onclick = function () {
     pestana.style.display = 'none'
     moldura.style.display = 'none'
     console.log('limpar')
+    
 
     apagar()
 }
@@ -1916,6 +1917,7 @@ mostrar.onclick = function () {
     for (i = 0; i < nota.length; i++) {
 
         nota[i].style.display = 'block'
+        nota[i].style.opacity = '1'
 
     }
 
@@ -2444,11 +2446,13 @@ function apagar() {
 
     pestana.style.display = 'none'
     moldura.style.display = 'none'
+    
 
 
     for (i = 0; i < nota.length; i++) {
 
-        nota[i].style.display = 'none'
+        
+        nota[i].style.opacity = '0.001'
     }
 
 
@@ -4297,13 +4301,26 @@ function clearFret() {
     
 }
 
-window.onload = Notification.requestPermission()
 
 
-if(Notification.permission == 'granted'){
 
-    console.log('Notificação permitida')
+
+
+for(i = 0; i < nota.length; i++){
+
+
+    nota[i].style.opacity = '0.001'
+    console.log(nota.length)
+    nota[i].style.display = 'block'   
+    nota[i].style.transition = 'none'
+    
+    
 
 }
 
-N
+
+
+
+
+
+
