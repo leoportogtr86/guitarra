@@ -1,3 +1,261 @@
+let concluido1 = document.getElementById('concluido1')
+let concluido2 = document.getElementById('concluido2')
+let concluido3 = document.getElementById('concluido3')
+let concluido4 = document.getElementById('concluido4')
+let concluido5 = document.getElementById('concluido5')
+let semana2 = document.getElementById('semana2')
+let naoConcluido1 = document.getElementById('naoConcluido1')
+let naoConcluido2 = document.getElementById('naoConcluido2')
+let naoConcluido3 = document.getElementById('naoConcluido3')
+let naoConcluido4 = document.getElementById('naoConcluido4')
+let naoConcluido5 = document.getElementById('naoConcluido5')
+
+semana2.onclick = function () {
+
+    window.location = 'semana2.html'
+    
+}
+
+
+let exConcluidos
+
+
+
+/*
+sessionStorage.setItem('concluido1', false)
+sessionStorage.setItem('concluido2', false)
+sessionStorage.setItem('concluido3', false)
+sessionStorage.setItem('concluido4', false)
+sessionStorage.setItem('concluido5', false)
+*/
+
+naoConcluido1.onclick = function () {
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'block'
+
+
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
+
+    sessionStorage.setItem('concluido1', 1)
+
+}
+
+concluido1.onclick = function () {
+
+    naoConcluido1.style.display = 'block'
+    concluido1.style.display = 'none'
+    sessionStorage.setItem('concluido1', 0)
+
+
+
+}
+
+
+naoConcluido2.onclick = function () {
+
+
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'block'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
+
+    sessionStorage.setItem('concluido2', 1)
+
+}
+
+concluido2.onclick = function () {
+
+    naoConcluido2.style.display = 'block'
+    concluido2.style.display = 'none'
+    sessionStorage.setItem('concluido2', 0)
+
+
+
+}
+
+
+naoConcluido3.onclick = function () {
+
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'block'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
+
+    sessionStorage.setItem('concluido3', 1)
+
+}
+
+concluido3.onclick = function () {
+
+    naoConcluido3.style.display = 'block'
+    concluido3.style.display = 'none'
+    sessionStorage.setItem('concluido3', 0)
+
+
+
+}
+
+naoConcluido4.onclick = function () {
+
+
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'block'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
+
+    sessionStorage.setItem('concluido4', 1)
+
+}
+
+concluido4.onclick = function () {
+
+    naoConcluido4.style.display = 'block'
+    concluido4.style.display = 'none'
+    sessionStorage.setItem('concluido4', 0)
+
+
+
+}
+
+
+naoConcluido5.onclick = function () {
+
+
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'block'
+
+
+    sessionStorage.setItem('concluido5', 1)
+
+}
+
+concluido5.onclick = function () {
+
+
+
+    naoConcluido5.style.display = 'block'
+    concluido5.style.display = 'none'
+    sessionStorage.setItem('concluido5', 0)
+
+}
+
+function conclusao() {
+
+    console.log(exConcluidos)
+
+    if (exConcluidos == 5) {
+
+        console.log('sessão de estudo finalizada')
+        alert("Sessão de Estudos Finalizada com Sucesso!!")
+
+
+    }
+
+    if (sessionStorage.concluido1 == 1) {
+
+        naoConcluido1.style.display = 'none'
+        concluido1.style.display = 'block'
+        console.log('concluído')
+    }
+
+    if (sessionStorage.concluido2 == 1) {
+
+        naoConcluido2.style.display = 'none'
+        concluido2.style.display = 'block'
+        console.log('concluído')
+    }
+
+    if (sessionStorage.concluido3 == 1) {
+
+        naoConcluido3.style.display = 'none'
+        concluido3.style.display = 'block'
+        console.log('concluído')
+    }
+
+    if (sessionStorage.concluido4 == 1) {
+
+        naoConcluido4.style.display = 'none'
+        concluido4.style.display = 'block'
+        console.log('concluído')
+    }
+
+    if (sessionStorage.concluido5 == 1) {
+
+        naoConcluido5.style.display = 'none'
+        concluido5.style.display = 'block'
+        console.log('concluído')
+    }
+
+}
+
+
+
+
+
+
+
 let permissao = document.getElementById('permissao')
 let still = document.getElementById('still')
 let calendario = document.getElementById('calendario')
@@ -96,6 +354,7 @@ video1.play()
 semana1.onclick = function () {
 
     listaSemanas.style.top = '-580px'
+    window.location = 'index.html'
 
 
 }
@@ -870,6 +1129,22 @@ menos.onclick = function () {
 
 ex5.onclick = function () {
 
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'block'
+    concluido5.style.display = 'none'
+
+
     console.log('ex5')
     video1.pause()
     apagar()
@@ -1095,6 +1370,8 @@ menuH1.onclick = function () {
 
     lista.style.right = '10px'
     lista.style.top = '0px'
+
+
 
     for (i = 0; i < corda.length; i++) {
 
@@ -1352,6 +1629,9 @@ function molduraF(casa) {
 ex1.onclick = function () {
 
     apagar()
+    naoConcluido1.style.display = 'block'
+    setInterval(conclusao, 100)
+
 
     base.pause()
     base.currentTime = 0
@@ -1397,6 +1677,21 @@ ex1.onclick = function () {
 ex2.onclick = function () {
 
     apagar()
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'block'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
 
 
     base.pause()
@@ -1464,6 +1759,21 @@ lista.onmouseleave = function () {
 
 ex3.onclick = function () {
 
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'block'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'none'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
     pdf.src = '3em3.pdf'
     video1.pause()
     lista.style.top = '-580px'
@@ -1486,6 +1796,22 @@ ex3.onclick = function () {
 }
 
 ex4.onclick = function () {
+
+    naoConcluido1.style.display = 'none'
+    concluido1.style.display = 'none'
+
+    naoConcluido2.style.display = 'none'
+    concluido2.style.display = 'none'
+
+    naoConcluido3.style.display = 'none'
+    concluido3.style.display = 'none'
+
+    naoConcluido4.style.display = 'block'
+    concluido4.style.display = 'none'
+
+    naoConcluido5.style.display = 'none'
+    concluido5.style.display = 'none'
+
 
     pdf.src = '4em4.pdf'
     base.pause()
@@ -4172,7 +4498,7 @@ for (i = 0; i < bolinha.length; i++) {
 
 
     bolinha[i].style.zIndex = 11
-    bolinha[i].style.transition = 'all 2s'
+
 
 }
 
@@ -4878,31 +5204,51 @@ function bass(cordas) {
         corda[0].style.display = 'none'
         corda[1].style.display = 'none'
 
-        for(i = 0; i < traste.length; i++){
+        for (i = 0; i < traste.length; i++) {
 
             traste[i].style.height = '150px'
             traste[i].style.top = '200px'
             fret.style.height = '150px'
             fret.style.top = '200px'
-            traste[i].style.transition = 'none'     
-            
+            traste[i].style.transition = 'none'
+
             bolinha[0].style.top = '270px'
             bolinha[1].style.top = '270px'
             bolinha[2].style.top = '270px'
             bolinha[3].style.top = '270px'
             bolinha[4].style.top = '240px'
             bolinha[5].style.top = '300px'
-            
 
+        }
+
+    } else if (cordas == 5) {
+
+        corda[0].style.display = 'none'
+
+
+        for (i = 0; i < traste.length; i++) {
+
+            traste[i].style.height = '200px'
+            traste[i].style.top = '150px'
+            fret.style.height = '200px'
+            fret.style.top = '150px'
+            traste[i].style.transition = 'none'
+
+            bolinha[0].style.top = '245px'
+            bolinha[1].style.top = '245px'
+            bolinha[2].style.top = '245px'
+            bolinha[3].style.top = '245px'
+            bolinha[4].style.top = '205px'
+            bolinha[5].style.top = '275px'
 
         }
 
     }
 }
 
-//bass(4)
 
-for (i = 0; i < corda.length; i++){
+
+for (i = 0; i < corda.length; i++) {
 
     corda[i].style.zIndex = '40'
 
@@ -4910,9 +5256,11 @@ for (i = 0; i < corda.length; i++){
 }
 
 
-for (i = 0; i < nota.length; i++){
+for (i = 0; i < nota.length; i++) {
 
     nota[i].style.zIndex = '50'
 
 
 }
+
+//--------------------------------------------------------------------------------------------------
