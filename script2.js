@@ -2105,13 +2105,13 @@ ex4.onclick = function () {
 
     apagar()
     
-    pdf.src = '4em4.pdf'
+    pdf.src = ''
     base.pause()
     video1.pause()
     base.currentTime = 0
     lista.style.top = '-580px'
     video.style.display = 'block'
-    video.src = 'https://www.youtube.com/embed/rEUQSj7mcR8?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
+    video.src = ''
     pdf.style.display = 'inline'
     video1.style.display = 'none'
 
