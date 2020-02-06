@@ -1125,6 +1125,8 @@ menos.onclick = function () {
 
 ex5.onclick = function () {
 
+    apagar()
+
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
 
@@ -1775,6 +1777,8 @@ lista.onmouseleave = function () {
 
 ex3.onclick = function () {
 
+    apagar()
+
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
 
@@ -2081,6 +2085,8 @@ ex3.onclick = function () {
 }
 
 ex4.onclick = function () {
+
+    apagar()
 
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
