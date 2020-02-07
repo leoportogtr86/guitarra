@@ -1621,21 +1621,23 @@ timerSvg.onclick = function () {
         aviso.innerHTML = 'Já chegamos na metade! Força, falta pouco. Não deixe as distrações te pararem!!!'
         aviso.style.animation = 'pisca 1s linear 5'
 
-    }, 1000 * 60 * 5)
+    }, 1000 * 60 * min/2)
 
     setTimeout(function () {
 
         alert('Exercício finalizado!!!')
 
-    }, 1000 * 60 * min)
+    }, 1000 * 60 * min + 3)
 
     setTimeout(function () {
+
+        video1.pause()
 
         window.location.reload()
         video1.pause()
         video1.currentTime = 0
 
-    }, 1000 * 60 * 10 + 3)
+    }, 1000 * 60 * min + 3)
 
 }
 
