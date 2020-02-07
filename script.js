@@ -5311,3 +5311,39 @@ function criaShape(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r) {
     corda1[r].style.opacity = '1'
 
 }
+
+
+function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
+
+    corda6[a].style.display = 'block'
+    corda6[a].style.opacity = '1'
+    corda6[b].style.display = 'block'
+    corda6[b].style.opacity = '1'
+    
+    corda5[d].style.display = 'block'
+    corda5[d].style.opacity = '1'
+    corda5[e].style.display = 'block'
+    corda5[e].style.opacity = '1'
+    
+    corda4[g].style.display = 'block'
+    corda4[g].style.opacity = '1'
+    corda4[h].style.display = 'block'
+    corda4[h].style.opacity = '1'
+    
+    corda3[j].style.display = 'block'
+    corda3[j].style.opacity = '1'
+    corda3[k].style.display = 'block'
+    corda3[k].style.opacity = '1'
+    
+    corda2[m].style.display = 'block'
+    corda2[m].style.opacity = '1'
+    corda2[n].style.display = 'block'
+    corda2[n].style.opacity = '1'
+    
+    corda1[p].style.display = 'block'
+    corda1[p].style.opacity = '1'
+    corda1[q].style.display = 'block'
+    corda1[q].style.opacity = '1'
+    
+}
+
