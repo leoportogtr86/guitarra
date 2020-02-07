@@ -1152,26 +1152,26 @@ ex5.onclick = function () {
     base.play()
 
 
-    
-    for(i = 0; i < nota.length; i++){
 
-        if(nota[i].innerHTML == 'A' || nota[i].innerHTML == 'C' || nota[i].innerHTML == 'D' || nota[i].innerHTML == 'E' || nota[i].innerHTML == 'G'){
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == 'A' || nota[i].innerHTML == 'C' || nota[i].innerHTML == 'D' || nota[i].innerHTML == 'E' || nota[i].innerHTML == 'G') {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
-               
+
         }
 
-        if(nota[i].innerHTML == 'B' || nota[i].innerHTML == 'F' || nota[i].innerHTML == 'G#'){
+        if (nota[i].innerHTML == 'B' || nota[i].innerHTML == 'F' || nota[i].innerHTML == 'G#') {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '0.5'
             nota[i].style.backgroundColor = 'red'
             nota[i].style.backgroundImage = 'none'
-               
+
         }
 
-         
+
 
 
     }
@@ -1544,76 +1544,79 @@ let min = 10
 
 function verificaDuracao() {
 
-    if(duracao.value == 10){
+    if (duracao.value == 10) {
 
         console.log('10 min')
         min = 10
-    
-    
-    } else if(duracao.value == 9){
+
+
+    } else if (duracao.value == 9) {
 
         console.log('9 min')
         min = 9
-    
-    
-    } else if(duracao.value == 8){
+
+
+    } else if (duracao.value == 8) {
 
         console.log('8 min')
         min = 8
-    
-    
-    } else if(duracao.value == 7){
+
+
+    } else if (duracao.value == 7) {
 
         console.log('7 min')
         min = 7
-    
-    
-    } else if(duracao.value == 6){
+
+
+    } else if (duracao.value == 6) {
 
         console.log('6 min')
         min = 6
-    
-    
-    } else if(duracao.value == 5){
+
+
+    } else if (duracao.value == 5) {
 
         console.log('5 min')
         min = 5
-    
-    
-    } else if(duracao.value == 4){
+
+
+    } else if (duracao.value == 4) {
 
         console.log('4 min')
         min = 4
-    
-    
-    } else if(duracao.value == 3){
+
+
+    } else if (duracao.value == 3) {
 
         console.log('3 min')
         min = 3
-    
-    
-    } else if(duracao.value == 2){
+
+
+    } else if (duracao.value == 2) {
 
         console.log('2 min')
         min = 2
-    
-    
-    } else if(duracao.value == 1){
+
+
+    } else if (duracao.value == 1) {
 
         console.log('1 min')
         min = 1
-    
-    
+
+
     }
-    
+
 }
 
 setInterval(verificaDuracao, 100)
 
+
+
 timerSvg.onclick = function () {
 
+   
 
-    timer.style.animation = 'timer ' + 60*min + 's linear'
+    timer.style.animation = 'timer ' + 60 * min + 's linear'
 
     setTimeout(function () {
 
@@ -1621,17 +1624,23 @@ timerSvg.onclick = function () {
         aviso.innerHTML = 'Já chegamos na metade! Força, falta pouco. Não deixe as distrações te pararem!!!'
         aviso.style.animation = 'pisca 1s linear 5'
 
-    }, 1000 * 60 * min/2)
+    }, 1000 * 60 * min / 2)
 
     setTimeout(function () {
 
         alert('Exercício finalizado!!!')
+        video1.pause()
+        video1.src = ''
+        timer.style.animation = ''
 
     }, 1000 * 60 * min + 3)
 
+
+    /*
     setTimeout(function () {
 
         video1.pause()
+        video1.src = ''
 
         window.location.reload()
         video1.pause()
@@ -1639,6 +1648,9 @@ timerSvg.onclick = function () {
 
     }, 1000 * 60 * min + 3)
 
+    video1.pause()
+    video1.src = ''
+*/
 }
 
 
@@ -2178,7 +2190,7 @@ ex4.onclick = function () {
     concluido5.style.display = 'none'
 
     apagar()
-    
+
     pdf.src = ''
     base.pause()
     video1.pause()
@@ -2468,7 +2480,7 @@ ex4.onclick = function () {
 
 
 
-   
+
 }
 
 
