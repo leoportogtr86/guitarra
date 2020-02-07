@@ -4,6 +4,29 @@
     margin-top: 0;
 }
 
+
+#duracao{
+
+    border-top: orangered 2px solid;
+    border-left: orangered 2px solid;
+    border-right: orangered 2px solid;    
+    border-bottom: orangered 2px solid;
+    background-color: rgb(39, 37, 37);
+    color: orangered;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 2px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    
+    cursor: pointer;
+
+
+}
+
 #video1 {
 
     position: absolute;
