@@ -1740,21 +1740,27 @@ ex1.onclick = function () {
 
         corda6[i].style.display = 'block'
         corda6[i].style.backgroundColor = 'greeyellow'
+        corda6[i].style.opacity = '1'
 
         corda5[i].style.display = 'block'
         corda5[i].style.backgroundColor = 'greeyellow'
+        corda5[i].style.opacity = '1'
 
         corda4[i].style.display = 'block'
         corda4[i].style.backgroundColor = 'greeyellow'
+        corda4[i].style.opacity = '1'
 
         corda3[i].style.display = 'block'
         corda3[i].style.backgroundColor = 'greeyellow'
+        corda3[i].style.opacity = '1'
 
         corda2[i].style.display = 'block'
         corda2[i].style.backgroundColor = 'greeyellow'
+        corda2[i].style.opacity = '1'
 
         corda1[i].style.display = 'block'
         corda1[i].style.backgroundColor = 'greeyellow'
+        corda1[i].style.opacity = '1'
     }
 
 
@@ -1955,24 +1961,7 @@ botao0.onclick = function () {
         console.log('shape 1')
 
         apagar()
-        corda6[5].style.display = 'block'
-        corda6[7].style.display = 'block'
-        corda6[8].style.display = 'block'
-        corda5[5].style.display = 'block'
-        corda5[7].style.display = 'block'
-        corda5[8].style.display = 'block'
-        corda4[6].style.display = 'block'
-        corda4[7].style.display = 'block'
-        corda4[9].style.display = 'block'
-        corda3[5].style.display = 'block'
-        corda3[7].style.display = 'block'
-        corda3[9].style.display = 'block'
-        corda2[6].style.display = 'block'
-        corda2[9].style.display = 'block'
-        corda2[10].style.display = 'block'
-        corda1[7].style.display = 'block'
-        corda1[8].style.display = 'block'
-        corda1[10].style.display = 'block'
+        criaShape(5, 7, 8, 5, 7, 8, 6, 7, 9, 5, 7, 9, 6, 9, 10, 7, 8, 10)
 
 
     } else if (posicao.value == 2) {
@@ -1980,24 +1969,8 @@ botao0.onclick = function () {
         console.log('shape 2')
 
         apagar()
-        corda6[7].style.display = 'block'
-        corda6[8].style.display = 'block'
-        corda6[10].style.display = 'block'
-        corda5[7].style.display = 'block'
-        corda5[8].style.display = 'block'
-        corda5[11].style.display = 'block'
-        corda4[7].style.display = 'block'
-        corda4[9].style.display = 'block'
-        corda4[10].style.display = 'block'
-        corda3[7].style.display = 'block'
-        corda3[9].style.display = 'block'
-        corda3[10].style.display = 'block'
-        corda2[9].style.display = 'block'
-        corda2[10].style.display = 'block'
-        corda2[12].style.display = 'block'
-        corda1[8].style.display = 'block'
-        corda1[10].style.display = 'block'
-        corda1[12].style.display = 'block'
+        criaShape(7, 8, 10, 7, 8, 11, 7, 9, 10, 7, 9, 10, 9, 10, 12, 8, 10, 12)
+
 
 
     } else if (posicao.value == 3) {
@@ -2005,49 +1978,16 @@ botao0.onclick = function () {
         console.log('shape 3')
 
         apagar()
-        corda6[8].style.display = 'block'
-        corda6[10].style.display = 'block'
-        corda6[12].style.display = 'block'
-        corda5[8].style.display = 'block'
-        corda5[11].style.display = 'block'
-        corda5[12].style.display = 'block'
-        corda4[9].style.display = 'block'
-        corda4[10].style.display = 'block'
-        corda4[12].style.display = 'block'
-        corda3[9].style.display = 'block'
-        corda3[10].style.display = 'block'
-        corda3[13].style.display = 'block'
-        corda2[10].style.display = 'block'
-        corda2[12].style.display = 'block'
-        corda2[13].style.display = 'block'
-        corda1[10].style.display = 'block'
-        corda1[12].style.display = 'block'
-        corda1[13].style.display = 'block'
-
+        criaShape(8, 10, 12, 8, 11, 12, 9, 10, 12, 9, 10, 13, 10, 12, 13, 10, 12, 13)
 
     } else if (posicao.value == 4) {
 
         console.log('shape 4')
 
         apagar()
-        corda6[10].style.display = 'block'
-        corda6[12].style.display = 'block'
-        corda6[13].style.display = 'block'
-        corda5[11].style.display = 'block'
-        corda5[12].style.display = 'block'
-        corda5[14].style.display = 'block'
-        corda4[10].style.display = 'block'
-        corda4[12].style.display = 'block'
-        corda4[14].style.display = 'block'
-        corda3[10].style.display = 'block'
-        corda3[13].style.display = 'block'
-        corda3[14].style.display = 'block'
-        corda2[12].style.display = 'block'
-        corda2[13].style.display = 'block'
-        corda2[15].style.display = 'block'
-        corda1[12].style.display = 'block'
-        corda1[13].style.display = 'block'
-        corda1[16].style.display = 'block'
+
+        criaShape(10, 12, 13, 11, 12, 14, 10, 12, 14, 10, 13, 14, 12, 13, 15, 12, 13, 16)
+        
 
 
     } else if (posicao.value == 5) {
@@ -2055,24 +1995,11 @@ botao0.onclick = function () {
         console.log('shape 5')
 
         apagar()
-        corda6[0].style.display = 'block'
-        corda6[1].style.display = 'block'
-        corda6[4].style.display = 'block'
-        corda5[0].style.display = 'block'
-        corda5[2].style.display = 'block'
-        corda5[3].style.display = 'block'
-        corda4[0].style.display = 'block'
-        corda4[2].style.display = 'block'
-        corda4[3].style.display = 'block'
-        corda3[1].style.display = 'block'
-        corda3[2].style.display = 'block'
-        corda3[4].style.display = 'block'
-        corda2[1].style.display = 'block'
-        corda2[3].style.display = 'block'
-        corda2[5].style.display = 'block'
-        corda1[1].style.display = 'block'
-        corda1[4].style.display = 'block'
-        corda1[5].style.display = 'block'
+
+
+        criaShape(0, 1, 4, 0, 2, 3, 0, 2, 3, 1, 2, 4, 1, 3, 5, 1, 4, 5)
+
+       
 
 
     } else if (posicao.value == 6) {
@@ -2080,24 +2007,10 @@ botao0.onclick = function () {
         console.log('shape 6')
 
         apagar()
-        corda6[1].style.display = 'block'
-        corda6[4].style.display = 'block'
-        corda6[5].style.display = 'block'
-        corda5[2].style.display = 'block'
-        corda5[3].style.display = 'block'
-        corda5[5].style.display = 'block'
-        corda4[2].style.display = 'block'
-        corda4[3].style.display = 'block'
-        corda4[6].style.display = 'block'
-        corda3[2].style.display = 'block'
-        corda3[4].style.display = 'block'
-        corda3[5].style.display = 'block'
-        corda2[3].style.display = 'block'
-        corda2[5].style.display = 'block'
-        corda2[6].style.display = 'block'
-        corda1[4].style.display = 'block'
-        corda1[5].style.display = 'block'
-        corda1[7].style.display = 'block'
+
+        criaShape(1, 4, 5, 2, 3, 5, 2, 3, 6, 2, 4, 5, 3, 5, 6, 4, 5, 7)
+
+      
 
 
     } else if (posicao.value == 7) {
@@ -2105,6 +2018,8 @@ botao0.onclick = function () {
         console.log('shape 7')
 
         apagar()
+        criaShape(4, 5, 7, 3, 5, 7, 3, 6, 7, 4, 5, 7, 5, 6, 9, 5, 7, 8)
+
         corda6[4].style.display = 'block'
         corda6[5].style.display = 'block'
         corda6[7].style.display = 'block'
@@ -5354,3 +5269,45 @@ for (i = 0; i < nota.length; i++) {
 }
 
 //--------------------------------------------------------------------------------------------------
+
+
+function criaShape(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r) {
+
+    corda6[a].style.display = 'block'
+    corda6[a].style.opacity = '1'
+    corda6[b].style.display = 'block'
+    corda6[b].style.opacity = '1'
+    corda6[c].style.display = 'block'
+    corda6[c].style.opacity = '1'
+    corda5[d].style.display = 'block'
+    corda5[d].style.opacity = '1'
+    corda5[e].style.display = 'block'
+    corda5[e].style.opacity = '1'
+    corda5[f].style.display = 'block'
+    corda5[f].style.opacity = '1'
+    corda4[g].style.display = 'block'
+    corda4[g].style.opacity = '1'
+    corda4[h].style.display = 'block'
+    corda4[h].style.opacity = '1'
+    corda4[i].style.display = 'block'
+    corda4[i].style.opacity = '1'
+    corda3[j].style.display = 'block'
+    corda3[j].style.opacity = '1'
+    corda3[k].style.display = 'block'
+    corda3[k].style.opacity = '1'
+    corda3[l].style.display = 'block'
+    corda3[l].style.opacity = '1'
+    corda2[m].style.display = 'block'
+    corda2[m].style.opacity = '1'
+    corda2[n].style.display = 'block'
+    corda2[n].style.opacity = '1'
+    corda2[o].style.display = 'block'
+    corda2[o].style.opacity = '1'
+    corda1[p].style.display = 'block'
+    corda1[p].style.opacity = '1'
+    corda1[q].style.display = 'block'
+    corda1[q].style.opacity = '1'
+    corda1[r].style.display = 'block'
+    corda1[r].style.opacity = '1'
+
+}
