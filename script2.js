@@ -3,7 +3,7 @@ let concluido2 = document.getElementById('concluido2')
 let concluido3 = document.getElementById('concluido3')
 let concluido4 = document.getElementById('concluido4')
 let concluido5 = document.getElementById('concluido5')
-
+let duracao = document.getElementById('duracao')
 let naoConcluido1 = document.getElementById('naoConcluido1')
 let naoConcluido2 = document.getElementById('naoConcluido2')
 let naoConcluido3 = document.getElementById('naoConcluido3')
@@ -1538,10 +1538,82 @@ timerSvg.onmouseout = function () {
 
 }
 
+let min = 10
+
+
+
+function verificaDuracao() {
+
+    if(duracao.value == 10){
+
+        console.log('10 min')
+        min = 10
+    
+    
+    } else if(duracao.value == 9){
+
+        console.log('9 min')
+        min = 9
+    
+    
+    } else if(duracao.value == 8){
+
+        console.log('8 min')
+        min = 8
+    
+    
+    } else if(duracao.value == 7){
+
+        console.log('7 min')
+        min = 7
+    
+    
+    } else if(duracao.value == 6){
+
+        console.log('6 min')
+        min = 6
+    
+    
+    } else if(duracao.value == 5){
+
+        console.log('5 min')
+        min = 5
+    
+    
+    } else if(duracao.value == 4){
+
+        console.log('4 min')
+        min = 4
+    
+    
+    } else if(duracao.value == 3){
+
+        console.log('3 min')
+        min = 3
+    
+    
+    } else if(duracao.value == 2){
+
+        console.log('2 min')
+        min = 2
+    
+    
+    } else if(duracao.value == 1){
+
+        console.log('1 min')
+        min = 1
+    
+    
+    }
+    
+}
+
+setInterval(verificaDuracao, 100)
+
 timerSvg.onclick = function () {
 
 
-    timer.style.animation = 'timer 600s linear'
+    timer.style.animation = 'timer ' + 60*min + 's linear'
 
     setTimeout(function () {
 
@@ -1555,7 +1627,7 @@ timerSvg.onclick = function () {
 
         alert('Exercício finalizado!!!')
 
-    }, 1000 * 60 * 10)
+    }, 1000 * 60 * min)
 
     setTimeout(function () {
 
