@@ -5906,3 +5906,4 @@ function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
     corda1[l].style.opacity = '1'
     
 }
+

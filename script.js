@@ -5345,6 +5345,46 @@ function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
     corda1[l].style.display = 'block'
     corda1[l].style.opacity = '1'
     
+
 }
 
-criaShapePenta(5, 8, 5, 7, 5, 7, 5, 7, 5, 8, 5, 8)
+for (i = 0; i < nota.length; i++) {
+
+    if (nota[i].innerHTML == 'C#'){
+
+        nota[i].innerHTML = 'Db'
+
+
+    }
+
+    if (nota[i].innerHTML == 'D#'){
+
+        nota[i].innerHTML = 'Eb'
+
+
+    }
+
+    if (nota[i].innerHTML == 'F#'){
+
+        nota[i].innerHTML = 'Gb'
+
+
+    }
+
+    if (nota[i].innerHTML == 'G#'){
+
+        nota[i].innerHTML = 'Ab'
+
+
+    }
+
+    if (nota[i].innerHTML == 'A#'){
+
+        nota[i].innerHTML = 'Bb'
+
+
+    }
+
+
+}
+
