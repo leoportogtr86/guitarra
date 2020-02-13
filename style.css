@@ -2929,3 +2929,30 @@ body{
     cursor: pointer;
     z-index: 0;
 }
+#tab {
+
+    background-color: white;
+    box-shadow: 2px 2px 18px black;
+    width: 90%;
+    height: 160px;
+    border-radius: 2px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:orangered;
+}
+
+.tablatura{
+
+    background-color: black;
+    width: 95%;
+    margin-top: 20px;
+    height: 3px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
