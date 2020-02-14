@@ -4,6 +4,13 @@
     margin-top: 0;
 }
 
+#soundslice {
+
+    left: 0;
+    position: absolute;
+    width: 95%;
+}
+
 
 #duracao{
 
