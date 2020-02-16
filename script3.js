@@ -6900,3 +6900,10 @@ function mostrarTodas(note) {
     
 }
 
+let bonus1 = document.getElementById('bonus1')
+
+bonus1.onclick = function () {
+
+    window.location = 'fouraxis.html'
+    
+}
