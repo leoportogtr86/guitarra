@@ -1,12 +1,9 @@
-let duracao = document.getElementById('duracao')
 let concluido1 = document.getElementById('concluido1')
 let concluido2 = document.getElementById('concluido2')
 let concluido3 = document.getElementById('concluido3')
 let concluido4 = document.getElementById('concluido4')
 let concluido5 = document.getElementById('concluido5')
-
-let semana2 = document.getElementById('semana2')
-let semana3 = document.getElementById('semana3')
+let duracao = document.getElementById('duracao')
 let naoConcluido1 = document.getElementById('naoConcluido1')
 let naoConcluido2 = document.getElementById('naoConcluido2')
 let naoConcluido3 = document.getElementById('naoConcluido3')
@@ -16,18 +13,6 @@ let naoConcluido5 = document.getElementById('naoConcluido5')
 
 
 
-
-semana2.onclick = function () {
-
-    window.location = 'semana2.html'
-
-}
-
-semana3.onclick = function () {
-
-    window.location = 'semana3.html'
-
-}
 
 
 let exConcluidos
@@ -343,6 +328,17 @@ let semana1 = document.getElementById('semana1')
 let css = document.getElementById('css')
 let video1 = document.getElementById('video1')
 
+semana1.onclick = function () {
+
+    window.location = 'index.html'
+
+}
+
+semana2.onclick = function () {
+
+    window.location = 'semana2.html'
+
+}
 
 
 console.log('Número de elementos da pág: ' + all.length)
@@ -350,7 +346,11 @@ console.log('Cordas: ' + corda.length)
 console.log('Casas: ' + traste.length)
 
 
+document.onclick = function () {
 
+    console.log('X: ' + event.clientX + '\n' + 'Y: ' + event.clientY)
+
+}
 
 still.onclick = function () {
 
@@ -1138,6 +1138,8 @@ menos.onclick = function () {
 
 ex5.onclick = function () {
 
+    apagar()
+
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
 
@@ -1162,23 +1164,96 @@ ex5.onclick = function () {
 
     base.play()
 
-
-    mostrarGS()
-    mostrarA()
-    mostrarB()
-    mostrarC()
-    mostrarD()
-    mostrarE()
-    mostrarFS()
-
-
-
-
-
+    setInterval(duasCordas, 500)
 
 
 
 }
+
+function duasCordas() {
+
+    if (base.currentTime < 150) {
+
+        apagar()
+
+        tab('1', 0)
+        tab('1', 1)
+        tab('1', 4)
+        tab('1', 5)
+        tab('1', 7)
+        tab('1', 8)
+        tab('1', 10)
+        tab('1', 12)
+
+
+        tab('2', 0)
+        tab('2', 1)
+        tab('2', 3)
+        tab('2', 5)
+        tab('2', 6)
+        tab('2', 9)
+        tab('2', 10)
+        tab('2', 12)
+
+
+
+    } else if (base.currentTime < 300) {
+
+        apagar()
+
+        tab('3', 1)
+        tab('3', 2)
+        tab('3', 4)
+        tab('3', 5)
+        tab('3', 7)
+        tab('3', 9)
+        tab('3', 10)
+        tab('3', 13)
+
+
+        tab('4', 0)
+        tab('4', 2)
+        tab('4', 3)
+        tab('4', 6)
+        tab('4', 7)
+        tab('4', 9)
+        tab('4', 10)
+        tab('4', 12)
+
+
+
+    } else if (base.currentTime < 450) {
+
+        apagar()
+
+        tab('5', 0)
+        tab('5', 2)
+        tab('5', 3)
+        tab('5', 5)
+        tab('5', 7)
+        tab('5', 8)
+        tab('5', 11)
+        tab('5', 12)
+
+
+        tab('6', 0)
+        tab('6', 1)
+        tab('6', 4)
+        tab('6', 5)
+        tab('6', 7)
+        tab('6', 8)
+        tab('6', 10)
+        tab('6', 12)
+
+
+
+    }
+
+
+}
+
+
+
 
 function shape() {
 
@@ -1654,9 +1729,6 @@ timerSvg.onclick = function () {
 
 
 
-
-
-
 ex1.onclick = function () {
 
     lista.style.top = '-580px'
@@ -1731,12 +1803,14 @@ ex1.onclick = function () {
     setInterval(conclusao, 100)
 
 
+
+
     base.pause()
     base.currentTime = 0
 
     lista.style.top = '-580px'
-    pdf.src = 'precisao1.pdf'
-    video1.src = 'exPrecisao1.mp4'
+    pdf.src = 'precisao3.pdf'
+    video1.src = 'exPrecisao3.mp4'
     pdf.style.zIndex = '50'
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
@@ -1748,27 +1822,21 @@ ex1.onclick = function () {
 
         corda6[i].style.display = 'block'
         corda6[i].style.backgroundColor = 'greeyellow'
-        corda6[i].style.opacity = '1'
 
         corda5[i].style.display = 'block'
         corda5[i].style.backgroundColor = 'greeyellow'
-        corda5[i].style.opacity = '1'
 
         corda4[i].style.display = 'block'
         corda4[i].style.backgroundColor = 'greeyellow'
-        corda4[i].style.opacity = '1'
 
         corda3[i].style.display = 'block'
         corda3[i].style.backgroundColor = 'greeyellow'
-        corda3[i].style.opacity = '1'
 
         corda2[i].style.display = 'block'
         corda2[i].style.backgroundColor = 'greeyellow'
-        corda2[i].style.opacity = '1'
 
         corda1[i].style.display = 'block'
         corda1[i].style.backgroundColor = 'greeyellow'
-        corda1[i].style.opacity = '1'
     }
 
 
@@ -1800,24 +1868,35 @@ ex2.onclick = function () {
 
     base.pause()
     base.currentTime = 0
-    video1.pause()
+
 
     contadorPosicao = 0
     lista.style.top = '-580px'
     pdf.style.display = 'none'
     video1.style.display = 'none'
-    video.style.display = 'block'
+    video1.pause()
+    video.style.display = 'none'
     base.style.display = 'none'
 
+    enarmonia('D#', 'Eb')
+    enarmonia('G#', 'Ab')
+
+    mostrarTodas('C')
+    mostrarTodas('D')
+    mostrarTodas('Eb')
+    mostrarTodas('F')
+    mostrarTodas('G')
+    mostrarTodas('Ab')
+    mostrarTodas('B')
 
 
-    mostrarGS()
-    mostrarA()
-    mostrarB()
-    mostrarC()
-    mostrarD()
-    mostrarE()
-    mostrarF()
+
+
+
+
+
+
+
 
 
 
@@ -1863,6 +1942,8 @@ lista.onmouseleave = function () {
 
 ex3.onclick = function () {
 
+    apagar()
+
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
 
@@ -1878,11 +1959,11 @@ ex3.onclick = function () {
     naoConcluido5.style.display = 'none'
     concluido5.style.display = 'none'
 
-    pdf.src = '3em3.pdf'
+    pdf.src = ''
     video1.pause()
     lista.style.top = '-580px'
-    video.style.display = 'block'
-    video.src = 'https://www.youtube.com/embed/OyV6Y5StgZw?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
+    video.style.display = 'none'
+    video.src = ''
     pdf.style.display = 'inline'
     video1.style.display = 'none'
     base.style.display = 'none'
@@ -1890,16 +1971,275 @@ ex3.onclick = function () {
 
     base.currentTime = 0
 
-    mostrarG()
-    mostrarA()
-    mostrarB()
-    mostrarC()
-    mostrarD()
-    mostrarE()
-    mostrarFS()
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == 'A#') {
+
+            nota[i].innerHTML = 'Bb'
+
+        }
+
+        if (nota[i].innerHTML == 'D#') {
+
+            nota[i].innerHTML = 'Eb'
+
+        }
+
+
+
+    }
+
+
+    let gm = document.createElement('p')
+    body.appendChild(gm)
+    gm.innerHTML = 'Gm'
+    gm.style.backgroundColor = 'orangered'
+    gm.style.width = '80px'
+    gm.style.fontFamily = 'arial'
+    gm.style.height = '30px'
+    gm.style.fontWeight = 'bold'
+    gm.style.fontSize = '20px'
+    gm.style.borderRadius = '5px'
+    gm.style.paddingTop = '1px'
+    gm.style.paddingLeft = '15px'
+    gm.style.position = 'absolute'
+    gm.style.top = '55px'
+    gm.style.left = '100px'
+    gm.style.cursor = 'pointer'
+
+
+
+
+    let aDim = document.createElement('p')
+    body.appendChild(aDim)
+    aDim.style.cursor = 'pointer'
+    aDim.innerHTML = 'A°'
+    aDim.style.backgroundColor = 'orangered'
+    aDim.style.width = '80px'
+    aDim.style.fontFamily = 'arial'
+    aDim.style.height = '30px'
+    aDim.style.fontWeight = 'bold'
+    aDim.style.fontSize = '20px'
+    aDim.style.borderRadius = '5px'
+    aDim.style.paddingTop = '1px'
+    aDim.style.paddingLeft = '15px'
+    aDim.style.position = 'absolute'
+    aDim.style.top = '55px'
+    aDim.style.left = '200px'
+
+    let bb = document.createElement('p')
+    body.appendChild(bb)
+    bb.style.cursor = 'pointer'
+    bb.innerHTML = 'Bb(#5)'
+    bb.style.backgroundColor = 'orangered'
+    bb.style.width = '100px'
+    bb.style.fontFamily = 'arial'
+    bb.style.height = '30px'
+    bb.style.fontWeight = 'bold'
+    bb.style.fontSize = '20px'
+    bb.style.borderRadius = '5px'
+    bb.style.paddingTop = '1px'
+    bb.style.paddingLeft = '15px'
+    bb.style.position = 'absolute'
+    bb.style.top = '55px'
+    bb.style.left = '300px'
+
+
+    let cm = document.createElement('p')
+    body.appendChild(cm)
+    cm.style.cursor = 'pointer'
+    cm.innerHTML = 'Cm'
+    cm.style.backgroundColor = 'orangered'
+    cm.style.width = '80px'
+    cm.style.fontFamily = 'arial'
+    cm.style.height = '30px'
+    cm.style.fontWeight = 'bold'
+    cm.style.fontSize = '20px'
+    cm.style.borderRadius = '5px'
+    cm.style.paddingTop = '1px'
+    cm.style.paddingLeft = '15px'
+    cm.style.position = 'absolute'
+    cm.style.top = '55px'
+    cm.style.left = '420px'
+
+
+    let d = document.createElement('p')
+    body.appendChild(d)
+    d.style.cursor = 'pointer'
+    d.innerHTML = 'D'
+    d.style.backgroundColor = 'orangered'
+    d.style.width = '80px'
+    d.style.fontFamily = 'arial'
+    d.style.height = '30px'
+    d.style.fontWeight = 'bold'
+    d.style.fontSize = '20px'
+    d.style.borderRadius = '5px'
+    d.style.paddingTop = '1px'
+    d.style.paddingLeft = '15px'
+    d.style.position = 'absolute'
+    d.style.top = '55px'
+    d.style.left = '520px'
+
+
+    let eb = document.createElement('p')
+    body.appendChild(eb)
+    eb.style.cursor = 'pointer'
+    eb.innerHTML = 'Eb'
+    eb.style.backgroundColor = 'orangered'
+    eb.style.width = '80px'
+    eb.style.fontFamily = 'arial'
+    eb.style.height = '30px'
+    eb.style.fontWeight = 'bold'
+    eb.style.fontSize = '20px'
+    eb.style.borderRadius = '5px'
+    eb.style.paddingTop = '1px'
+    eb.style.paddingLeft = '15px'
+    eb.style.position = 'absolute'
+    eb.style.top = '55px'
+    eb.style.left = '620px'
+
+
+    let fsDim = document.createElement('p')
+    body.appendChild(fsDim)
+    fsDim.style.cursor = 'pointer'
+    fsDim.innerHTML = 'F#°'
+    fsDim.style.backgroundColor = 'orangered'
+    fsDim.style.width = '80px'
+    fsDim.style.fontFamily = 'arial'
+    fsDim.style.height = '30px'
+    fsDim.style.fontWeight = 'bold'
+    fsDim.style.fontSize = '20px'
+    fsDim.style.borderRadius = '5px'
+    fsDim.style.paddingTop = '1px'
+    fsDim.style.paddingLeft = '15px'
+    fsDim.style.position = 'absolute'
+    fsDim.style.top = '55px'
+    fsDim.style.left = '720px'
+
+
+
+    gm.onclick = function () {
+
+        apagar()
+
+        tab('6', '3')
+        tab('6', '6')
+        tab('5', '5')
+        tab('4', '5')
+        tab('3', '3')
+        tab('3', '7')
+        tab('2', '8')
+        tab('1', '6')
+        tab('1', '10')
+
+    }
+
+    aDim.onclick = function () {
+
+        apagar()
+
+
+        tab('6', '5')
+        tab('6', '8')
+        tab('5', '6')
+        tab('4', '7')
+        tab('3', '5')
+        tab('3', '8')
+        tab('2', '10')
+        tab('1', '8')
+        tab('1', '11')
+
+    }
+
+    bb.onclick = function () {
+
+        apagar()
+
+
+        tab('6', '6')
+        tab('6', '10')
+        tab('5', '9')
+        tab('4', '8')
+        tab('3', '7')
+        tab('3', '11')
+        tab('2', '11')
+        tab('1', '10')
+        tab('1', '14')
+
+
+    }
+
+    cm.onclick = function () {
+
+        apagar()
+
+
+        tab('6', '8')
+        tab('6', '11')
+        tab('5', '10')
+        tab('4', '10')
+        tab('3', '8')
+        tab('3', '12')
+        tab('2', '13')
+        tab('1', '11')
+        tab('1', '15')
+
+    }
+
+    d.onclick = function () {
+
+        apagar()
+        tab('5', '5')
+        tab('4', '4')
+        tab('3', '2')
+        tab('2', '3')
+        tab('1', '2')
+        tab('1', '5')
+
+
+    }
+
+    eb.onclick = function () {
+
+        apagar()
+
+        tab('5', '6')
+        tab('4', '5')
+        tab('3', '3')
+        tab('2', '4')
+        tab('1', '3')
+        tab('1', '6')
+
+    }
+
+    fsDim.onclick = function () {
+
+        apagar()
+
+        tab('6', '2')
+        tab('6', '5')
+        tab('5', '3')
+        tab('4', '4')
+        tab('3', '2')
+        tab('3', '5')
+        tab('2', '7')
+        tab('1', '5')
+        tab('1', '8')
+
+
+
+
+
+    }
+
+
+
+
 }
 
 ex4.onclick = function () {
+
+    apagar()
 
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
@@ -1916,26 +2256,288 @@ ex4.onclick = function () {
     naoConcluido5.style.display = 'none'
     concluido5.style.display = 'none'
 
+    apagar()
 
-    pdf.src = '4em4.pdf'
+    pdf.src = ''
     base.pause()
     video1.pause()
     base.currentTime = 0
     lista.style.top = '-580px'
     video.style.display = 'block'
-    video.src = 'https://www.youtube.com/embed/rEUQSj7mcR8?list=PLKJpTqKLvfLKCmmRzBkyWvEyILKXtMkR2'
+    video.src = ''
     pdf.style.display = 'inline'
     video1.style.display = 'none'
 
     base.style.display = 'none'
 
-    mostrarG()
-    mostrarA()
-    mostrarB()
-    mostrarC()
-    mostrarD()
-    mostrarE()
-    mostrarFS()
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == 'A#') {
+
+            nota[i].innerHTML = 'Bb'
+
+        }
+
+        if (nota[i].innerHTML == 'D#') {
+
+            nota[i].innerHTML = 'Eb'
+
+        }
+
+
+
+    }
+
+
+    let gm = document.createElement('p')
+    body.appendChild(gm)
+    gm.innerHTML = 'Gm7+'
+    gm.style.backgroundColor = 'orangered'
+    gm.style.width = '80px'
+    gm.style.fontFamily = 'arial'
+    gm.style.height = '30px'
+    gm.style.fontWeight = 'bold'
+    gm.style.fontSize = '20px'
+    gm.style.borderRadius = '5px'
+    gm.style.paddingTop = '10px'
+    gm.style.paddingLeft = '15px'
+    gm.style.position = 'absolute'
+    gm.style.top = '55px'
+    gm.style.left = '100px'
+    gm.style.cursor = 'pointer'
+
+
+
+
+    let aDim = document.createElement('p')
+    body.appendChild(aDim)
+    aDim.style.cursor = 'pointer'
+    aDim.innerHTML = 'Am7(b5)'
+    aDim.style.backgroundColor = 'orangered'
+    aDim.style.width = '80px'
+    aDim.style.fontFamily = 'arial'
+    aDim.style.height = '30px'
+    aDim.style.fontWeight = 'bold'
+    aDim.style.fontSize = '20px'
+    aDim.style.borderRadius = '5px'
+    aDim.style.paddingTop = '10px'
+    aDim.style.paddingLeft = '10px'
+    aDim.style.position = 'absolute'
+    aDim.style.top = '55px'
+    aDim.style.left = '200px'
+
+    let bb = document.createElement('p')
+    body.appendChild(bb)
+    bb.style.cursor = 'pointer'
+    bb.innerHTML = 'Bb7M(#5)'
+    bb.style.backgroundColor = 'orangered'
+    bb.style.width = '100px'
+    bb.style.fontFamily = 'arial'
+    bb.style.height = '30px'
+    bb.style.fontWeight = 'bold'
+    bb.style.fontSize = '20px'
+    bb.style.borderRadius = '5px'
+    bb.style.paddingTop = '10px'
+    bb.style.paddingLeft = '15px'
+    bb.style.position = 'absolute'
+    bb.style.top = '55px'
+    bb.style.left = '300px'
+
+
+    let cm = document.createElement('p')
+    body.appendChild(cm)
+    cm.style.cursor = 'pointer'
+    cm.innerHTML = 'Cm7'
+    cm.style.backgroundColor = 'orangered'
+    cm.style.width = '80px'
+    cm.style.fontFamily = 'arial'
+    cm.style.height = '30px'
+    cm.style.fontWeight = 'bold'
+    cm.style.fontSize = '20px'
+    cm.style.borderRadius = '5px'
+    cm.style.paddingTop = '10px'
+    cm.style.paddingLeft = '15px'
+    cm.style.position = 'absolute'
+    cm.style.top = '55px'
+    cm.style.left = '420px'
+
+
+    let d = document.createElement('p')
+    body.appendChild(d)
+    d.style.cursor = 'pointer'
+    d.innerHTML = 'D7'
+    d.style.backgroundColor = 'orangered'
+    d.style.width = '80px'
+    d.style.fontFamily = 'arial'
+    d.style.height = '30px'
+    d.style.fontWeight = 'bold'
+    d.style.fontSize = '20px'
+    d.style.borderRadius = '5px'
+    d.style.paddingTop = '10px'
+    d.style.paddingLeft = '15px'
+    d.style.position = 'absolute'
+    d.style.top = '55px'
+    d.style.left = '520px'
+
+
+    let eb = document.createElement('p')
+    body.appendChild(eb)
+    eb.style.cursor = 'pointer'
+    eb.innerHTML = 'Eb7M'
+    eb.style.backgroundColor = 'orangered'
+    eb.style.width = '80px'
+    eb.style.fontFamily = 'arial'
+    eb.style.height = '30px'
+    eb.style.fontWeight = 'bold'
+    eb.style.fontSize = '20px'
+    eb.style.borderRadius = '5px'
+    eb.style.paddingTop = '10px'
+    eb.style.paddingLeft = '15px'
+    eb.style.position = 'absolute'
+    eb.style.top = '55px'
+    eb.style.left = '620px'
+
+
+    let fsDim = document.createElement('p')
+    body.appendChild(fsDim)
+    fsDim.style.cursor = 'pointer'
+    fsDim.innerHTML = 'F#°'
+    fsDim.style.backgroundColor = 'orangered'
+    fsDim.style.width = '80px'
+    fsDim.style.fontFamily = 'arial'
+    fsDim.style.height = '30px'
+    fsDim.style.fontWeight = 'bold'
+    fsDim.style.fontSize = '20px'
+    fsDim.style.borderRadius = '5px'
+    fsDim.style.paddingTop = '10px'
+    fsDim.style.paddingLeft = '15px'
+    fsDim.style.position = 'absolute'
+    fsDim.style.top = '55px'
+    fsDim.style.left = '720px'
+
+
+
+    gm.onclick = function () {
+
+        apagar()
+
+        tab('6', '3')
+        tab('6', '6')
+        tab('5', '5')
+        tab('4', '4')
+        tab('4', '5')
+        tab('3', '3')
+        tab('2', '3')
+        tab('2', '7')
+        tab('1', '3')
+
+
+    }
+
+    aDim.onclick = function () {
+
+        apagar()
+
+        tab('6', '5')
+        tab('6', '8')
+        tab('5', '6')
+        tab('4', '5')
+        tab('4', '7')
+        tab('3', '5')
+        tab('2', '4')
+        tab('2', '8')
+        tab('1', '5')
+
+    }
+
+    bb.onclick = function () {
+
+        apagar()
+
+        tab('6', '6')
+        tab('6', '10')
+        tab('5', '9')
+        tab('4', '8')
+        tab('4', '9')
+        tab('3', '8')
+        tab('2', '8')
+        tab('2', '11')
+        tab('1', '6')
+
+    }
+
+    cm.onclick = function () {
+
+        apagar()
+
+        tab('5', '3')
+        tab('5', '6')
+        tab('4', '5')
+        tab('3', '3')
+        tab('3', '5')
+        tab('2', '4')
+        tab('1', '3')
+        tab('1', '6')
+
+
+    }
+
+    d.onclick = function () {
+
+        apagar()
+
+        tab('5', '5')
+        tab('5', '9')
+        tab('4', '7')
+        tab('3', '5')
+        tab('3', '7')
+        tab('2', '7')
+        tab('1', '5')
+        tab('1', '8')
+
+
+    }
+
+    eb.onclick = function () {
+
+        apagar()
+
+        tab('5', '6')
+        tab('5', '10')
+        tab('4', '8')
+        tab('3', '7')
+        tab('3', '8')
+        tab('2', '8')
+        tab('1', '6')
+        tab('1', '10')
+
+
+
+
+    }
+
+    fsDim.onclick = function () {
+
+        apagar()
+        tab('6', '2')
+        tab('6', '5')
+        tab('5', '3')
+        tab('4', '1')
+        tab('4', '4')
+        tab('3', '2')
+        tab('2', '1')
+        tab('2', '4')
+        tab('1', '2')
+
+
+
+    }
+
+
+
+
+
+
 }
 
 
@@ -1960,16 +2562,22 @@ botao1.onclick = function () {
 
 
 
+
 //****************************************************************************************/
 
 botao0.onclick = function () {
+
+    enarmonia('D#', 'Eb')
+    enarmonia('G#', 'Ab')
 
     if (posicao.value == 1) {
 
         console.log('shape 1')
 
         apagar()
-        criaShape(5, 7, 8, 5, 7, 8, 6, 7, 9, 5, 7, 9, 6, 9, 10, 7, 8, 10)
+
+        criaShape(8, 10, 11, 8, 10, 11, 9, 10, 12, 8, 10, 12, 9, 12, 13, 10, 11, 13)
+
 
 
     } else if (posicao.value == 2) {
@@ -1977,8 +2585,7 @@ botao0.onclick = function () {
         console.log('shape 2')
 
         apagar()
-        criaShape(7, 8, 10, 7, 8, 11, 7, 9, 10, 7, 9, 10, 9, 10, 12, 8, 10, 12)
-
+        criaShape(10, 11, 13, 10, 11, 14, 10, 12, 13, 10, 12, 13, 12, 13, 15, 11, 13, 15)
 
 
     } else if (posicao.value == 3) {
@@ -1986,15 +2593,19 @@ botao0.onclick = function () {
         console.log('shape 3')
 
         apagar()
-        criaShape(8, 10, 12, 8, 11, 12, 9, 10, 12, 9, 10, 13, 10, 12, 13, 10, 12, 13)
+
+        criaShape(10, 11, 13, 10, 11, 14, 10, 12, 13, 10, 12, 13, 12, 13, 15, 11, 13, 15)
+
+
+
+
 
     } else if (posicao.value == 4) {
 
         console.log('shape 4')
 
         apagar()
-
-        criaShape(10, 12, 13, 11, 12, 14, 10, 12, 14, 10, 13, 14, 12, 13, 15, 12, 13, 16)
+        criaShape(1, 3, 4, 2, 3, 5, 1, 3, 5, 1, 4, 5, 3, 4, 6, 3, 4, 7)
 
 
 
@@ -2002,10 +2613,10 @@ botao0.onclick = function () {
 
         console.log('shape 5')
 
+
+
         apagar()
-
-
-        criaShape(0, 1, 4, 0, 2, 3, 0, 2, 3, 1, 2, 4, 1, 3, 5, 1, 4, 5)
+        criaShape(3, 4, 7, 3, 5, 6, 3, 5, 6, 4, 5, 7, 4, 6, 8, 4, 7, 8)
 
 
 
@@ -2015,8 +2626,7 @@ botao0.onclick = function () {
         console.log('shape 6')
 
         apagar()
-
-        criaShape(1, 4, 5, 2, 3, 5, 2, 3, 6, 2, 4, 5, 3, 5, 6, 4, 5, 7)
+        criaShape(4, 7, 8, 5, 6, 8, 5, 6, 9, 5, 7, 8, 6, 8, 9, 7, 8, 10)
 
 
 
@@ -2026,39 +2636,23 @@ botao0.onclick = function () {
         console.log('shape 7')
 
         apagar()
-        criaShape(4, 5, 7, 3, 5, 7, 3, 6, 7, 4, 5, 7, 5, 6, 9, 5, 7, 8)
-
-        corda6[4].style.display = 'block'
-        corda6[5].style.display = 'block'
-        corda6[7].style.display = 'block'
-        corda5[3].style.display = 'block'
-        corda5[5].style.display = 'block'
-        corda5[7].style.display = 'block'
-        corda4[3].style.display = 'block'
-        corda4[6].style.display = 'block'
-        corda4[7].style.display = 'block'
-        corda3[4].style.display = 'block'
-        corda3[5].style.display = 'block'
-        corda3[7].style.display = 'block'
-        corda2[5].style.display = 'block'
-        corda2[6].style.display = 'block'
-        corda2[9].style.display = 'block'
-        corda1[5].style.display = 'block'
-        corda1[7].style.display = 'block'
-        corda1[8].style.display = 'block'
+        criaShape(7, 8, 10, 6, 8, 10, 6, 9, 10, 7, 8, 10, 8, 9, 11, 8, 10, 11)
 
 
     } else if (posicao.value == 8) {
 
         apagar()
 
-        mostrarG()
-        mostrarA()
-        mostrarB()
-        mostrarC()
-        mostrarD()
-        mostrarE()
-        mostrarFS()
+        mostrarTodas('C')
+        mostrarTodas('D')
+        mostrarTodas('Eb')
+        mostrarTodas('F')
+        mostrarTodas('G')
+        mostrarTodas('Ab')
+        mostrarTodas('B')
+
+
+
 
 
 
@@ -4229,8 +4823,7 @@ apagar()
 estrutura.style.display = 'none'
 tipo.style.display = 'none'
 tonalidade.style.display = 'none'
-direita.style.display = 'none'
-esquerda.style.display = 'none'
+
 posicao.style.borderLeftColor = 'orangered'
 
 for (i = 0; i < corda.length; i++) {
@@ -4486,7 +5079,7 @@ for (i = 0; i < corda.length; i++) {
 
 
     corda[i].style.zIndex = 11
-    
+    corda[i].style.transition = 'all 2s'
 
 
 }
@@ -4494,7 +5087,7 @@ for (i = 0; i < corda.length; i++) {
 for (i = 0; i < traste.length; i++) {
 
     traste[i].style.zIndex = 11
-    
+    traste[i].style.transition = 'all 2s'
 
 
 }
@@ -4503,7 +5096,7 @@ for (i = 0; i < nota.length; i++) {
 
 
     nota[i].style.zIndex = 13
-    
+    nota[i].style.transition = 'all 2s'
 
 }
 
@@ -5205,14 +5798,13 @@ function markSelection() {
     }
 }
 
-
-
 for (i = 0; i < nota.length; i++) {
     nota[i].onclick = markSelection;
-
-    
-   
 }
+
+
+
+
 
 
 
@@ -5285,7 +5877,6 @@ for (i = 0; i < nota.length; i++) {
 
 //--------------------------------------------------------------------------------------------------
 
-
 function criaShape(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r) {
 
     corda6[a].style.display = 'block'
@@ -5325,6 +5916,23 @@ function criaShape(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r) {
     corda1[r].style.display = 'block'
     corda1[r].style.opacity = '1'
 
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == 'A#') {
+
+            nota[i].innerHTML = 'Bb'
+
+        }
+
+        if (nota[i].innerHTML == 'D#') {
+
+            nota[i].innerHTML = 'Eb'
+
+        }
+
+
+
+    }
 }
 
 
@@ -5360,12 +5968,7 @@ function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
     corda1[l].style.display = 'block'
     corda1[l].style.opacity = '1'
 
-
 }
-
-
-
-//--------------------------------------------------------------------------------------------------------------------------
 
 
 function colorNote(note, cor) {
@@ -6143,7 +6746,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6164,7 +6767,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6185,7 +6788,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6204,7 +6807,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6213,7 +6816,7 @@ function intervaloModos(tonica, modo) {
         }
 
 
-    }  else if (tonica == 'C' && modo == 'eolio') {
+    } else if (tonica == 'C' && modo == 'eolio') {
 
         colorNote('T', 'green')
         colorNote('b2', 'red')
@@ -6223,7 +6826,7 @@ function intervaloModos(tonica, modo) {
         colorNote('6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6259,14 +6862,15 @@ function miniFret() {
 
     bolinha[3].style.display = 'none'
     bolinha[4].style.display = 'none'
-    bolinha[2].style.display = 'none'    
-    bolinha[5].style.display = 'none'    
+    bolinha[2].style.display = 'none'
+    bolinha[5].style.display = 'none'
     bolinha[6].style.display = 'none'
-    
-    
+
+
 }
 
 //miniFret()
+
 
 let cordaVetor = ['x', corda1, corda2, corda3, corda4, corda5, corda6]
 
@@ -6274,14 +6878,15 @@ function tab(x, y) {
 
     cordaVetor[x][y].style.display = 'block'
     cordaVetor[x][y].style.opacity = '1'
-    
+
 }
+
 
 function mostrarTodas(note) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note){
+        if (nota[i].innerHTML == note) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6291,114 +6896,312 @@ function mostrarTodas(note) {
 
 
     }
-    
+
 }
 
-function xml(corda, casa, duracao) {
+function arpejo1() {
 
-    let tipo
+    apagar()
 
-    if (duracao == 1){
-
-        tipo = 'whole'
-
-
-    } else if (duracao == 2){
-
-        tipo = 'half'
+    tab(6, 5)
+    tab(5, 3)
+    tab(4, 2)
+    tab(3, 0)
 
 
-    } else if (duracao == 4){
-
-        tipo = 'quarter'
-
-
-    } else if (duracao == 8){
-
-        tipo = 'eighth'
-
-
-    } else if (duracao == 16){
-
-        tipo = '16th'
-
-
-    } else if (duracao == 32){
-
-        tipo = '32th'
-
-
-    } 
-    
-    
-    let nota = "<note><duration>1</duration><voice>1</voice><type>" + tipo + "</type><notations><dynamics><f></f></dynamics><technical><string>" + corda + "</string><fret>" + casa + "</fret></technical></notations></note>"
-    console.log(nota + '\n')
-    
 }
+
+
+function arpejo2() {
+
+    apagar()
+
+    tab(6, 5)
+    tab(5, 3)
+    tab(4, 2)
+    tab(4, 5)
+
+
+}
+
+function arpejo3() {
+
+    apagar()
+
+    tab(6, 5)
+    tab(5, 3)
+    tab(5, 7)
+    tab(4, 5)
+
+
+}
+
+function arpejo4() {
+
+    apagar()
+
+    tab(6, 5)
+    tab(6, 8)
+    tab(5, 7)
+    tab(4, 5)
+
+
+}
+
+function arpejo5() {
+
+    apagar()
+
+    tab(4, 7)
+    tab(3, 5)
+    tab(2, 5)
+    tab(1, 3)
+
+
+}
+
+function arpejo6() {
+
+    apagar()
+
+    tab(4, 7)
+    tab(3, 5)
+    tab(2, 5)
+    tab(2, 8)
+
+
+}
+
+function arpejo7() {
+
+    apagar()
+
+    tab(4, 7)
+    tab(3, 5)
+    tab(3, 9)
+    tab(2, 8)
+
+
+}
+
+function arpejo8() {
+
+    apagar()
+
+    tab(4, 7)
+    tab(4, 10)
+    tab(3, 9)
+    tab(2, 8)
+
+
+}
+
+function arpejo9() {
+
+    apagar()
+
+    tab(5, 12)
+    tab(4, 10)
+    tab(3, 9)
+    tab(2, 8)
+
+
+}
+
+function arpejo10() {
+
+    apagar()
+
+    tab(5, 12)
+    tab(4, 10)
+    tab(3, 9)
+    tab(3, 12)
+
+
+}
+
+function arpejo11() {
+
+    apagar()
+
+    tab(5, 12)
+    tab(4, 10)
+    tab(4, 14)
+    tab(3, 12)
+
+
+}
+
+function arpejo12() {
+
+    apagar()
+
+    tab(5, 12)
+    tab(5, 15)
+    tab(4, 14)
+    tab(3, 12)
+
+
+}
+
+function arpejo13() {
+
+    apagar()
+
+    tab(3, 2)
+    tab(2, 1)
+    tab(1, 0)
+    tab(1, 3)
+
+
+}
+
+function arpejo14() {
+
+    apagar()
+
+    tab(3, 2)
+    tab(2, 1)
+    tab(2, 5)
+    tab(1, 3)
+
+
+}
+
+function arpejo15() {
+
+    apagar()
+
+    tab(3, 2)
+    tab(3, 5)
+    tab(2, 5)
+    tab(1, 3)
+
+
+}
+
+
+let arpejo = 1
 
 document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'a'){
+    if (e.key == '+') {
 
-        apagar()
+        arpejo++
 
-        mostrarTodas('A')
-        mostrarTodas('B')
-        mostrarTodas('D')
-
-        
+        console.log(arpejo)
 
 
-    } else if (e.key == 'b'){
+    } else if (e.key == '-') {
 
-        apagar()
+        arpejo--
 
-        mostrarTodas('G')
-        mostrarTodas('D')
-        mostrarTodas('B')
-        mostrarTodas('G#')
-
-       
-
-
-
-
-    } else if (e.key == 'c'){
-
-        apagar()
-
-        mostrarTodas('A')
-        mostrarTodas('D')
-        mostrarTodas('G')
-        mostrarTodas('F#')
-        mostrarTodas('E')
-        mostrarTodas('D#')
-        mostrarTodas('C')
-        mostrarTodas('B')
-        mostrarTodas('A#')
-
-        colorNote('D#', 'red')
-        colorNote('A#', 'red')
-
-       
-
-
+        console.log(arpejo)
 
 
     }
-    
+
+    if (arpejo > 15) {
+
+        arpejo = 15
+
+
+    }
+
+    if (arpejo < 1) {
+
+        arpejo = 1
+
+
+    }
+
 })
 
-let bonus1 = document.getElementById('bonus1')
+function verificaArpejos() {
 
-bonus1.onclick = function () {
+    if (arpejo == 1) {
 
-    window.location = 'fouraxis.html'
-    
+        arpejo1()
+
+
+    } else if (arpejo == 2) {
+
+        arpejo2()
+
+
+    } else if (arpejo == 3) {
+
+        arpejo3()
+
+
+    } else if (arpejo == 4) {
+
+        arpejo4()
+
+
+    } else if (arpejo == 5) {
+
+        arpejo5()
+
+
+    } else if (arpejo == 6) {
+
+        arpejo6()
+
+
+    } else if (arpejo == 7) {
+
+        arpejo7()
+
+
+    } else if (arpejo == 8) {
+
+        arpejo8()
+
+
+    } else if (arpejo == 9) {
+
+        arpejo9()
+
+
+    } else if (arpejo == 10) {
+
+        arpejo10()
+
+
+    } else if (arpejo == 11) {
+
+        arpejo11()
+
+
+    } else if (arpejo == 12) {
+
+        arpejo12()
+
+
+    }  else if (arpejo == 13) {
+
+        arpejo13()
+
+
+    }  else if (arpejo == 14) {
+
+        arpejo14()
+
+
+    }  else if (arpejo == 15) {
+
+        arpejo15()
+
+
+    }  else if (arpejo == 16) {
+
+        arpejo16()
+
+
+    }
+
 }
 
-
-
-
-
+setInterval(verificaArpejos, 500)
 
