@@ -6336,58 +6336,7 @@ function xml(corda, casa, duracao) {
     
 }
 
-document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'a'){
-
-        apagar()
-
-        mostrarTodas('A')
-        mostrarTodas('B')
-        mostrarTodas('D')
-
-        
-
-
-    } else if (e.key == 'b'){
-
-        apagar()
-
-        mostrarTodas('G')
-        mostrarTodas('D')
-        mostrarTodas('B')
-        mostrarTodas('G#')
-
-       
-
-
-
-
-    } else if (e.key == 'c'){
-
-        apagar()
-
-        mostrarTodas('A')
-        mostrarTodas('D')
-        mostrarTodas('G')
-        mostrarTodas('F#')
-        mostrarTodas('E')
-        mostrarTodas('D#')
-        mostrarTodas('C')
-        mostrarTodas('B')
-        mostrarTodas('A#')
-
-        colorNote('D#', 'red')
-        colorNote('A#', 'red')
-
-       
-
-
-
-
-    }
-    
-})
 
 let bonus1 = document.getElementById('bonus1')
 
@@ -6411,6 +6360,77 @@ function scale(a, b, c, d, e, f, g, h) {
 }
 
 console.log($('.nota')[16].innerHTML)
+
+document.addEventListener('keypress', function (e) {
+
+    if (e.key == 'c'){
+
+        mostrarTodas('C')
+
+
+    } else if (e.key == 'd'){
+
+        mostrarTodas('D')
+
+
+    } else if (e.key == 'e'){
+
+        mostrarTodas('E')
+
+
+    } else if (e.key == 'f'){
+
+        mostrarTodas('F')
+
+
+    } else if (e.key == 'g'){
+
+        mostrarTodas('G')
+
+
+    } else if (e.key == 'a'){
+
+        mostrarTodas('A')
+
+
+    } else if (e.key == 'b'){
+
+        mostrarTodas('B')
+
+
+    } else if (e.key == 'C'){
+
+        mostrarTodas('C#')
+
+
+    } else if (e.key == 'D'){
+
+        mostrarTodas('D#')
+
+
+    } else if (e.key == 'F'){
+
+        mostrarTodas('F#')
+
+
+    } else if (e.key == 'G'){
+
+        mostrarTodas('G#')
+
+
+    } else if (e.key == 'A'){
+
+        mostrarTodas('A#')
+
+
+    } else if (e.key == '-'){
+
+        apagar()
+
+
+    }
+    
+})
 
 
 

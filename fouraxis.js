@@ -7205,3 +7205,74 @@ function verificaArpejos() {
 
 setInterval(verificaArpejos, 500)
 
+
+document.addEventListener('keypress', function (e) {
+
+    if (e.key == 'c'){
+
+        mostrarTodas('C')
+
+
+    } else if (e.key == 'd'){
+
+        mostrarTodas('D')
+
+
+    } else if (e.key == 'e'){
+
+        mostrarTodas('E')
+
+
+    } else if (e.key == 'f'){
+
+        mostrarTodas('F')
+
+
+    } else if (e.key == 'g'){
+
+        mostrarTodas('G')
+
+
+    } else if (e.key == 'a'){
+
+        mostrarTodas('A')
+
+
+    } else if (e.key == 'b'){
+
+        mostrarTodas('B')
+
+
+    } else if (e.key == 'C'){
+
+        mostrarTodas('C#')
+
+
+    } else if (e.key == 'D'){
+
+        mostrarTodas('D#')
+
+
+    } else if (e.key == 'F'){
+
+        mostrarTodas('F#')
+
+
+    } else if (e.key == 'G'){
+
+        mostrarTodas('G#')
+
+
+    } else if (e.key == 'A'){
+
+        mostrarTodas('A#')
+
+
+    } else if (e.key == '-'){
+
+        apagar()
+
+
+    }
+    
+})
