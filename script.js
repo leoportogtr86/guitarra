@@ -6397,6 +6397,18 @@ bonus1.onclick = function () {
     
 }
 
+function scale(a, b, c, d, e, f, g, h) {
+
+    mostrarTodas(a)
+    mostrarTodas(b)
+    mostrarTodas(c)
+    mostrarTodas(d)
+    mostrarTodas(e)
+    mostrarTodas(f)
+    mostrarTodas(g)
+    mostrarTodas(h)
+    
+}
 
 
 
