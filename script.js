@@ -6410,7 +6410,7 @@ function scale(a, b, c, d, e, f, g, h) {
     
 }
 
-
+console.log($('.nota')[16].innerHTML)
 
 
 
