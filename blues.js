@@ -6510,4 +6510,162 @@ setTimeout(function () {
     
 }
 
-melodia()
+
+video1.src = 'blues.mp4'
+video1.style.display = 'block'
+
+$('.controles').hide()
+
+
+
+
+function sinc() {
+
+   
+
+    
+
+    if (video1.currentTime <= 3){
+
+        apagar()     
+        
+        
+
+    }
+
+    if (video1.currentTime >= 3){
+
+        apagar()
+
+        mostrarTodas('A')
+        mostrarTodas('B')
+        mostrarTodas('C')
+        mostrarTodas('C#')
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G')
+
+        colorNote('C', 'blue')  
+             
+
+    } 
+
+    
+    
+    if (video1.currentTime >= 14){
+
+        apagar()
+
+        mostrarTodas('D')
+        mostrarTodas('E')
+        mostrarTodas('F')
+        mostrarTodas('F#')
+        mostrarTodas('A')
+        mostrarTodas('B')
+        mostrarTodas('C')
+
+        colorNote('F', 'blue')       
+
+    }
+
+    if (video1.currentTime >= 19){
+
+        apagar()
+
+        mostrarTodas('A')
+        mostrarTodas('B')
+        mostrarTodas('C')
+        mostrarTodas('C#')
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G')
+
+        colorNote('C', 'blue')       
+
+    } 
+
+    if (video1.currentTime >= 25){
+
+        apagar()
+
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G')
+        mostrarTodas('G#')
+        mostrarTodas('B')
+        mostrarTodas('C#')
+        mostrarTodas('D')
+
+        colorNote('G', 'blue')       
+
+    } 
+
+    if (video1.currentTime >= 28){
+
+        apagar()
+
+        mostrarTodas('D')
+        mostrarTodas('E')
+        mostrarTodas('F')
+        mostrarTodas('F#')
+        mostrarTodas('A')
+        mostrarTodas('B')
+        mostrarTodas('C')
+
+        colorNote('F', 'blue')       
+
+    }
+
+    if (video1.currentTime >= 30){
+
+        apagar()
+
+        mostrarTodas('A')
+        mostrarTodas('B')
+        mostrarTodas('C')
+        mostrarTodas('C#')
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G')
+
+        colorNote('C', 'blue')       
+
+    } 
+
+    if (video1.currentTime >= 33){
+
+        apagar()
+
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G')
+        mostrarTodas('G#')
+        mostrarTodas('B')
+        mostrarTodas('C#')
+        mostrarTodas('D')
+
+        colorNote('G', 'blue')       
+
+    } 
+
+    if (video1.currentTime >= 36.7){
+
+        video1.currentTime = 4.9
+
+
+    }
+    
+}
+
+setInterval(sinc, 500)
+
+
+
+
+
+
+
+
+
+
+

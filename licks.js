@@ -6510,4 +6510,335 @@ setTimeout(function () {
     
 }
 
-melodia()
+
+video1.src = 'licksalt.mp4'
+video1.style.display = 'block'
+
+$('.controles').hide()
+
+
+
+
+function sinc() {
+
+    colorNote('C#', 'red')
+    colorNote('D#', 'red')
+    colorNote('F#', 'red')
+    colorNote('G#', 'red')
+    colorNote('B', 'red')
+
+    if (video1.currentTime <= 70){
+
+        apagar()     
+        
+        h1.innerHTML = '10 Licks Sobre Acordes Alterados'
+
+    }
+
+    if (video1.currentTime >= 70){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 1'
+
+        
+        tab (3, 7)
+        tab (4, 8)
+        tab (4, 7)
+        tab (5, 10)
+        tab (3, 10)
+        tab (4, 10)
+        tab (3, 9)
+        tab (2, 7)
+        tab (2, 11)
+        tab (2, 10)
+        tab (1, 9)
+        tab (1, 8)
+
+        enarmonia('A#', 'Bb')
+
+    } 
+
+    
+    
+    if (video1.currentTime >= 60*2 + 17){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 2'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        tab(2, 9)
+        tab(3, 7)
+        tab(3, 8)
+        tab(3, 9)
+        tab(3, 10)
+        tab(3, 11)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 10)
+        tab(4, 11)
+        tab(5, 10)
+
+    }
+
+    if (video1.currentTime >= 60*3 + 18){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 3'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        
+        tab(3, 8)
+        tab(3, 9)
+        tab(3, 11)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 10)
+        tab(4, 11)
+        tab(5, 8)
+        tab(5, 9)
+        tab(5, 11)
+        tab(6, 6)
+        tab(6, 10)
+
+    }  if (video1.currentTime >= 60*4 + 3){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 4'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        tab(1, 8)
+        tab(1, 9)
+        tab(1, 11)
+        tab(2, 9)
+        tab(2, 11)
+        tab(3, 7)
+        tab(3, 8)
+        tab(3, 10)
+        tab(3, 11)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 10)
+        tab(4, 11)
+        tab(5, 10)
+        
+
+    }
+
+    if (video1.currentTime >= 60*5 + 15){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 5'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        tab(1, 8)
+        tab(1, 9)
+        tab(2, 9)
+        tab(2, 10)
+        tab(2, 11)
+        tab(3, 7)
+        tab(3, 8)
+        tab(3, 9)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 10)
+        tab(4, 11)
+        tab(5, 8)
+        tab(5, 10)
+        
+
+    }
+
+    if (video1.currentTime >= 60*6 + 9){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 6'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        
+        tab(2, 9)
+        tab(2, 10)
+        tab(2, 11)
+        tab(2, 13)
+        tab(3, 8)
+        tab(3, 9)
+        tab(3, 10)
+        tab(3, 11)
+        tab(3, 12)
+        tab(4, 10)
+        tab(4, 11)
+        tab(4, 12)
+        
+        
+
+    }
+
+    if (video1.currentTime >= 60*7 + 4){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 7'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        
+        tab(2, 7)
+        tab(2, 8)
+        tab(2, 9)
+        tab(2, 10)
+        tab(3, 5)
+        tab(3, 6)
+        tab(3, 7)
+        tab(3, 8)
+        tab(3, 9)
+        tab(4, 7)
+        tab(4, 8)
+        tab(5, 9)
+        tab(5, 10)
+        
+        
+
+    }
+
+    if (video1.currentTime >= 60*7 + 57){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 8'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        tab(2, 6)
+        tab(2, 7)
+        tab(2, 8)
+        tab(2, 9)
+        tab(2, 10)
+        tab(3, 6)
+        tab(3, 7)
+        tab(3, 8)
+        tab(3, 9)
+        tab(4, 5)
+        tab(4, 6)
+        tab(4, 7)
+        tab(4, 8)
+        
+        
+
+    }
+
+    if (video1.currentTime >= 60*9 + 1){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 9'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        
+        tab(2, 11)
+        tab(2, 9)
+        tab(2, 10)
+        tab(3, 8)
+        tab(3, 9)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 10)
+        tab(5, 7)
+        tab(5, 8)
+        tab(5, 9)
+        tab(5, 10)
+        tab(6, 10)
+        
+        
+
+    }
+
+    if (video1.currentTime >= 60*10 + 23){
+
+        apagar()
+
+        h1.innerHTML = 'Lick 10'
+
+        
+       
+
+        enarmonia('A#', 'Bb')
+         
+        
+        tab(1, 8)
+        tab(1, 9)
+        tab(1, 10)
+        tab(1, 11)
+        tab(2, 9)
+        tab(2, 8)
+        tab(3, 8)
+        tab(4, 7)
+        tab(4, 8)
+        tab(4, 11)
+        
+        tab(5, 7)
+        tab(5, 8)
+        tab(5, 9)
+        tab(5, 10)
+        tab(6, 10)
+        tab(6, 6)
+        
+        
+
+    }
+    
+}
+
+setInterval(sinc, 500)
+
+
+
+
+
+
+
+
+
+
+
