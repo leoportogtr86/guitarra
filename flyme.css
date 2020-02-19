@@ -2959,7 +2959,7 @@ body{
     left: 520px;
     width: 790px;
     height: 310px;
-    display: none;
+    
 }
 
 #video1 {
@@ -2967,10 +2967,10 @@ body{
     position: absolute;
     top: 360px;
     cursor: pointer;
-    left: 120px;
+    left: 0px;
     border-radius: 7px;
     z-index: 50;
-    width: 50%;
-    display: none;
+    width: 41%;
+    margin-left: 0;
     
 }

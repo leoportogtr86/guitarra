@@ -4486,7 +4486,7 @@ for (i = 0; i < corda.length; i++) {
 
 
     corda[i].style.zIndex = 11
-    
+
 
 
 }
@@ -4494,7 +4494,7 @@ for (i = 0; i < corda.length; i++) {
 for (i = 0; i < traste.length; i++) {
 
     traste[i].style.zIndex = 11
-    
+
 
 
 }
@@ -4503,7 +4503,7 @@ for (i = 0; i < nota.length; i++) {
 
 
     nota[i].style.zIndex = 13
-    
+
 
 }
 
@@ -5210,8 +5210,8 @@ function markSelection() {
 for (i = 0; i < nota.length; i++) {
     nota[i].onclick = markSelection;
 
-    
-   
+
+
 }
 
 
@@ -6143,7 +6143,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6164,7 +6164,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6185,7 +6185,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6204,7 +6204,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6213,7 +6213,7 @@ function intervaloModos(tonica, modo) {
         }
 
 
-    }  else if (tonica == 'C' && modo == 'eolio') {
+    } else if (tonica == 'C' && modo == 'eolio') {
 
         colorNote('T', 'green')
         colorNote('b2', 'red')
@@ -6223,7 +6223,7 @@ function intervaloModos(tonica, modo) {
         colorNote('6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6259,11 +6259,11 @@ function miniFret() {
 
     bolinha[3].style.display = 'none'
     bolinha[4].style.display = 'none'
-    bolinha[2].style.display = 'none'    
-    bolinha[5].style.display = 'none'    
+    bolinha[2].style.display = 'none'
+    bolinha[5].style.display = 'none'
     bolinha[6].style.display = 'none'
-    
-    
+
+
 }
 
 //miniFret()
@@ -6274,14 +6274,14 @@ function tab(x, y) {
 
     cordaVetor[x][y].style.display = 'block'
     cordaVetor[x][y].style.opacity = '1'
-    
+
 }
 
 function mostrarTodas(note) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note){
+        if (nota[i].innerHTML == note) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6291,49 +6291,49 @@ function mostrarTodas(note) {
 
 
     }
-    
+
 }
 
 function xml(corda, casa, duracao) {
 
     let tipo
 
-    if (duracao == 1){
+    if (duracao == 1) {
 
         tipo = 'whole'
 
 
-    } else if (duracao == 2){
+    } else if (duracao == 2) {
 
         tipo = 'half'
 
 
-    } else if (duracao == 4){
+    } else if (duracao == 4) {
 
         tipo = 'quarter'
 
 
-    } else if (duracao == 8){
+    } else if (duracao == 8) {
 
         tipo = 'eighth'
 
 
-    } else if (duracao == 16){
+    } else if (duracao == 16) {
 
         tipo = '16th'
 
 
-    } else if (duracao == 32){
+    } else if (duracao == 32) {
 
         tipo = '32th'
 
 
-    } 
-    
-    
+    }
+
+
     let nota = "<note><duration>1</duration><voice>1</voice><type>" + tipo + "</type><notations><dynamics><f></f></dynamics><technical><string>" + corda + "</string><fret>" + casa + "</fret></technical></notations></note>"
     console.log(nota + '\n')
-    
+
 }
 
 
@@ -6343,7 +6343,7 @@ let bonus1 = document.getElementById('bonus1')
 bonus1.onclick = function () {
 
     window.location = 'fouraxis.html'
-    
+
 }
 
 function scale(a, b, c, d, e, f, g, h) {
@@ -6356,7 +6356,7 @@ function scale(a, b, c, d, e, f, g, h) {
     mostrarTodas(f)
     mostrarTodas(g)
     mostrarTodas(h)
-    
+
 }
 
 console.log($('.nota')[16].innerHTML)
@@ -6365,86 +6365,86 @@ document.addEventListener('keypress', function (e) {
 
     console.log(e.key + '--> ' + parseInt(video1.currentTime))
 
-   
-    
+
+
 })
 
 function melodia() {
 
-    
-
-tab(6, 5)
-
-setTimeout(function () {
-
-    
-
-    tab(6, 8)
-    
-}, 1000)
-
-setTimeout(function () {
-
-    tab(5, 5)
-    
-}, 2000)
-
-setTimeout(function () {
-
-    tab(5, 7)
-    
-}, 3000)
-
-setTimeout(function () {
-
-    tab(4, 5)
-    
-}, 4000)
-
-setTimeout(function () {
-
-    tab(4, 7)
-    
-}, 5000)
-
-setTimeout(function () {
-
-    tab(3, 5)
-    
-}, 6000)
-
-setTimeout(function () {
-
-    tab(3, 7)
-    
-}, 7000)
-
-setTimeout(function () {
-
-    tab(2, 5)
-    
-}, 8000)
-
-setTimeout(function () {
-
-    tab(2, 8)
-    
-}, 9000)
-
-setTimeout(function () {
-
-    tab(1, 5)
-    
-}, 10000)
-
-setTimeout(function () {
-
-    tab(1, 8)
-    
-}, 11000)
 
 
-    
+    tab(6, 5)
+
+    setTimeout(function () {
+
+
+
+        tab(6, 8)
+
+    }, 1000)
+
+    setTimeout(function () {
+
+        tab(5, 5)
+
+    }, 2000)
+
+    setTimeout(function () {
+
+        tab(5, 7)
+
+    }, 3000)
+
+    setTimeout(function () {
+
+        tab(4, 5)
+
+    }, 4000)
+
+    setTimeout(function () {
+
+        tab(4, 7)
+
+    }, 5000)
+
+    setTimeout(function () {
+
+        tab(3, 5)
+
+    }, 6000)
+
+    setTimeout(function () {
+
+        tab(3, 7)
+
+    }, 7000)
+
+    setTimeout(function () {
+
+        tab(2, 5)
+
+    }, 8000)
+
+    setTimeout(function () {
+
+        tab(2, 8)
+
+    }, 9000)
+
+    setTimeout(function () {
+
+        tab(1, 5)
+
+    }, 10000)
+
+    setTimeout(function () {
+
+        tab(1, 8)
+
+    }, 11000)
+
+
+
 }
 
 
@@ -6462,39 +6462,142 @@ mostrarTodas('D')
 mostrarTodas('E')
 mostrarTodas('F')
 mostrarTodas('G')
-mostrarTodas('G#')
 mostrarTodas('A')
 mostrarTodas('B')
-mostrarTodas('F#')
 
 
 
 
-colorNote('G#', 'yellow')
-colorNote('F#', 'yellow')
+
+
 
 document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'a'){
+    if (e.key == 'a') {
+
+        resetColorAll()
 
         colorNote('A', 'blue')
         colorNote('C', 'blue')
         colorNote('E', 'blue')
         colorNote('G', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
+        
+
 
 
     }
 
-    if (e.key == 'd'){
+    if (e.key == 'd') {
+
+        resetColorAll()
 
         colorNote('D', 'blue')
         colorNote('F', 'blue')
         colorNote('A', 'blue')
         colorNote('C', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
 
 
     }
+
+    if (e.key == 'g') {
+
+        resetColorAll()
+
+        colorNote('G', 'blue')
+        colorNote('B', 'blue')
+        colorNote('D', 'blue')
+        colorNote('F', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
+
+
+    }
+
+    if (e.key == 'f') {
+
+        resetColorAll()
+
+        colorNote('F', 'blue')
+        colorNote('A', 'blue')
+        colorNote('C', 'blue')
+        colorNote('E', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
+
+
+    }
+
+    if (e.key == 'c') {
+
+        resetColorAll()
+
+        colorNote('C', 'blue')
+        colorNote('E', 'blue')
+        colorNote('G', 'blue')
+        colorNote('B', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
+
+
+    }
+
+    if (e.key == 'b') {
+
+        resetColorAll()
+
+        colorNote('B', 'blue')
+        colorNote('F', 'blue')
+        colorNote('A', 'blue')
+        colorNote('D', 'blue')
+        esconderTodas('C#')
+        esconderTodas('F#')
+        esconderTodas('G#')
+
+
+    }
+
+    if (e.key == 'e') {
+
+        resetColorAll()
+
+        colorNote('D', 'blue')
+        colorNote('G#', 'blue')
+        colorNote('E', 'blue')
+        colorNote('B', 'blue')
+        mostrarTodas('G#')
+        esconderTodas('C#')
+        esconderTodas('F#')
     
+
+
+    }
+
+    if (e.key == 'A') {
+
+        resetColorAll()
+
+        mostrarTodas('C#')
+
+        colorNote('A', 'blue')
+        colorNote('C#', 'blue')
+        colorNote('E', 'blue')
+        colorNote('G', 'blue')
+        
+        esconderTodas('F#')
+        esconderTodas('G#')
+
+
+    }
+
 })
 
 let c6c0 = document.getElementById('c6c0')
@@ -6522,105 +6625,105 @@ let c6c15 = document.getElementById('c6c15')
 nota[0].onclick = function () {
 
     c6c0.play()
-    
-    
+
+
 }
 
 nota[1].onclick = function () {
 
     c6c1.play()
-    
+
 }
 
 nota[2].onclick = function () {
 
     c6c2.play()
-    
+
 }
 
 nota[3].onclick = function () {
 
     c6c3.play()
-    
+
 }
 
 nota[4].onclick = function () {
 
     c6c4.play()
-    
+
 }
 
 nota[5].onclick = function () {
 
     c6c5.play()
-    
+
 }
 
 nota[6].onclick = function () {
 
     c6c6.play()
-    
+
 }
 
 nota[7].onclick = function () {
 
     c6c7.play()
-    
+
 }
 
 nota[8].onclick = function () {
 
     c6c8.play()
-    
+
 }
 
 nota[9].onclick = function () {
 
     c6c9.play()
-    
+
 }
 
 nota[10].onclick = function () {
 
     c6c10.play()
-    
+
 }
 
 nota[11].onclick = function () {
 
     c6c11.play()
-    
+
 }
 
 nota[12].onclick = function () {
 
     c6c12.play()
-    
+
 }
 
 nota[13].onclick = function () {
 
     c6c13.play()
-    
+
 }
 
 nota[14].onclick = function () {
 
     c6c14.play()
-    
+
 }
 
 nota[15].onclick = function () {
 
     c6c15.play()
-    
+
 }
 
-function resetColor (e) {
+function resetColor(e) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == e){
+        if (nota[i].innerHTML == e) {
 
             nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
 
@@ -6630,10 +6733,39 @@ function resetColor (e) {
 
     }
 
-
-    
 }
 
+function resetColorAll() {
+
+    for (i = 0; i < nota.length; i++) {
+
+
+
+        nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
+
+
+
+
+
+    }
+
+}
+
+function esconderTodas(e) {
+
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == e) {
+
+            nota[i].style.display = 'none'
+
+
+        }
+
+
+    }
+
+}
 
 
 
