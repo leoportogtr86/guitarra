@@ -6432,82 +6432,22 @@ document.addEventListener('keypress', function (e) {
     
 })
 
-function melodia() {
 
-    
+function resetColor (e) {
 
-tab(6, 5)
+    for (i = 0; i < nota.length; i++){
 
-setTimeout(function () {
+        if (nota[i].innerHTML == e){
 
-    
+            nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
 
-    tab(6, 8)
-    
-}, 1000)
 
-setTimeout(function () {
+        }
 
-    tab(5, 5)
-    
-}, 2000)
 
-setTimeout(function () {
-
-    tab(5, 7)
-    
-}, 3000)
-
-setTimeout(function () {
-
-    tab(4, 5)
-    
-}, 4000)
-
-setTimeout(function () {
-
-    tab(4, 7)
-    
-}, 5000)
-
-setTimeout(function () {
-
-    tab(3, 5)
-    
-}, 6000)
-
-setTimeout(function () {
-
-    tab(3, 7)
-    
-}, 7000)
-
-setTimeout(function () {
-
-    tab(2, 5)
-    
-}, 8000)
-
-setTimeout(function () {
-
-    tab(2, 8)
-    
-}, 9000)
-
-setTimeout(function () {
-
-    tab(1, 5)
-    
-}, 10000)
-
-setTimeout(function () {
-
-    tab(1, 8)
-    
-}, 11000)
+    }
 
 
     
 }
 
-melodia()

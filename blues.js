@@ -6363,72 +6363,9 @@ console.log($('.nota')[16].innerHTML)
 
 document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'c'){
+    console.log(e.key + '--> ' + parseInt(video1.currentTime))
 
-        mostrarTodas('C')
-
-
-    } else if (e.key == 'd'){
-
-        mostrarTodas('D')
-
-
-    } else if (e.key == 'e'){
-
-        mostrarTodas('E')
-
-
-    } else if (e.key == 'f'){
-
-        mostrarTodas('F')
-
-
-    } else if (e.key == 'g'){
-
-        mostrarTodas('G')
-
-
-    } else if (e.key == 'a'){
-
-        mostrarTodas('A')
-
-
-    } else if (e.key == 'b'){
-
-        mostrarTodas('B')
-
-
-    } else if (e.key == 'C'){
-
-        mostrarTodas('C#')
-
-
-    } else if (e.key == 'D'){
-
-        mostrarTodas('D#')
-
-
-    } else if (e.key == 'F'){
-
-        mostrarTodas('F#')
-
-
-    } else if (e.key == 'G'){
-
-        mostrarTodas('G#')
-
-
-    } else if (e.key == 'A'){
-
-        mostrarTodas('A#')
-
-
-    } else if (e.key == '-'){
-
-        apagar()
-
-
-    }
+   
     
 })
 
@@ -6546,6 +6483,9 @@ function sinc() {
         mostrarTodas('G')
 
         colorNote('C', 'blue')  
+
+        resetColor('F')
+        resetColor('G')
              
 
     } 
@@ -6564,7 +6504,9 @@ function sinc() {
         mostrarTodas('B')
         mostrarTodas('C')
 
-        colorNote('F', 'blue')       
+        colorNote('F', 'blue')  
+        resetColor('C')
+        resetColor('G')     
 
     }
 
@@ -6580,7 +6522,10 @@ function sinc() {
         mostrarTodas('F#')
         mostrarTodas('G')
 
-        colorNote('C', 'blue')       
+        colorNote('C', 'blue')    
+        
+        resetColor('F')
+        resetColor('G')   
 
     } 
 
@@ -6596,7 +6541,9 @@ function sinc() {
         mostrarTodas('C#')
         mostrarTodas('D')
 
-        colorNote('G', 'blue')       
+        colorNote('G', 'blue')      
+        resetColor('F')
+        resetColor('C') 
 
     } 
 
@@ -6612,7 +6559,9 @@ function sinc() {
         mostrarTodas('B')
         mostrarTodas('C')
 
-        colorNote('F', 'blue')       
+        colorNote('F', 'blue')      
+        resetColor('C')
+        resetColor('G') 
 
     }
 
@@ -6629,6 +6578,9 @@ function sinc() {
         mostrarTodas('G')
 
         colorNote('C', 'blue')       
+        
+        resetColor('F')
+        resetColor('G')
 
     } 
 
@@ -6644,7 +6596,10 @@ function sinc() {
         mostrarTodas('C#')
         mostrarTodas('D')
 
-        colorNote('G', 'blue')       
+        colorNote('G', 'blue')   
+        resetColor('F')
+        resetColor('C')
+            
 
     } 
 
@@ -6658,6 +6613,24 @@ function sinc() {
 }
 
 setInterval(sinc, 500)
+
+function resetColor (e) {
+
+    for (i = 0; i < nota.length; i++){
+
+        if (nota[i].innerHTML == e){
+
+            nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
+
+
+        }
+
+
+    }
+
+
+    
+}
 
 
 

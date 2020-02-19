@@ -6832,6 +6832,24 @@ function sinc() {
 
 setInterval(sinc, 500)
 
+function resetColor (e) {
+
+    for (i = 0; i < nota.length; i++){
+
+        if (nota[i].innerHTML == e){
+
+            nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
+
+
+        }
+
+
+    }
+
+
+    
+}
+
 
 
 
