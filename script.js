@@ -7,6 +7,7 @@ let concluido5 = document.getElementById('concluido5')
 
 let semana2 = document.getElementById('semana2')
 let semana3 = document.getElementById('semana3')
+let semana4 = document.getElementById('semana4')
 let naoConcluido1 = document.getElementById('naoConcluido1')
 let naoConcluido2 = document.getElementById('naoConcluido2')
 let naoConcluido3 = document.getElementById('naoConcluido3')
@@ -15,6 +16,11 @@ let naoConcluido5 = document.getElementById('naoConcluido5')
 
 
 
+semana4.onclick = function () {
+
+    window.location = 'semana4.html'
+
+}
 
 
 semana2.onclick = function () {
@@ -375,7 +381,7 @@ calendario.onclick = function () {
 
 listaSemanas.onmouseleave = function () {
 
-    listaSemanas.style.top = '-580px'
+    listaSemanas.style.top = '-630px'
 
 }
 
@@ -6456,3 +6462,5 @@ document.addEventListener('keypress', function (e) {
     console.log(e.key)
     
 })
+
+
