@@ -6950,6 +6950,32 @@ document.addEventListener('keypress', function (e) {
         apagar()
 
 
+    }  else if (e.key == 'z'){
+
+        enarmonia('C#', 'Db')
+        enarmonia('D#', 'Eb')
+
+        enarmonia('F#', 'Gb')
+
+        enarmonia('G#', 'Ab')
+
+        enarmonia('A#', 'Bb')
+
+
+
+    } else if (e.key == 'x'){
+
+        enarmonia('Db', 'C#')
+        enarmonia('Eb', 'D#')
+
+        enarmonia('Gb', 'F#')
+
+        enarmonia('Ab', 'G#')
+
+        enarmonia('Bb', 'A#')
+
+
+
     } else if (e.key == '1'){
 
         resetCorda()
