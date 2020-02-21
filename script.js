@@ -6950,7 +6950,12 @@ document.addEventListener('keypress', function (e) {
         apagar()
 
 
-    }  else if (e.key == 'z'){
+    } else if (e.key == 'p'){
+
+        print(' ', ' ')
+
+
+    } else if (e.key == 'z'){
 
         enarmonia('C#', 'Db')
         enarmonia('D#', 'Eb')
