@@ -1,3 +1,4 @@
+let cordaAtual = 0
 let duracao = document.getElementById('duracao')
 let concluido1 = document.getElementById('concluido1')
 let concluido2 = document.getElementById('concluido2')
@@ -6371,62 +6372,577 @@ document.addEventListener('keypress', function (e) {
 
     if (e.key == 'c'){
 
-        mostrarTodas('C')
+        if (cordaAtual == 0){
+
+            mostrarTodas('C')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 8)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 1)
+            tab(2, 13)
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 5)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 10)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 3)
+            tab(5, 15)
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 8)
+            
+
+
+        }
+
+       
 
 
     } else if (e.key == 'd'){
 
-        mostrarTodas('D')
+        if (cordaAtual == 0){
+
+            mostrarTodas('D')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 10)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 3)
+            tab(2, 15)
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 7)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 12)
+            tab(4, 0)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 5)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 10)
+            
+
+
+        }
 
 
     } else if (e.key == 'e'){
 
-        mostrarTodas('E')
+        if (cordaAtual == 0){
+
+            mostrarTodas('E')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 0)
+            tab(1, 12)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 5)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 9)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 2)
+            tab(4, 14)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 7)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 0)
+            tab(6, 12)
+            
+
+
+        }
 
 
     } else if (e.key == 'f'){
 
-        mostrarTodas('F')
+        if (cordaAtual == 0){
+
+            mostrarTodas('F')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 1)
+            tab(1, 13)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 6)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 10)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 3)
+            tab(4, 15)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 8)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 1)
+            tab(6, 13)
+            
+
+
+        }
 
 
     } else if (e.key == 'g'){
 
-        mostrarTodas('G')
+        if (cordaAtual == 0){
+
+            mostrarTodas('G')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 3)
+            tab(1, 15)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 8)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 0)
+            tab(3, 12)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 5)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 10)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 3)
+            tab(6, 15)
+            
+
+
+        }
 
 
     } else if (e.key == 'a'){
 
-        mostrarTodas('A')
+        if (cordaAtual == 0){
+
+            mostrarTodas('A')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 5)
+            
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 10)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 2)
+            tab(3, 14)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 7)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 0)
+            tab(5, 12)
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 5)
+            
+            
+
+
+        }
 
 
     } else if (e.key == 'b'){
 
-        mostrarTodas('B')
+        if (cordaAtual == 0){
+
+            mostrarTodas('B')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 7)
+            
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 0)
+            tab(2, 12)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 4)
+            
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 9)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 2)
+            tab(5, 14)
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 7)
+            
+            
+
+
+        }
 
 
     } else if (e.key == 'C'){
 
-        mostrarTodas('C#')
+        if (cordaAtual == 0){
+
+            mostrarTodas('C#')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 9)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 2)
+            tab(2, 14)
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 6)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 11)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 4)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 9)
+            
+
+
+        }
 
 
     } else if (e.key == 'D'){
 
-        mostrarTodas('D#')
+        if (cordaAtual == 0){
+
+            mostrarTodas('D#')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 11)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 4)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 8)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 1)
+            tab(4, 13)
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 6)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 11)
+            
+
+
+        }
 
 
     } else if (e.key == 'F'){
 
-        mostrarTodas('F#')
+        if (cordaAtual == 0){
+
+            mostrarTodas('F#')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 2)
+            tab(1, 14)
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 7)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 11)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 4)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 9)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 2)
+            tab(6, 14)
+            
+
+
+        }
 
 
     } else if (e.key == 'G'){
 
-        mostrarTodas('G#')
+        if (cordaAtual == 0){
+
+            mostrarTodas('G#')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 4)
+            
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 9)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 1)
+            tab(3, 13)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 6)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 11)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 4)
+            
+            
+
+
+        }
 
 
     } else if (e.key == 'A'){
 
-        mostrarTodas('A#')
+        if (cordaAtual == 0){
+
+            mostrarTodas('A#')
+
+
+        } else if (cordaAtual == 1){
+
+            tab(1, 6)
+            
+
+
+        } else if (cordaAtual == 2){
+
+            tab(2, 11)
+            
+
+
+        } else if (cordaAtual == 3){
+
+            tab(3, 3)
+            tab(3, 15)
+            
+
+
+        } else if (cordaAtual == 4){
+
+            tab(4, 8)
+            
+            
+
+
+        } else if (cordaAtual == 5){
+
+            tab(5, 1)
+            tab(5, 13)
+            
+
+
+        } else if (cordaAtual == 6){
+
+            tab(6, 6)
+            
+            
+
+
+        }
 
 
     } else if (e.key == '-'){
@@ -6441,11 +6957,14 @@ document.addEventListener('keypress', function (e) {
         corda[0].style.backgroundImage = 'none'
         corda[0].style.backgroundColor = 'red'
         corda[0].style.animation = 'pisca 0.5s linear infinite'
+        cordaAtual = 1
 
 
     } else if (e.key == '0'){
 
         resetCorda()
+        cordaAtual = 0
+
 
        
 
@@ -6454,6 +6973,7 @@ document.addEventListener('keypress', function (e) {
      else if (e.key == '2'){
 
         resetCorda()
+        cordaAtual = 2
 
         corda[1].style.backgroundImage = 'none'
         corda[1].style.backgroundColor = 'red'
@@ -6464,6 +6984,7 @@ document.addEventListener('keypress', function (e) {
     } else if (e.key == '3'){
 
         resetCorda()
+        cordaAtual = 3
 
         corda[2].style.backgroundImage = 'none'
         corda[2].style.backgroundColor = 'red'
@@ -6474,6 +6995,7 @@ document.addEventListener('keypress', function (e) {
     } else if (e.key == '4'){
 
         resetCorda()
+        cordaAtual = 4
 
         corda[3].style.backgroundImage = 'none'
         corda[3].style.backgroundColor = 'red'
@@ -6484,6 +7006,7 @@ document.addEventListener('keypress', function (e) {
     } else if (e.key == '5'){
 
         resetCorda()
+        cordaAtual = 5
 
         corda[4].style.backgroundImage = 'none'
         corda[4].style.backgroundColor = 'red'
@@ -6494,6 +7017,7 @@ document.addEventListener('keypress', function (e) {
     } else if (e.key == '6'){
 
         resetCorda()
+        cordaAtual = 6
 
         corda[5].style.backgroundImage = 'none'
         corda[5].style.backgroundColor = 'red'
