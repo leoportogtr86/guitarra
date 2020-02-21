@@ -6954,6 +6954,13 @@ document.addEventListener('keypress', function (e) {
 
         print(' ', ' ')
 
+        h1.innerHTML = prompt('Título')
+
+
+    } else if (e.key == 'm'){
+
+        miniFret()
+
 
     } else if (e.key == 'z'){
 
