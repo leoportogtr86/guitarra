@@ -6434,6 +6434,73 @@ document.addEventListener('keypress', function (e) {
         apagar()
 
 
+    } else if (e.key == '1'){
+
+        resetCorda()
+
+        corda[0].style.backgroundImage = 'none'
+        corda[0].style.backgroundColor = 'red'
+        corda[0].style.animation = 'pisca 0.5s linear infinite'
+
+
+    } else if (e.key == '0'){
+
+        resetCorda()
+
+       
+
+
+    }
+     else if (e.key == '2'){
+
+        resetCorda()
+
+        corda[1].style.backgroundImage = 'none'
+        corda[1].style.backgroundColor = 'red'
+        corda[1].style.animation = 'pisca 0.5s linear infinite'
+
+
+
+    } else if (e.key == '3'){
+
+        resetCorda()
+
+        corda[2].style.backgroundImage = 'none'
+        corda[2].style.backgroundColor = 'red'
+        corda[2].style.animation = 'pisca 0.5s linear infinite'
+
+
+
+    } else if (e.key == '4'){
+
+        resetCorda()
+
+        corda[3].style.backgroundImage = 'none'
+        corda[3].style.backgroundColor = 'red'
+        corda[3].style.animation = 'pisca 0.5s linear infinite'
+
+
+
+    } else if (e.key == '5'){
+
+        resetCorda()
+
+        corda[4].style.backgroundImage = 'none'
+        corda[4].style.backgroundColor = 'red'
+        corda[4].style.animation = 'pisca 0.5s linear infinite'
+
+
+
+    } else if (e.key == '6'){
+
+        resetCorda()
+
+        corda[5].style.backgroundImage = 'none'
+        corda[5].style.backgroundColor = 'red'
+        corda[5].style.animation = 'pisca 0.5s linear infinite'
+
+
+
     }
     
 })
@@ -6463,4 +6530,60 @@ document.addEventListener('keypress', function (e) {
     
 })
 
+function print(nomeDaLicao, corpoDaLicao) {
 
+    body.style.backgroundColor = 'white'
+    fret.style.backgroundImage = 'none'
+    fret.style.boxShadow = 'none'
+    limpar.style.display = 'none'
+    mostrar.style.display = 'none'
+    menuH.style.display = 'none'
+    timerSvg.style.display = 'none'
+    camada1.style.display = 'none'
+    barra.style.display = 'none'
+    timer.style.display = 'none'
+    listaSemanas.style.display = 'none'
+    posicao.style.display = 'none'
+    botao0.style.display = 'none'
+    h1.innerHTML = nomeDaLicao
+    tonalidade.style.display = 'none'
+    duracao.style.display = 'none'
+    calendario.style.display = 'none'
+
+    let corpo = document.createElement('p')
+    body.appendChild(corpo)
+    corpo.style.fontFamily = 'arial'
+    corpo.style.fontSize = '40px'
+    corpo.style.position = 'absolute'
+    corpo.style.top = '450px'
+
+    corpo.innerHTML = corpoDaLicao
+
+    let assinatura = document.createElement('p')
+    body.appendChild(assinatura)
+
+    assinatura.innerHTML = 'Prof. Leo Porto'
+    assinatura.style.fontFamily = 'sans-serif'
+
+    
+    
+}
+
+//print('Brilha Brilha Estrelinha', '0 0 7 7 9 9 7 7 5 5 4 4 2 2 0 <br> 7 7 5 5 4 4 2 <br> 7 7 5 5 4 4 2 <br> 0 0 7 7 9 9 7 7 5 5 4 4 2 2 0')
+
+function resetCorda() {
+
+    
+
+        corda[0].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        corda[1].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        corda[2].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        corda[3].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        corda[4].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        corda[5].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+        
+
+
+    
+    
+}
