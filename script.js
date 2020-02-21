@@ -7126,6 +7126,7 @@ function print(nomeDaLicao, corpoDaLicao) {
 
     assinatura.innerHTML = 'Prof. Leo Porto'
     assinatura.style.fontFamily = 'sans-serif'
+    assinatura.style.fontWeight = 'bold'
 
     
     
