@@ -7011,4 +7011,4 @@ function card(titulo, dica) {
 
 let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
 
-setTimeout(dicaPausa.mostrarCard, 1000*30)
+setTimeout(dicaPausa.mostrarCard, 1000*30*60)
