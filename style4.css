@@ -2951,10 +2951,9 @@ body{
     background-color: rgb(39, 37, 37);
     color: orangered;
 
-    /*
-    height: 400px;
-    width: 400px;
-    */
+    
+    width: 300px;
+
 
 
     font-size: 20px;
