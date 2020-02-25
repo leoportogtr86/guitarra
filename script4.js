@@ -6599,11 +6599,13 @@ function Licao() {
 
 //**********************************************************************************************************/
 
-
+/*
 const licao1 = Licao()
 licao1.mudarTitulo('Escala Maior em 12 Tons')
 licao1.exercicios('1234', '4321', '1423', '1432', 'Improviso sobre II V I')
 licao1.links(' ', 'still.mp4', ' ', 'still.pdf')
+
+*/
 function card(titulo, dica) {
 
     return {
