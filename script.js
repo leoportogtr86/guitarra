@@ -1748,6 +1748,10 @@ ex1.onclick = function () {
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
     base.style.display = 'none'
+    let dica0 = card('Dica', 'Lembrar de manter a palhetada sempre alternada.')
+
+    setTimeout(dica0.mostrarCard, 5000)
+
 
 
 
@@ -4493,7 +4497,7 @@ for (i = 0; i < corda.length; i++) {
 
 
     corda[i].style.zIndex = 11
-    
+
 
 
 }
@@ -4501,7 +4505,7 @@ for (i = 0; i < corda.length; i++) {
 for (i = 0; i < traste.length; i++) {
 
     traste[i].style.zIndex = 11
-    
+
 
 
 }
@@ -4510,7 +4514,7 @@ for (i = 0; i < nota.length; i++) {
 
 
     nota[i].style.zIndex = 13
-    
+
 
 }
 
@@ -5217,8 +5221,8 @@ function markSelection() {
 for (i = 0; i < nota.length; i++) {
     nota[i].onclick = markSelection;
 
-    
-   
+
+
 }
 
 
@@ -6150,7 +6154,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6171,7 +6175,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6192,7 +6196,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6211,7 +6215,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6220,7 +6224,7 @@ function intervaloModos(tonica, modo) {
         }
 
 
-    }  else if (tonica == 'C' && modo == 'eolio') {
+    } else if (tonica == 'C' && modo == 'eolio') {
 
         colorNote('T', 'green')
         colorNote('b2', 'red')
@@ -6230,7 +6234,7 @@ function intervaloModos(tonica, modo) {
         colorNote('6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6266,11 +6270,11 @@ function miniFret() {
 
     bolinha[3].style.display = 'none'
     bolinha[4].style.display = 'none'
-    bolinha[2].style.display = 'none'    
-    bolinha[5].style.display = 'none'    
+    bolinha[2].style.display = 'none'
+    bolinha[5].style.display = 'none'
     bolinha[6].style.display = 'none'
-    
-    
+
+
 }
 
 //miniFret()
@@ -6281,14 +6285,14 @@ function tab(x, y) {
 
     cordaVetor[x][y].style.display = 'block'
     cordaVetor[x][y].style.opacity = '1'
-    
+
 }
 
 function mostrarTodas(note) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note){
+        if (nota[i].innerHTML == note) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6298,49 +6302,49 @@ function mostrarTodas(note) {
 
 
     }
-    
+
 }
 
 function xml(corda, casa, duracao) {
 
     let tipo
 
-    if (duracao == 1){
+    if (duracao == 1) {
 
         tipo = 'whole'
 
 
-    } else if (duracao == 2){
+    } else if (duracao == 2) {
 
         tipo = 'half'
 
 
-    } else if (duracao == 4){
+    } else if (duracao == 4) {
 
         tipo = 'quarter'
 
 
-    } else if (duracao == 8){
+    } else if (duracao == 8) {
 
         tipo = 'eighth'
 
 
-    } else if (duracao == 16){
+    } else if (duracao == 16) {
 
         tipo = '16th'
 
 
-    } else if (duracao == 32){
+    } else if (duracao == 32) {
 
         tipo = '32th'
 
 
-    } 
-    
-    
+    }
+
+
     let nota = "<note><duration>1</duration><voice>1</voice><type>" + tipo + "</type><notations><dynamics><f></f></dynamics><technical><string>" + corda + "</string><fret>" + casa + "</fret></technical></notations></note>"
     console.log(nota + '\n')
-    
+
 }
 
 
@@ -6350,7 +6354,7 @@ let bonus1 = document.getElementById('bonus1')
 bonus1.onclick = function () {
 
     window.location = 'fouraxis.html'
-    
+
 }
 
 function scale(a, b, c, d, e, f, g, h) {
@@ -6363,606 +6367,606 @@ function scale(a, b, c, d, e, f, g, h) {
     mostrarTodas(f)
     mostrarTodas(g)
     mostrarTodas(h)
-    
+
 }
 
 console.log($('.nota')[16].innerHTML)
 
 document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'c'){
+    if (e.key == 'c') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('C')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 8)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 1)
             tab(2, 13)
 
 
-        } else if (cordaAtual == 3){
+        } else if (cordaAtual == 3) {
 
             tab(3, 5)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 10)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 3)
             tab(5, 15)
 
 
-        } else if (cordaAtual == 6){
+        } else if (cordaAtual == 6) {
 
             tab(6, 8)
-            
+
 
 
         }
 
-       
 
 
-    } else if (e.key == 'd'){
 
-        if (cordaAtual == 0){
+    } else if (e.key == 'd') {
+
+        if (cordaAtual == 0) {
 
             mostrarTodas('D')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 10)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 3)
             tab(2, 15)
 
 
-        } else if (cordaAtual == 3){
+        } else if (cordaAtual == 3) {
 
             tab(3, 7)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 12)
             tab(4, 0)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 5)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 10)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'e'){
+    } else if (e.key == 'e') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('E')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 0)
             tab(1, 12)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 5)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 9)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 2)
             tab(4, 14)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 7)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 0)
             tab(6, 12)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'f'){
+    } else if (e.key == 'f') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('F')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 1)
             tab(1, 13)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 6)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 10)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 3)
             tab(4, 15)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 8)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 1)
             tab(6, 13)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'g'){
+    } else if (e.key == 'g') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('G')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 3)
             tab(1, 15)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 8)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 0)
             tab(3, 12)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 5)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 10)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 3)
             tab(6, 15)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'a'){
+    } else if (e.key == 'a') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('A')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 5)
-            
 
 
-        } else if (cordaAtual == 2){
+
+        } else if (cordaAtual == 2) {
 
             tab(2, 10)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 2)
             tab(3, 14)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 7)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 0)
             tab(5, 12)
 
 
-        } else if (cordaAtual == 6){
+        } else if (cordaAtual == 6) {
 
             tab(6, 5)
-            
-            
+
+
 
 
         }
 
 
-    } else if (e.key == 'b'){
+    } else if (e.key == 'b') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('B')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 7)
-            
 
 
-        } else if (cordaAtual == 2){
+
+        } else if (cordaAtual == 2) {
 
             tab(2, 0)
             tab(2, 12)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 4)
-            
-            
 
 
-        } else if (cordaAtual == 4){
+
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 9)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 2)
             tab(5, 14)
 
 
-        } else if (cordaAtual == 6){
+        } else if (cordaAtual == 6) {
 
             tab(6, 7)
-            
-            
+
+
 
 
         }
 
 
-    } else if (e.key == 'C'){
+    } else if (e.key == 'C') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('C#')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 9)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 2)
             tab(2, 14)
 
 
-        } else if (cordaAtual == 3){
+        } else if (cordaAtual == 3) {
 
             tab(3, 6)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 11)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 4)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 9)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'D'){
+    } else if (e.key == 'D') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('D#')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 11)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 4)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 8)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 1)
             tab(4, 13)
-            
 
 
-        } else if (cordaAtual == 5){
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 6)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 11)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'F'){
+    } else if (e.key == 'F') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('F#')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 2)
             tab(1, 14)
 
 
-        } else if (cordaAtual == 2){
+        } else if (cordaAtual == 2) {
 
             tab(2, 7)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 11)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 4)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 9)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 2)
             tab(6, 14)
-            
+
 
 
         }
 
 
-    } else if (e.key == 'G'){
+    } else if (e.key == 'G') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('G#')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 4)
-            
 
 
-        } else if (cordaAtual == 2){
+
+        } else if (cordaAtual == 2) {
 
             tab(2, 9)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 1)
             tab(3, 13)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 6)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 11)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 4)
-            
-            
+
+
 
 
         }
 
 
-    } else if (e.key == 'A'){
+    } else if (e.key == 'A') {
 
-        if (cordaAtual == 0){
+        if (cordaAtual == 0) {
 
             mostrarTodas('A#')
 
 
-        } else if (cordaAtual == 1){
+        } else if (cordaAtual == 1) {
 
             tab(1, 6)
-            
 
 
-        } else if (cordaAtual == 2){
+
+        } else if (cordaAtual == 2) {
 
             tab(2, 11)
-            
 
 
-        } else if (cordaAtual == 3){
+
+        } else if (cordaAtual == 3) {
 
             tab(3, 3)
             tab(3, 15)
-            
 
 
-        } else if (cordaAtual == 4){
+
+        } else if (cordaAtual == 4) {
 
             tab(4, 8)
-            
-            
 
 
-        } else if (cordaAtual == 5){
+
+
+        } else if (cordaAtual == 5) {
 
             tab(5, 1)
             tab(5, 13)
-            
 
 
-        } else if (cordaAtual == 6){
+
+        } else if (cordaAtual == 6) {
 
             tab(6, 6)
-            
-            
+
+
 
 
         }
 
 
-    } else if (e.key == '-'){
+    } else if (e.key == '-') {
 
         apagar()
 
 
-    } else if (e.key == 'p'){
+    } else if (e.key == 'p') {
 
         print(' ', ' ')
 
         h1.innerHTML = prompt('Título')
 
 
-    } else if (e.key == 'm'){
+    } else if (e.key == 'm') {
 
         miniFret()
 
 
-    } else if (e.key == 'z'){
+    } else if (e.key == 'z') {
 
         enarmonia('C#', 'Db')
         enarmonia('D#', 'Eb')
@@ -6975,7 +6979,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == 'x'){
+    } else if (e.key == 'x') {
 
         enarmonia('Db', 'C#')
         enarmonia('Eb', 'D#')
@@ -6988,7 +6992,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == '1'){
+    } else if (e.key == '1') {
 
         resetCorda()
 
@@ -6998,17 +7002,17 @@ document.addEventListener('keypress', function (e) {
         cordaAtual = 1
 
 
-    } else if (e.key == '0'){
+    } else if (e.key == '0') {
 
         resetCorda()
         cordaAtual = 0
 
 
-       
+
 
 
     }
-     else if (e.key == '2'){
+    else if (e.key == '2') {
 
         resetCorda()
         cordaAtual = 2
@@ -7019,7 +7023,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == '3'){
+    } else if (e.key == '3') {
 
         resetCorda()
         cordaAtual = 3
@@ -7030,7 +7034,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == '4'){
+    } else if (e.key == '4') {
 
         resetCorda()
         cordaAtual = 4
@@ -7041,7 +7045,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == '5'){
+    } else if (e.key == '5') {
 
         resetCorda()
         cordaAtual = 5
@@ -7052,7 +7056,7 @@ document.addEventListener('keypress', function (e) {
 
 
 
-    } else if (e.key == '6'){
+    } else if (e.key == '6') {
 
         resetCorda()
         cordaAtual = 6
@@ -7064,15 +7068,15 @@ document.addEventListener('keypress', function (e) {
 
 
     }
-    
+
 })
 
 
-function resetColor (e) {
+function resetColor(e) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == e){
+        if (nota[i].innerHTML == e) {
 
             nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
 
@@ -7083,13 +7087,13 @@ function resetColor (e) {
     }
 
 
-    
+
 }
 
 document.addEventListener('keypress', function (e) {
 
     console.log(e.key)
-    
+
 })
 
 function print(nomeDaLicao, corpoDaLicao) {
@@ -7128,25 +7132,103 @@ function print(nomeDaLicao, corpoDaLicao) {
     assinatura.style.fontFamily = 'sans-serif'
     assinatura.style.fontWeight = 'bold'
 
-    
-    
+
+
 }
 
 //print('Brilha Brilha Estrelinha', '0 0 7 7 9 9 7 7 5 5 4 4 2 2 0 <br> 7 7 5 5 4 4 2 <br> 7 7 5 5 4 4 2 <br> 0 0 7 7 9 9 7 7 5 5 4 4 2 2 0')
 
 function resetCorda() {
 
-    
-
-        corda[0].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        corda[1].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        corda[2].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        corda[3].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        corda[4].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        corda[5].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
-        
 
 
-    
-    
+    corda[0].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+    corda[1].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+    corda[2].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+    corda[3].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+    corda[4].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+    corda[5].style.backgroundImage = 'linear-gradient(to top, rgb(119, 118, 118), rgb(218, 216, 216), black, rgb(161, 153, 153))'
+
 }
+
+function opacidade(e) {
+
+    for (i = 0; i < nota.length; i++) {
+
+        if (nota[i].innerHTML == e) {
+
+            nota[i].style.opacity = '0.4'
+
+
+        }
+
+
+    }
+
+}
+
+function card(titulo, dica) {
+
+    return {
+
+        titulo,
+        dica,
+        mostrarCard() {
+
+
+            let divCard = document.createElement('div')
+            body.appendChild(divCard)
+            divCard.classList.add('card')
+            console.log('classe adicionada')
+
+            let tituloDica = document.createElement('h1')
+            divCard.appendChild(tituloDica)
+            tituloDica.innerHTML = titulo
+
+            let corpoDica = document.createElement('p')
+            divCard.appendChild(corpoDica)
+            corpoDica.innerHTML = dica
+
+            let fechar = document.createElement('p')
+            divCard.appendChild(fechar)
+
+            fechar.innerHTML = 'X'
+            fechar.style.backgroundColor = 'red'
+            fechar.style.width = '25px'
+            fechar.style.height = '25px'
+            fechar.style.color = 'white'
+            fechar.style.fontWeight = 'bolder'
+            fechar.style.fontFamily = 'arial'
+            fechar.style.position = 'absolute'
+            fechar.style.top = '0px'
+            fechar.style.right = '0px'
+            fechar.style.paddingLeft = '8px'
+            fechar.style.marginRight = '0px'
+            fechar.style.marginTop = '0px'
+
+            let icone = document.createElement('img')
+            divCard.appendChild(icone)
+            icone.src = 'dica.png'
+            icone.style.width = '50px'
+            icone.style.position = 'absolute'
+            icone.style.bottom = '0'
+            icone.style.left = '0'
+            icone.style.marginBottom = '0'
+            icone.style.marginLeft = '0'
+
+            fechar.onclick = function () {
+
+                divCard.style.display = 'none'
+
+            }
+
+        }
+    }
+
+}
+
+let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
+
+setTimeout(dicaPausa.mostrarCard, 1000*30)
+
+

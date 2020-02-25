@@ -23,7 +23,7 @@ semana4.onclick = function () {
 semana3.onclick = function () {
 
     window.location = 'semana3.html'
-    
+
 }
 
 
@@ -1629,7 +1629,7 @@ setInterval(verificaDuracao, 100)
 
 timerSvg.onclick = function () {
 
-   
+
 
     timer.style.animation = 'timer ' + 60 * min + 's linear'
 
@@ -5894,65 +5894,65 @@ function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
     corda6[a].style.opacity = '1'
     corda6[b].style.display = 'block'
     corda6[b].style.opacity = '1'
-    
+
     corda5[c].style.display = 'block'
     corda5[c].style.opacity = '1'
     corda5[d].style.display = 'block'
     corda5[d].style.opacity = '1'
-    
+
     corda4[e].style.display = 'block'
     corda4[e].style.opacity = '1'
     corda4[f].style.display = 'block'
     corda4[f].style.opacity = '1'
-    
+
     corda3[g].style.display = 'block'
     corda3[g].style.opacity = '1'
     corda3[h].style.display = 'block'
     corda3[h].style.opacity = '1'
-    
+
     corda2[i].style.display = 'block'
     corda2[i].style.opacity = '1'
     corda2[j].style.display = 'block'
     corda2[j].style.opacity = '1'
-    
+
     corda1[k].style.display = 'block'
     corda1[k].style.opacity = '1'
     corda1[l].style.display = 'block'
     corda1[l].style.opacity = '1'
-    
+
 }
 
 
 function colorNote(note, cor) {
 
-    for(i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note){
-    
+        if (nota[i].innerHTML == note) {
+
             nota[i].style.backgroundColor = cor
             nota[i].style.backgroundImage = 'none'
-    
-    
+
+
         }
-    
-    
+
+
     }
-    
+
 }
 
 function enarmonia(note0, note1) {
 
-    for(i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note0){
-    
+        if (nota[i].innerHTML == note0) {
+
             nota[i].innerHTML = note1
-    
-    
+
+
         }
-    
-    
-    }    
+
+
+    }
 }
 
 function intervalos(tonica) {
@@ -6698,7 +6698,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6719,7 +6719,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6740,7 +6740,7 @@ function intervaloModos(tonica, modo) {
         colorNote('#6', 'red')
         colorNote('b7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6759,7 +6759,7 @@ function intervaloModos(tonica, modo) {
         colorNote('b6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6768,7 +6768,7 @@ function intervaloModos(tonica, modo) {
         }
 
 
-    }  else if (tonica == 'C' && modo == 'eolio') {
+    } else if (tonica == 'C' && modo == 'eolio') {
 
         colorNote('T', 'green')
         colorNote('b2', 'red')
@@ -6778,7 +6778,7 @@ function intervaloModos(tonica, modo) {
         colorNote('6', 'red')
         colorNote('7', 'red')
 
-        for (i = 0; i < nota.length; i++){
+        for (i = 0; i < nota.length; i++) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6814,11 +6814,11 @@ function miniFret() {
 
     bolinha[3].style.display = 'none'
     bolinha[4].style.display = 'none'
-    bolinha[2].style.display = 'none'    
-    bolinha[5].style.display = 'none'    
+    bolinha[2].style.display = 'none'
+    bolinha[5].style.display = 'none'
     bolinha[6].style.display = 'none'
-    
-    
+
+
 }
 
 //miniFret()
@@ -6830,15 +6830,15 @@ function tab(x, y) {
 
     cordaVetor[x][y].style.display = 'block'
     cordaVetor[x][y].style.opacity = '1'
-    
+
 }
 
 
 function mostrarTodas(note) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == note){
+        if (nota[i].innerHTML == note) {
 
             nota[i].style.display = 'block'
             nota[i].style.opacity = '1'
@@ -6848,7 +6848,7 @@ function mostrarTodas(note) {
 
 
     }
-    
+
 }
 
 let bonus1 = document.getElementById('bonus1')
@@ -6856,86 +6856,86 @@ let bonus1 = document.getElementById('bonus1')
 bonus1.onclick = function () {
 
     window.location = 'fouraxis.html'
-    
+
 }
 
 
 document.addEventListener('keypress', function (e) {
 
-    if (e.key == 'c'){
+    if (e.key == 'c') {
 
         mostrarTodas('C')
 
 
-    } else if (e.key == 'd'){
+    } else if (e.key == 'd') {
 
         mostrarTodas('D')
 
 
-    } else if (e.key == 'e'){
+    } else if (e.key == 'e') {
 
         mostrarTodas('E')
 
 
-    } else if (e.key == 'f'){
+    } else if (e.key == 'f') {
 
         mostrarTodas('F')
 
 
-    } else if (e.key == 'g'){
+    } else if (e.key == 'g') {
 
         mostrarTodas('G')
 
 
-    } else if (e.key == 'a'){
+    } else if (e.key == 'a') {
 
         mostrarTodas('A')
 
 
-    } else if (e.key == 'b'){
+    } else if (e.key == 'b') {
 
         mostrarTodas('B')
 
 
-    } else if (e.key == 'C'){
+    } else if (e.key == 'C') {
 
         mostrarTodas('C#')
 
 
-    } else if (e.key == 'D'){
+    } else if (e.key == 'D') {
 
         mostrarTodas('D#')
 
 
-    } else if (e.key == 'F'){
+    } else if (e.key == 'F') {
 
         mostrarTodas('F#')
 
 
-    } else if (e.key == 'G'){
+    } else if (e.key == 'G') {
 
         mostrarTodas('G#')
 
 
-    } else if (e.key == 'A'){
+    } else if (e.key == 'A') {
 
         mostrarTodas('A#')
 
 
-    } else if (e.key == '-'){
+    } else if (e.key == '-') {
 
         apagar()
 
 
     }
-    
+
 })
 
-function resetColor (e) {
+function resetColor(e) {
 
-    for (i = 0; i < nota.length; i++){
+    for (i = 0; i < nota.length; i++) {
 
-        if (nota[i].innerHTML == e){
+        if (nota[i].innerHTML == e) {
 
             nota[i].style.backgroundImage = 'linear-gradient(45deg, greenyellow, rgb(146, 201, 63) , rgb(161, 201, 102), rgb(136, 197, 45) )'
 
@@ -6946,6 +6946,69 @@ function resetColor (e) {
     }
 
 
-    
+
 }
 
+function card(titulo, dica) {
+
+    return {
+
+        titulo,
+        dica,
+        mostrarCard() {
+
+
+            let divCard = document.createElement('div')
+            body.appendChild(divCard)
+            divCard.classList.add('card')
+            console.log('classe adicionada')
+
+            let tituloDica = document.createElement('h1')
+            divCard.appendChild(tituloDica)
+            tituloDica.innerHTML = titulo
+
+            let corpoDica = document.createElement('p')
+            divCard.appendChild(corpoDica)
+            corpoDica.innerHTML = dica
+
+            let fechar = document.createElement('p')
+            divCard.appendChild(fechar)
+
+            fechar.innerHTML = 'X'
+            fechar.style.backgroundColor = 'red'
+            fechar.style.width = '25px'
+            fechar.style.height = '25px'
+            fechar.style.color = 'white'
+            fechar.style.fontWeight = 'bolder'
+            fechar.style.fontFamily = 'arial'
+            fechar.style.position = 'absolute'
+            fechar.style.top = '0px'
+            fechar.style.right = '0px'
+            fechar.style.paddingLeft = '8px'
+            fechar.style.marginRight = '0px'
+            fechar.style.marginTop = '0px'
+
+            let icone = document.createElement('img')
+            divCard.appendChild(icone)
+            icone.src = 'dica.png'
+            icone.style.width = '50px'
+            icone.style.position = 'absolute'
+            icone.style.bottom = '0'
+            icone.style.left = '0'
+            icone.style.marginBottom = '0'
+            icone.style.marginLeft = '0'
+
+            fechar.onclick = function () {
+
+                divCard.style.display = 'none'
+
+            }
+
+        }
+    }
+
+}
+
+let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
+
+setTimeout(dicaPausa.mostrarCard, 1000*30)

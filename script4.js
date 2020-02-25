@@ -6556,4 +6556,114 @@ function resetColor (e) {
     
 }
 
-//teste
+
+//**************************************************************************************************************** */
+function Licao() {
+
+    return {
+
+
+        mudarTitulo(titulo) {
+
+            h1.innerHTML = titulo
+
+        },
+
+        exercicios(exercicio1, exercicio2, exercicio3, exercicio4, exercicio5){
+
+            ex1.innerHTML = exercicio1
+            ex2.innerHTML = exercicio2
+            ex3.innerHTML = exercicio3
+            ex4.innerHTML = exercicio4
+            ex5.innerHTML = exercicio5
+        }, 
+       
+
+        links (srcVideo, srcVideo1, srcPdf, srcSoundslice){
+
+            video.src = srcVideo
+            video1.src = srcVideo1
+            pdf.src = srcPdf       
+            soundslice.src = srcSoundslice
+        },
+
+        click1 (){
+
+
+        }
+
+        
+    }
+
+}
+
+//**********************************************************************************************************/
+
+
+const licao1 = Licao()
+licao1.mudarTitulo('Escala Maior em 12 Tons')
+licao1.exercicios('1234', '4321', '1423', '1432', 'Improviso sobre II V I')
+licao1.links(' ', 'still.mp4', ' ', 'still.pdf')
+function card(titulo, dica) {
+
+    return {
+
+        titulo,
+        dica,
+        mostrarCard() {
+
+
+            let divCard = document.createElement('div')
+            body.appendChild(divCard)
+            divCard.classList.add('card')
+            console.log('classe adicionada')
+
+            let tituloDica = document.createElement('h1')
+            divCard.appendChild(tituloDica)
+            tituloDica.innerHTML = titulo
+
+            let corpoDica = document.createElement('p')
+            divCard.appendChild(corpoDica)
+            corpoDica.innerHTML = dica
+
+            let fechar = document.createElement('p')
+            divCard.appendChild(fechar)
+
+            fechar.innerHTML = 'X'
+            fechar.style.backgroundColor = 'red'
+            fechar.style.width = '25px'
+            fechar.style.height = '25px'
+            fechar.style.color = 'white'
+            fechar.style.fontWeight = 'bolder'
+            fechar.style.fontFamily = 'arial'
+            fechar.style.position = 'absolute'
+            fechar.style.top = '0px'
+            fechar.style.right = '0px'
+            fechar.style.paddingLeft = '8px'
+            fechar.style.marginRight = '0px'
+            fechar.style.marginTop = '0px'
+
+            let icone = document.createElement('img')
+            divCard.appendChild(icone)
+            icone.src = 'dica.png'
+            icone.style.width = '50px'
+            icone.style.position = 'absolute'
+            icone.style.bottom = '0'
+            icone.style.left = '0'
+            icone.style.marginBottom = '0'
+            icone.style.marginLeft = '0'
+
+            fechar.onclick = function () {
+
+                divCard.style.display = 'none'
+
+            }
+
+        }
+    }
+
+}
+
+let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
+
+setTimeout(dicaPausa.mostrarCard, 1000*30)

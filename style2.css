@@ -2933,3 +2933,29 @@ body{
 
     cursor: pointer;
 }
+
+.card{
+
+    border-top: orangered 2px solid;
+    border-left: orangered 2px solid;
+    border-right: orangered 2px solid;    
+    border-bottom: orangered 2px solid;
+    background-color: rgb(39, 37, 37);
+    color: orangered;
+
+    /*
+    height: 400px;
+    width: 400px;
+    */
+
+
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 2px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    
+    cursor: pointer;
+}
