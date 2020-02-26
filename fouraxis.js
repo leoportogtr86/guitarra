@@ -7294,3 +7294,7 @@ function resetColor (e) {
     
 }
 
+limpar.style.display = 'none'
+mostrar.style.display = 'none'
+posicao.style.display = 'none'
+botao0.style.display = 'none'
