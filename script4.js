@@ -1831,6 +1831,10 @@ ex1.onclick = function () {
     setInterval(conclusao, 100)
     soundslice.style.display = 'none'
 
+    let dicaPalhetada = card('Dica', 'Lembrar de manter a palhetada alternada nesse exercício, distanciando o mínimo possível os dedos da escala da guitarra.')
+   
+
+    setTimeout(dicaPalhetada.mostrarCard, 10000)
 
 
 
@@ -6534,7 +6538,7 @@ document.addEventListener('keypress', function (e) {
         apagar()
 
 
-    }
+    }  
     
 })
 
