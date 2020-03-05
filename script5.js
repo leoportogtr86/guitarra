@@ -1842,8 +1842,8 @@ ex1.onclick = function () {
     base.currentTime = 0
 
     lista.style.top = '-580px'
-    pdf.src = 'precisao4.pdf'
-    video1.src = 'exPrecisao4.mp4'
+    pdf.src = 'precisao5.pdf'
+    video1.src = 'exPrecisao5.mp4'
     pdf.style.zIndex = '50'
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
@@ -1884,7 +1884,7 @@ ex2.onclick = function () {
     apagar()
 
 
-    soundslice.src = 'https://www.soundslice.com/slices/ygZVc/embed-channelpost/'
+    soundslice.src = 'https://www.soundslice.com/slices/hKjVc/embed-channelpost/'
     soundslice.style.display = 'block'
 
     naoConcluido1.style.display = 'none'
@@ -1979,7 +1979,7 @@ ex3.onclick = function () {
 
     apagar()
 
-    soundslice.src = 'https://www.soundslice.com/slices/CgZVc/embed-channelpost/'
+    soundslice.src = 'https://www.soundslice.com/slices/mKjVc/embed-channelpost/'
     soundslice.style.display = 'block'
 
 
@@ -2029,7 +2029,7 @@ ex4.onclick = function () {
     apagar()
 
     soundslice.style.display = 'block'
-    soundslice.src = 'https://www.soundslice.com/slices/RgZVc/embed-channelpost/'
+    soundslice.src = 'https://www.soundslice.com/slices/vKjVc/embed-channelpost/'
 
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
@@ -2062,13 +2062,7 @@ ex4.onclick = function () {
 
     base.style.display = 'none'
 
-    mostrarTodas('A')
-    mostrarTodas('B')
-    mostrarTodas('C')
-    mostrarTodas('D')
-    mostrarTodas('E')
-    mostrarTodas('F')
-    mostrarTodas('G#')
+
 
 
 
