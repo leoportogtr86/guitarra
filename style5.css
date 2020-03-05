@@ -276,6 +276,7 @@
     left: 20px;
     width: 50px;
     cursor: pointer;
+    display: none;
 }
 
 #aviso{
@@ -2965,4 +2966,26 @@ body{
     z-index: 100;
 
     cursor: pointer;
+}
+
+#cronograma{
+
+    border-top: orangered 2px solid;
+    border-left: orangered 2px solid;
+    border-right: orangered 2px solid;
+    border-bottom: orangered 2px solid;
+    background-color: rgb(39, 37, 37);
+    color: orangered;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 2px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    margin-left: 0px;
+
+    cursor: pointer;
+
 }

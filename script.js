@@ -7228,7 +7228,49 @@ let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein?
 
 setTimeout(dicaPausa.mostrarCard, 1000*60*30)
 
-let escala = require('./escalas')
 
-escala.scale('C', 'maior')
 
+calendario.style.display = 'none'
+
+let cronograma = document.getElementById('cronograma')
+
+cronograma.onchange = function () {
+
+     if(cronograma.value == 'semana1'){
+
+        window.location = 'index.html'
+
+
+     } else if(cronograma.value == 'semana2'){
+
+        window.location = 'semana2.html'
+
+
+     } else if(cronograma.value == 'semana3'){
+
+        window.location = 'semana3.html'
+
+
+     } else if(cronograma.value == 'semana4'){
+
+        window.location = 'semana4.html'
+
+
+     } else if(cronograma.value == 'semana5'){
+
+        window.location = 'semana5.html'
+
+
+     } else if(cronograma.value == 'musica1'){
+
+        window.location = 'still.html'
+
+
+     } else if(cronograma.value == 'bonus1'){
+
+        window.location = 'fouraxis.html'
+
+
+     }
+
+}

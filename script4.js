@@ -345,13 +345,13 @@ let video1 = document.getElementById('video1')
 semana1.onclick = function () {
 
     window.location = 'index.html'
-    
+
 }
 
 semana2.onclick = function () {
 
     window.location = 'semana2.html'
-    
+
 }
 
 
@@ -1174,15 +1174,15 @@ ex5.onclick = function () {
     video.src = 'https://www.youtube.com/embed/L9_L8iiJJAk'
     video.style.display = 'block'
 
-    
 
-    
+
+
 
     console.log('ex5')
     video1.pause()
     apagar()
     lista.style.top = '-580px'
-    
+
 
     mostrarTodas('A')
     mostrarTodas('B')
@@ -1192,9 +1192,9 @@ ex5.onclick = function () {
     mostrarTodas('F')
     mostrarTodas('G#')
 
-    
 
-   
+
+
 
 }
 
@@ -1213,7 +1213,7 @@ function duasCordas() {
         tab('1', 10)
         tab('1', 12)
 
-        
+
         tab('2', 0)
         tab('2', 1)
         tab('2', 3)
@@ -1222,7 +1222,7 @@ function duasCordas() {
         tab('2', 9)
         tab('2', 10)
         tab('2', 12)
-        
+
 
 
     } else if (base.currentTime < 300){
@@ -1238,7 +1238,7 @@ function duasCordas() {
         tab('3', 10)
         tab('3', 13)
 
-        
+
         tab('4', 0)
         tab('4', 2)
         tab('4', 3)
@@ -1247,7 +1247,7 @@ function duasCordas() {
         tab('4', 9)
         tab('4', 10)
         tab('4', 12)
-        
+
 
 
     } else if (base.currentTime < 450){
@@ -1263,7 +1263,7 @@ function duasCordas() {
         tab('5', 11)
         tab('5', 12)
 
-        
+
         tab('6', 0)
         tab('6', 1)
         tab('6', 4)
@@ -1272,12 +1272,12 @@ function duasCordas() {
         tab('6', 8)
         tab('6', 10)
         tab('6', 12)
-        
 
 
-    } 
 
-    
+    }
+
+
 }
 
 
@@ -1712,7 +1712,7 @@ setInterval(verificaDuracao, 100)
 
 timerSvg.onclick = function () {
 
-   
+
 
     timer.style.animation = 'timer ' + 60 * min + 's linear'
 
@@ -1832,7 +1832,7 @@ ex1.onclick = function () {
     soundslice.style.display = 'none'
 
     let dicaPalhetada = card('Dica', 'Lembrar de manter a palhetada alternada nesse exercício, distanciando o mínimo possível os dedos da escala da guitarra.')
-   
+
 
     setTimeout(dicaPalhetada.mostrarCard, 10000)
 
@@ -1883,7 +1883,7 @@ ex2.onclick = function () {
 
     apagar()
 
-    
+
     soundslice.src = 'https://www.soundslice.com/slices/ygZVc/embed-channelpost/'
     soundslice.style.display = 'block'
 
@@ -1924,7 +1924,7 @@ ex2.onclick = function () {
     mostrarTodas('G#')
 
 
-   
+
 
 
 
@@ -1981,8 +1981,8 @@ ex3.onclick = function () {
 
     soundslice.src = 'https://www.soundslice.com/slices/CgZVc/embed-channelpost/'
     soundslice.style.display = 'block'
-    
-    
+
+
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
 
@@ -2018,7 +2018,7 @@ ex3.onclick = function () {
     mostrarTodas('F')
     mostrarTodas('G#')
 
-    
+
 
 
 
@@ -2046,7 +2046,7 @@ ex4.onclick = function () {
     naoConcluido5.style.display = 'none'
     concluido5.style.display = 'none'
 
-   
+
 
     apagar()
 
@@ -2070,7 +2070,7 @@ ex4.onclick = function () {
     mostrarTodas('F')
     mostrarTodas('G#')
 
-   
+
 
 
 
@@ -2106,7 +2106,7 @@ botao1.onclick = function () {
 
 botao0.onclick = function () {
 
-   
+
 
     console.log('teste')
 
@@ -2209,16 +2209,16 @@ botao0.onclick = function () {
 
 
     }
-    
-
-
-    
-
-   
 
 
 
-    
+
+
+
+
+
+
+
 
 
 
@@ -4683,7 +4683,7 @@ let audio2 = document.getElementById('audio2')
 
 setInterval(function () {
 
-    
+
     if(audio2.currentTime >= 4){
 
         apagar()
@@ -4766,7 +4766,7 @@ setInterval(function () {
 
     }
 
-    
+
 }, 500)
 */
 
@@ -4818,158 +4818,158 @@ for (i = 0; i < nota.length; i++) {
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[1].onclick = function () {
 
     nota[1].style.opacity = '1'
-    
+
 }
 nota[2].onclick = function () {
 
     nota[2].style.opacity = '1'
-    
+
 }
 nota[3].onclick = function () {
 
     nota[3].style.opacity = '1'
-    
+
 }
 nota[4].onclick = function () {
 
     nota[4].style.opacity = '1'
-    
+
 }
 nota[5].onclick = function () {
 
     nota[5].style.opacity = '1'
-    
+
 }
 nota[6].onclick = function () {
 
     nota[6].style.opacity = '1'
-    
+
 }
 nota[7].onclick = function () {
 
     nota[7].style.opacity = '1'
-    
+
 }
 nota[8].onclick = function () {
 
     nota[8].style.opacity = '1'
-    
+
 }
 nota[9].onclick = function () {
 
     nota[9].style.opacity = '1'
-    
+
 }
 nota[10].onclick = function () {
 
     nota[10].style.opacity = '1'
-    
+
 }
 nota[11].onclick = function () {
 
     nota[11].style.opacity = '1'
-    
+
 }
 nota[12].onclick = function () {
 
     nota[12].style.opacity = '1'
-    
+
 }
 nota[13].onclick = function () {
 
     nota[13].style.opacity = '1'
-    
+
 }
 nota[14].onclick = function () {
 
     nota[14].style.opacity = '1'
-    
+
 }
 nota[15].onclick = function () {
 
     nota[15].style.opacity = '1'
-    
+
 }
 nota[16].onclick = function () {
 
     nota[16].style.opacity = '1'
-    
+
 }
 nota[17].onclick = function () {
 
     nota[17].style.opacity = '1'
-    
+
 }
 nota[18].onclick = function () {
 
     nota[18].style.opacity = '1'
-    
+
 }
 nota[19].onclick = function () {
 
     nota[19].style.opacity = '1'
-    
+
 }
 nota[20].onclick = function () {
 
     nota[20].style.opacity = '1'
-    
+
 }
 
 nota[21].onclick = function () {
 
     nota[21].style.opacity = '1'
-    
+
 }
 nota[22].onclick = function () {
 
     nota[22].style.opacity = '1'
-    
+
 }
 nota[23].onclick = function () {
 
     nota[23].style.opacity = '1'
-    
+
 }
 nota[24].onclick = function () {
 
     nota[24].style.opacity = '1'
-    
+
 }
 nota[25].onclick = function () {
 
     nota[25].style.opacity = '1'
-    
+
 }
 nota[26].onclick = function () {
 
     nota[26].style.opacity = '1'
-    
+
 }
 nota[27].onclick = function () {
 
     nota[27].style.opacity = '1'
-    
+
 }
 nota[28].onclick = function () {
 
     nota[28].style.opacity = '1'
-    
+
 }
 nota[29].onclick = function () {
 
     nota[29].style.opacity = '1'
-    
+
 }
 nota[30].onclick = function () {
 
     nota[30].style.opacity = '1'
-    
+
 }
 nota[31].onclick = function () {
 
@@ -4978,370 +4978,370 @@ nota[31].onclick = function () {
 nota[32].onclick = function () {
 
     nota[32].style.opacity = '1'
-    
+
 }
 nota[33].onclick = function () {
 
     nota[33].style.opacity = '1'
-    
+
 }
 nota[34].onclick = function () {
 
     nota[34].style.opacity = '1'
-    
+
 }
 nota[35].onclick = function () {
 
     nota[35].style.opacity = '1'
-    
+
 }
 nota[36].onclick = function () {
 
     nota[36].style.opacity = '1'
-    
+
 }
 nota[37].onclick = function () {
 
     nota[37].style.opacity = '1'
-    
+
 }
 nota[38].onclick = function () {
 
     nota[38].style.opacity = '1'
-    
+
 }
 nota[39].onclick = function () {
 
     nota[39].style.opacity = '1'
-    
+
 }
 nota[40].onclick = function () {
 
     nota[40].style.opacity = '1'
-    
+
 }
 nota[41].onclick = function () {
 
     nota[41].style.opacity = '1'
-    
+
 }
 
 nota[42].onclick = function () {
 
     nota[42].style.opacity = '1'
-    
+
 }
 nota[43].onclick = function () {
 
     nota[43].style.opacity = '1'
-    
+
 }
 nota[44].onclick = function () {
 
     nota[44].style.opacity = '1'
-    
+
 }
 nota[45].onclick = function () {
 
     nota[45].style.opacity = '1'
-    
+
 }
 nota[46].onclick = function () {
 
     nota[46].style.opacity = '1'
-    
+
 }
 nota[47].onclick = function () {
 
     nota[47].style.opacity = '1'
-    
+
 }
 nota[48].onclick = function () {
 
     nota[48].style.opacity = '1'
-    
+
 }
 nota[49].onclick = function () {
 
     nota[49].style.opacity = '1'
-    
+
 }
 nota[50].onclick = function () {
 
     nota[50].style.opacity = '1'
-    
+
 }
 nota[51].onclick = function () {
 
     nota[51].style.opacity = '1'
-    
+
 }
 nota[52].onclick = function () {
 
     nota[52].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
-}
 
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
-}
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-    
 }
 
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
 }
 nota[0].onclick = function () {
 
     nota[0].style.opacity = '1'
-    
+
+}
+
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
+}
+nota[0].onclick = function () {
+
+    nota[0].style.opacity = '1'
+
 }
 */
 
@@ -5505,32 +5505,32 @@ function criaShapePenta(a, b, c, d, e, f, g, h, i, j, k, l) {
     corda6[a].style.opacity = '1'
     corda6[b].style.display = 'block'
     corda6[b].style.opacity = '1'
-    
+
     corda5[c].style.display = 'block'
     corda5[c].style.opacity = '1'
     corda5[d].style.display = 'block'
     corda5[d].style.opacity = '1'
-    
+
     corda4[e].style.display = 'block'
     corda4[e].style.opacity = '1'
     corda4[f].style.display = 'block'
     corda4[f].style.opacity = '1'
-    
+
     corda3[g].style.display = 'block'
     corda3[g].style.opacity = '1'
     corda3[h].style.display = 'block'
     corda3[h].style.opacity = '1'
-    
+
     corda2[i].style.display = 'block'
     corda2[i].style.opacity = '1'
     corda2[j].style.display = 'block'
     corda2[j].style.opacity = '1'
-    
+
     corda1[k].style.display = 'block'
     corda1[k].style.opacity = '1'
     corda1[l].style.display = 'block'
     corda1[l].style.opacity = '1'
-    
+
 }
 
 
@@ -5539,16 +5539,16 @@ function colorNote(note, cor) {
     for(i = 0; i < nota.length; i++){
 
         if (nota[i].innerHTML == note){
-    
+
             nota[i].style.backgroundColor = cor
             nota[i].style.backgroundImage = 'none'
-    
-    
+
+
         }
-    
-    
+
+
     }
-    
+
 }
 
 function enarmonia(note0, note1) {
@@ -5556,14 +5556,14 @@ function enarmonia(note0, note1) {
     for(i = 0; i < nota.length; i++){
 
         if (nota[i].innerHTML == note0){
-    
+
             nota[i].innerHTML = note1
-    
-    
+
+
         }
-    
-    
-    }    
+
+
+    }
 }
 
 function intervalos(tonica) {
@@ -6425,11 +6425,11 @@ function miniFret() {
 
     bolinha[3].style.display = 'none'
     bolinha[4].style.display = 'none'
-    bolinha[2].style.display = 'none'    
-    bolinha[5].style.display = 'none'    
+    bolinha[2].style.display = 'none'
+    bolinha[5].style.display = 'none'
     bolinha[6].style.display = 'none'
-    
-    
+
+
 }
 
 //miniFret()
@@ -6441,7 +6441,7 @@ function tab(x, y) {
 
     cordaVetor[x][y].style.display = 'block'
     cordaVetor[x][y].style.opacity = '1'
-    
+
 }
 
 
@@ -6459,7 +6459,7 @@ function mostrarTodas(note) {
 
 
     }
-    
+
 }
 
 let bonus1 = document.getElementById('bonus1')
@@ -6467,7 +6467,7 @@ let bonus1 = document.getElementById('bonus1')
 bonus1.onclick = function () {
 
     window.location = 'fouraxis.html'
-    
+
 }
 
 
@@ -6538,8 +6538,8 @@ document.addEventListener('keypress', function (e) {
         apagar()
 
 
-    }  
-    
+    }
+
 })
 
 function resetColor (e) {
@@ -6557,7 +6557,7 @@ function resetColor (e) {
     }
 
 
-    
+
 }
 
 
@@ -6580,14 +6580,14 @@ function Licao() {
             ex3.innerHTML = exercicio3
             ex4.innerHTML = exercicio4
             ex5.innerHTML = exercicio5
-        }, 
-       
+        },
+
 
         links (srcVideo, srcVideo1, srcPdf, srcSoundslice){
 
             video.src = srcVideo
             video1.src = srcVideo1
-            pdf.src = srcPdf       
+            pdf.src = srcPdf
             soundslice.src = srcSoundslice
         },
 
@@ -6596,7 +6596,7 @@ function Licao() {
 
         }
 
-        
+
     }
 
 }
@@ -6673,3 +6673,47 @@ function card(titulo, dica) {
 let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
 
 setTimeout(dicaPausa.mostrarCard, 1000*30*60)
+
+
+let cronograma = document.getElementById('cronograma')
+
+cronograma.onchange = function () {
+
+     if(cronograma.value == 'semana1'){
+
+        window.location = 'index.html'
+
+
+     } else if(cronograma.value == 'semana2'){
+
+        window.location = 'semana2.html'
+
+
+     } else if(cronograma.value == 'semana3'){
+
+        window.location = 'semana3.html'
+
+
+     } else if(cronograma.value == 'semana4'){
+
+        window.location = 'semana4.html'
+
+
+     } else if(cronograma.value == 'semana5'){
+
+        window.location = 'semana5.html'
+
+
+     } else if(cronograma.value == 'musica1'){
+
+        window.location = 'still.html'
+
+
+     } else if(cronograma.value == 'bonus1'){
+
+        window.location = 'fouraxis.html'
+
+
+     }
+
+}
