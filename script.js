@@ -7271,6 +7271,23 @@ cronograma.onchange = function () {
         window.location = 'fouraxis.html'
 
 
+     } else if(cronograma.value == 'semana6'){
+
+        window.location = 'semana6.html'
+
+
      }
 
 }
+
+document.addEventListener('keypress', function (e) {
+
+    if (e.key == '/'){
+
+        window.location = 'http://localhost:8081'
+
+
+    }
+
+})
+

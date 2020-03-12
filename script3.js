@@ -7109,6 +7109,11 @@ cronograma.onchange = function () {
         window.location = 'fouraxis.html'
 
 
+     } else if(cronograma.value == 'semana6'){
+
+        window.location = 'semana6.html'
+
+
      }
 
 }
