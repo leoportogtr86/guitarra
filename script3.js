@@ -7104,12 +7104,12 @@ cronograma.onchange = function () {
         window.location = 'still.html'
 
 
-     } else if(cronograma.value == 'bonus1'){
+     }  else if(cronograma.value == 'semana6'){
 
-        window.location = 'fouraxis.html'
+        window.location = 'semana6.html'
 
 
-     } else if(cronograma.value == 'semana6'){
+     }  else if(cronograma.value == 'semana6'){
 
         window.location = 'semana6.html'
 

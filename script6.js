@@ -6760,14 +6760,14 @@ cronograma.onchange = function () {
         window.location = 'still.html'
 
 
+     }  else if(cronograma.value == 'semana6'){
+
+        window.location = 'semana6.html'
+
+
      } else if(cronograma.value == 'bonus1'){
 
         window.location = 'fouraxis.html'
-
-
-     } else if(cronograma.value == 'semana6'){
-
-        window.location = 'semana6.html'
 
 
      }
