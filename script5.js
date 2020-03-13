@@ -12,17 +12,6 @@ let naoConcluido5 = document.getElementById('naoConcluido5')
 let semana4 = document.getElementById('semana4')
 let soundslice = document.getElementById('soundslice')
 
-semana4.onclick = function () {
-
-    window.location = 'semana4.html'
-
-}
-
-semana3.onclick = function () {
-
-    window.location = 'semana3.html'
-
-}
 
 
 
@@ -6698,14 +6687,14 @@ cronograma.onchange = function () {
         window.location = 'semana5.html'
 
 
+     } else if(cronograma.value == 'semana6'){
+
+        window.location = 'semana6.html'
+
+
      } else if(cronograma.value == 'musica1'){
 
         window.location = 'still.html'
-
-
-     }  else if(cronograma.value == 'semana6'){
-
-        window.location = 'semana6.html'
 
 
      } else if(cronograma.value == 'bonus1'){
@@ -6714,4 +6703,5 @@ cronograma.onchange = function () {
 
 
 
+}
 }

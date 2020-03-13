@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
   },
   "repository": {
     "type": "git",
@@ -16,11 +17,11 @@
     "url": "https://github.com/leoportogtr86/Eduardo/issues"
   },
   "homepage": "https://github.com/leoportogtr86/Eduardo#readme",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "mongodb": "^3.5.4"
-  }
+  },
+  "description": ""
 }
