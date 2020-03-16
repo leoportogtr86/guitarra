@@ -1173,6 +1173,9 @@ ex5.onclick = function () {
 
     video.src = 'https://www.youtube.com/embed/I9n8jcdNTlM'
     video.style.display = 'block'
+    video1.pause()
+    video1.style.display = 'none'
+    pdf.style.display ='none'
 
 
 

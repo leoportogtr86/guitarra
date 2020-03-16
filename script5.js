@@ -6701,7 +6701,5 @@ cronograma.onchange = function () {
 
         window.location = 'fouraxis.html'
 
-
-
-}
+     }
 }
