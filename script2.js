@@ -1,4 +1,3 @@
-//teste
 let concluido1 = document.getElementById('concluido1')
 let concluido2 = document.getElementById('concluido2')
 let concluido3 = document.getElementById('concluido3')
@@ -7012,7 +7011,7 @@ function card(titulo, dica) {
 
 let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
 
-setTimeout(dicaPausa.mostrarCard, 1000*30*60)
+setInterval(dicaPausa.mostrarCard, 1000*30*60)
 
 
 let cronograma = document.getElementById('cronograma')
@@ -7057,6 +7056,11 @@ cronograma.onchange = function () {
      } else if(cronograma.value == 'bonus1'){
 
         window.location = 'fouraxis.html'
+
+
+     } else if(cronograma.value == 'semana7'){
+
+        window.location = 'semana7.html'
 
 
      }

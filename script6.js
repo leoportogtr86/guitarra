@@ -12,17 +12,6 @@ let naoConcluido5 = document.getElementById('naoConcluido5')
 let semana4 = document.getElementById('semana4')
 let soundslice = document.getElementById('soundslice')
 
-semana4.onclick = function () {
-
-    window.location = 'semana4.html'
-
-}
-
-semana3.onclick = function () {
-
-    window.location = 'semana3.html'
-
-}
 
 
 
@@ -1173,9 +1162,6 @@ ex5.onclick = function () {
 
     video.src = 'https://www.youtube.com/embed/I9n8jcdNTlM'
     video.style.display = 'block'
-    video1.pause()
-    video1.style.display = 'none'
-    pdf.style.display ='none'
 
 
 
@@ -1739,16 +1725,12 @@ timerSvg.onclick = function () {
 
     /*
     setTimeout(function () {
-
         video1.pause()
         video1.src = ''
-
         window.location.reload()
         video1.pause()
         video1.currentTime = 0
-
     }, 1000 * 60 * min + 3)
-
     video1.pause()
     video1.src = ''
 */
@@ -1845,8 +1827,8 @@ ex1.onclick = function () {
     base.currentTime = 0
 
     lista.style.top = '-580px'
-    pdf.src = 'precisao6.pdf'
-    video1.src = 'exPrecisao6.mp4'
+    pdf.src = 'precisao5.pdf'
+    video1.src = 'exPrecisao5.mp4'
     pdf.style.zIndex = '50'
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
@@ -1887,8 +1869,8 @@ ex2.onclick = function () {
     apagar()
 
 
-    soundslice.src = ''
-    soundslice.style.display = 'none'
+    soundslice.src = 'https://www.soundslice.com/slices/hKjVc/embed-channelpost/'
+    soundslice.style.display = 'block'
 
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
@@ -1920,12 +1902,11 @@ ex2.onclick = function () {
 
     mostrarTodas('A')
     mostrarTodas('B')
-    mostrarTodas('C#')
-    mostrarTodas('D#')
+    mostrarTodas('C')
+    mostrarTodas('D')
     mostrarTodas('E')
-    mostrarTodas('F#')
+    mostrarTodas('F')
     mostrarTodas('G#')
-    colorNote('B', 'orange')
 
 
 
@@ -1983,8 +1964,8 @@ ex3.onclick = function () {
 
     apagar()
 
-    soundslice.src = ''
-    soundslice.style.display = 'none'
+    soundslice.src = 'https://www.soundslice.com/slices/mKjVc/embed-channelpost/'
+    soundslice.style.display = 'block'
 
 
     naoConcluido1.style.display = 'none'
@@ -2014,70 +1995,14 @@ ex3.onclick = function () {
 
     base.currentTime = 0
 
-    let dicaNavegacao = card('Dica', 'Use as teclas de 1 a 4 para navegar entre os modelos de arpejos')
-    setTimeout(dicaNavegacao.mostrarCard(), 1000)
+    mostrarTodas('A')
+    mostrarTodas('B')
+    mostrarTodas('C')
+    mostrarTodas('D')
+    mostrarTodas('E')
+    mostrarTodas('F')
+    mostrarTodas('G#')
 
-    document.addEventListener('keypress', function (e) {
-
-        if(e.key == '1'){
-
-            apagar()
-            tab(6, 7)
-            tab(6, 11)
-            tab(5, 9)
-            tab(4, 7)
-            tab(4, 9)
-            tab(3, 8)
-            tab(2, 7)
-            tab(2, 10)
-            tab(1, 7)
-
-
-        } else if(e.key == '2'){
-
-            apagar()
-            tab(6, 11)
-            tab(6, 14)
-            tab(5, 12)
-            tab(4, 9)
-            tab(4, 13)
-            tab(3, 11)
-            tab(2, 10)
-            tab(2, 12)
-            tab(1, 11)
-
-
-        } else if(e.key == '3'){
-
-            apagar()
-            tab(6, 2)
-            tab(6, 5)
-            tab(5, 2)
-            tab(4, 1)
-            tab(4, 4)
-            tab(3, 2)
-            tab(2, 0)
-            tab(2, 4)
-            tab(1, 2)
-
-
-        } else if(e.key == '4'){
-
-            apagar()
-            tab(6, 5)
-            tab(6, 7)
-            tab(5, 6)
-            tab(4, 4)
-            tab(4, 7)
-            tab(3, 4)
-            tab(2, 4)
-            tab(2, 7)
-            tab(1, 5)
-
-
-        }
-
-    })
 
 
 
@@ -2089,7 +2014,7 @@ ex4.onclick = function () {
     apagar()
 
     soundslice.style.display = 'block'
-    soundslice.src = 'https://www.soundslice.com/slices/5BPVc/embed-channelpost/'
+    soundslice.src = 'https://www.soundslice.com/slices/vKjVc/embed-channelpost/'
 
     naoConcluido1.style.display = 'none'
     concluido1.style.display = 'none'
@@ -4732,95 +4657,54 @@ for (i = 0; i < bolinha.length; i++) {
 }
 
 /*
-
 let audio2 = document.getElementById('audio2')
-
 setInterval(function () {
-
-
     if(audio2.currentTime >= 4){
-
         apagar()
-
         corda5[5].style.display = 'block'
         corda4[6].style.display = 'block'
         corda3[5].style.display = 'block'
         corda2[6].style.display = 'block'
-
         console.log('teste')
-
-
     }
-
     if(audio2.currentTime >= 6){
-
         apagar()
-
         corda6[3].style.display = 'block'
         corda4[3].style.display = 'block'
         corda3[4].style.display = 'block'
         corda2[4].style.display = 'block'
-
-
-
     }
-
     if(audio2.currentTime >= 8){
-
         apagar()
-
         corda5[3].style.display = 'block'
         corda4[5].style.display = 'block'
         corda3[3].style.display = 'block'
         corda2[4].style.display = 'block'
-
         console.log('teste')
-
-
     }
-
     if(audio2.currentTime >= 12){
-
         apagar()
-
         corda5[5].style.display = 'block'
         corda4[6].style.display = 'block'
         corda3[5].style.display = 'block'
         corda2[6].style.display = 'block'
-
         console.log('teste')
-
-
     }
-
     if(audio2.currentTime >= 14){
-
         apagar()
-
         corda6[3].style.display = 'block'
         corda4[3].style.display = 'block'
         corda3[4].style.display = 'block'
         corda2[4].style.display = 'block'
-
-
-
     }
-
     if(audio2.currentTime >= 16){
-
         apagar()
-
         corda5[3].style.display = 'block'
         corda4[5].style.display = 'block'
         corda3[3].style.display = 'block'
         corda2[4].style.display = 'block'
-
         console.log('teste')
-
-
     }
-
-
 }, 500)
 */
 
@@ -4868,534 +4752,320 @@ for (i = 0; i < nota.length; i++) {
 }
 
 /*
-
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[1].onclick = function () {
-
     nota[1].style.opacity = '1'
-
 }
 nota[2].onclick = function () {
-
     nota[2].style.opacity = '1'
-
 }
 nota[3].onclick = function () {
-
     nota[3].style.opacity = '1'
-
 }
 nota[4].onclick = function () {
-
     nota[4].style.opacity = '1'
-
 }
 nota[5].onclick = function () {
-
     nota[5].style.opacity = '1'
-
 }
 nota[6].onclick = function () {
-
     nota[6].style.opacity = '1'
-
 }
 nota[7].onclick = function () {
-
     nota[7].style.opacity = '1'
-
 }
 nota[8].onclick = function () {
-
     nota[8].style.opacity = '1'
-
 }
 nota[9].onclick = function () {
-
     nota[9].style.opacity = '1'
-
 }
 nota[10].onclick = function () {
-
     nota[10].style.opacity = '1'
-
 }
 nota[11].onclick = function () {
-
     nota[11].style.opacity = '1'
-
 }
 nota[12].onclick = function () {
-
     nota[12].style.opacity = '1'
-
 }
 nota[13].onclick = function () {
-
     nota[13].style.opacity = '1'
-
 }
 nota[14].onclick = function () {
-
     nota[14].style.opacity = '1'
-
 }
 nota[15].onclick = function () {
-
     nota[15].style.opacity = '1'
-
 }
 nota[16].onclick = function () {
-
     nota[16].style.opacity = '1'
-
 }
 nota[17].onclick = function () {
-
     nota[17].style.opacity = '1'
-
 }
 nota[18].onclick = function () {
-
     nota[18].style.opacity = '1'
-
 }
 nota[19].onclick = function () {
-
     nota[19].style.opacity = '1'
-
 }
 nota[20].onclick = function () {
-
     nota[20].style.opacity = '1'
-
 }
-
 nota[21].onclick = function () {
-
     nota[21].style.opacity = '1'
-
 }
 nota[22].onclick = function () {
-
     nota[22].style.opacity = '1'
-
 }
 nota[23].onclick = function () {
-
     nota[23].style.opacity = '1'
-
 }
 nota[24].onclick = function () {
-
     nota[24].style.opacity = '1'
-
 }
 nota[25].onclick = function () {
-
     nota[25].style.opacity = '1'
-
 }
 nota[26].onclick = function () {
-
     nota[26].style.opacity = '1'
-
 }
 nota[27].onclick = function () {
-
     nota[27].style.opacity = '1'
-
 }
 nota[28].onclick = function () {
-
     nota[28].style.opacity = '1'
-
 }
 nota[29].onclick = function () {
-
     nota[29].style.opacity = '1'
-
 }
 nota[30].onclick = function () {
-
     nota[30].style.opacity = '1'
-
 }
 nota[31].onclick = function () {
-
     nota[31].style.opacity = '1'
 }
 nota[32].onclick = function () {
-
     nota[32].style.opacity = '1'
-
 }
 nota[33].onclick = function () {
-
     nota[33].style.opacity = '1'
-
 }
 nota[34].onclick = function () {
-
     nota[34].style.opacity = '1'
-
 }
 nota[35].onclick = function () {
-
     nota[35].style.opacity = '1'
-
 }
 nota[36].onclick = function () {
-
     nota[36].style.opacity = '1'
-
 }
 nota[37].onclick = function () {
-
     nota[37].style.opacity = '1'
-
 }
 nota[38].onclick = function () {
-
     nota[38].style.opacity = '1'
-
 }
 nota[39].onclick = function () {
-
     nota[39].style.opacity = '1'
-
 }
 nota[40].onclick = function () {
-
     nota[40].style.opacity = '1'
-
 }
 nota[41].onclick = function () {
-
     nota[41].style.opacity = '1'
-
 }
-
 nota[42].onclick = function () {
-
     nota[42].style.opacity = '1'
-
 }
 nota[43].onclick = function () {
-
     nota[43].style.opacity = '1'
-
 }
 nota[44].onclick = function () {
-
     nota[44].style.opacity = '1'
-
 }
 nota[45].onclick = function () {
-
     nota[45].style.opacity = '1'
-
 }
 nota[46].onclick = function () {
-
     nota[46].style.opacity = '1'
-
 }
 nota[47].onclick = function () {
-
     nota[47].style.opacity = '1'
-
 }
 nota[48].onclick = function () {
-
     nota[48].style.opacity = '1'
-
 }
 nota[49].onclick = function () {
-
     nota[49].style.opacity = '1'
-
 }
 nota[50].onclick = function () {
-
     nota[50].style.opacity = '1'
-
 }
 nota[51].onclick = function () {
-
     nota[51].style.opacity = '1'
-
 }
 nota[52].onclick = function () {
-
     nota[52].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
-}
-
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
-}
-
-nota[0].onclick = function () {
-
-    nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
 }
 nota[0].onclick = function () {
-
     nota[0].style.opacity = '1'
-
+}
+nota[0].onclick = function () {
+    nota[0].style.opacity = '1'
+}
+nota[0].onclick = function () {
+    nota[0].style.opacity = '1'
 }
 */
 
@@ -6662,7 +6332,6 @@ const licao1 = Licao()
 licao1.mudarTitulo('Escala Maior em 12 Tons')
 licao1.exercicios('1234', '4321', '1423', '1432', 'Improviso sobre II V I')
 licao1.links(' ', 'still.mp4', ' ', 'still.pdf')
-
 */
 function card(titulo, dica) {
 
@@ -6726,7 +6395,7 @@ function card(titulo, dica) {
 
 let dicaPausa = card('Hora da pausa', 'Uns minutinhos de pausa cairiam bem hein? Tomar uma água, ir ao banheiro, só não vale ir pro facebook, whatsapp e CIA hein. Bons estudos!')
 
-setTimeout(dicaPausa.mostrarCard, 1000*30*60)
+setInterval(dicaPausa.mostrarCard, 1000*30*60)
 
 
 let cronograma = document.getElementById('cronograma')
@@ -6758,21 +6427,24 @@ cronograma.onchange = function () {
         window.location = 'semana5.html'
 
 
+     } else if(cronograma.value == 'semana6'){
+
+        window.location = 'semana6.html'
+
+
+     }else if(cronograma.value == 'semana7'){
+
+        window.location = 'semana7.html'
+
+
      } else if(cronograma.value == 'musica1'){
 
         window.location = 'still.html'
-
-
-     }  else if(cronograma.value == 'semana6'){
-
-        window.location = 'semana6.html'
 
 
      } else if(cronograma.value == 'bonus1'){
 
         window.location = 'fouraxis.html'
 
-
      }
-
 }
