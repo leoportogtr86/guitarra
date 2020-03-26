@@ -1184,17 +1184,18 @@ ex5.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
-
+    enarmonia('A#', 'Bb')
+    enarmonia('D#', 'Eb')
     mostrarTodas('D')
-    mostrarTodas('D#')
+    mostrarTodas('Eb')
 
     mostrarTodas('G')
 
-    mostrarTodas('A#')
+    mostrarTodas('Bb')
 
-    enarmonia('D#', 'Eb')
-    enarmonia('A#', 'Bb')
-    enarmonia('Eb', 'Eb')
+
+
+
 
 
 
@@ -1845,16 +1846,19 @@ ex1.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
+    enarmonia('A#', 'Bb')
+    enarmonia('D#', 'Eb')
+
     mostrarTodas('C')
     mostrarTodas('D')
-    mostrarTodas('D#')
+    mostrarTodas('Eb')
     mostrarTodas('F')
     mostrarTodas('G')
     mostrarTodas('A')
-    mostrarTodas('A#')
+    mostrarTodas('Bb')
 
-    enarmonia('D#', 'Eb')
-    enarmonia('A#', 'Bb')
+
+
 
 
 
@@ -1903,14 +1907,16 @@ ex2.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
+    enarmonia('D#', 'Eb')
+
     mostrarTodas('C')
-    mostrarTodas('D#')
+    mostrarTodas('Eb')
     mostrarTodas('F')
     mostrarTodas('G')
     mostrarTodas('A')
 
 
-    enarmonia('D#', 'Eb')
+
 
 
 
@@ -2002,16 +2008,19 @@ ex3.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
+    enarmonia('A#', 'Bb')
+    enarmonia('D#', 'Eb')
+
     mostrarTodas('C')
 
-    mostrarTodas('D#')
+    mostrarTodas('Eb')
 
     mostrarTodas('G')
 
-    mostrarTodas('A#')
+    mostrarTodas('Bb')
 
     enarmonia('D#', 'Eb')
-    enarmonia('A#', 'Bb')
+
 
 
 
@@ -2057,15 +2066,16 @@ ex4.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
+    enarmonia('D#', 'Eb')
     mostrarTodas('C')
 
-    mostrarTodas('D#')
+    mostrarTodas('Eb')
 
     mostrarTodas('G')
     mostrarTodas('A')
 
 
-    enarmonia('D#', 'Eb')
+
     enarmonia('A#', 'Bb')
 
 
