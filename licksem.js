@@ -6830,7 +6830,7 @@ function sinc() {
 
 }
 
-setInterval(sinc, 500)
+
 
 function resetColor (e) {
 
@@ -6850,9 +6850,25 @@ function resetColor (e) {
 
 }
 
+menuH1.style.display = 'none'
+video1.style.display = 'none'
+video.style.display = 'block'
+video.src = 'https://www.youtube.com/embed/w3pfrDRpbvQ'
+video.style.top = '400px'
 
+mostrarTodas('G')
+mostrarTodas('A')
+mostrarTodas('B')
+mostrarTodas('C')
+mostrarTodas('D')
+mostrarTodas('E')
+mostrarTodas('F#')
 
-
+colorNote('E', 'red')
+colorNote('G', 'red')
+colorNote('A', 'red')
+colorNote('B', 'red')
+colorNote('D', 'red')
 
 
 
