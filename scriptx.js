@@ -1184,14 +1184,7 @@ ex5.onclick = function () {
     video1.style.display = 'none'
     base.style.display = 'block'
 
-    enarmonia('A#', 'Bb')
-    enarmonia('D#', 'Eb')
-    mostrarTodas('D')
-    mostrarTodas('Eb')
 
-    mostrarTodas('G')
-
-    mostrarTodas('Bb')
 
 
 
@@ -1846,18 +1839,6 @@ ex1.onclick = function () {
     video1.style.display = 'block'
     base.style.display = 'none'
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -1896,33 +1877,15 @@ ex2.onclick = function () {
     pdf.style.zIndex = '50'
     pdf.style.display = 'none'
     video1.style.display = 'none'
-    base.style.display = 'block'
+    base.style.display = 'none'
 
-    enarmonia('D#', 'Eb')
-
-    mostrarTodas('C')
-    mostrarTodas('Eb')
-    mostrarTodas('F')
-    mostrarTodas('G')
-    mostrarTodas('A')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    mostrarTodas('B')
+    mostrarTodas('C#')
+    mostrarTodas('D#')
+    mostrarTodas('E')
+    mostrarTodas('F#')
+    mostrarTodas('G#')
+    mostrarTodas('A#')
 
 
 }
@@ -2108,6 +2071,8 @@ botao1.onclick = function () {
 
 botao0.onclick = function () {
 
+    enarmonia('Bb', 'A#')
+
 
 
     console.log('teste')
@@ -2117,7 +2082,7 @@ botao0.onclick = function () {
         console.log('shape 1')
 
         apagar()
-        criaShape(0, 2, 4, 0, 2, 4, 0, 2, 4, 1, 2, 4, 2, 3, 5, 2, 4, 5)
+        criaShape(7, 9, 11, 7, 9, 11, 8, 9, 11, 8, 9, 11, 9, 11, 12, 9, 11, 12)
 
 
     } else if (posicao.value == 2) {
@@ -2142,7 +2107,7 @@ botao0.onclick = function () {
 
         apagar()
 
-        criaShape(5, 7, 9, 5, 7, 9, 6, 7, 9, 6, 7, 9, 7, 9, 10, 7, 9, 10)
+        criaShape(0, 2, 4, 1, 2, 4, 1, 2, 4, 1, 3, 4, 2, 4, 5, 2, 4, 6)
 
 
 
@@ -2153,7 +2118,7 @@ botao0.onclick = function () {
         apagar()
 
 
-        criaShape(7, 9, 10, 7, 9, 11, 7, 9, 11, 7, 9, 11, 9, 10, 12, 9, 10, 12)
+        criaShape(2, 4, 6, 2, 4, 6, 2, 4, 6, 3, 4, 6, 4, 5, 7, 4, 6, 7)
 
 
 
@@ -2164,7 +2129,7 @@ botao0.onclick = function () {
 
         apagar()
 
-        criaShape(9, 10, 12, 9, 11, 12, 9, 11, 12, 9, 11, 13, 10, 12, 14, 10, 12, 14)
+        criaShape(4, 6, 7, 4, 6, 7, 4, 6, 8, 4, 6, 8, 5, 7, 9, 6, 7, 9)
 
 
 
@@ -2174,56 +2139,26 @@ botao0.onclick = function () {
         console.log('shape 7')
 
         apagar()
-        criaShape(10, 12, 14, 11, 12, 14, 11, 12, 14, 11, 13, 14, 12, 14, 15, 12, 14, 14)
+        criaShape(6, 7, 9, 6, 7, 9, 6, 8, 9, 6, 8, 9, 7, 9, 11, 7, 9, 11)
 
-        corda6[4].style.display = 'block'
-        corda6[5].style.display = 'block'
-        corda6[7].style.display = 'block'
-        corda5[3].style.display = 'block'
-        corda5[5].style.display = 'block'
-        corda5[7].style.display = 'block'
-        corda4[3].style.display = 'block'
-        corda4[6].style.display = 'block'
-        corda4[7].style.display = 'block'
-        corda3[4].style.display = 'block'
-        corda3[5].style.display = 'block'
-        corda3[7].style.display = 'block'
-        corda2[5].style.display = 'block'
-        corda2[6].style.display = 'block'
-        corda2[9].style.display = 'block'
-        corda1[5].style.display = 'block'
-        corda1[7].style.display = 'block'
-        corda1[8].style.display = 'block'
 
 
     } else if (posicao.value == 8) {
 
         apagar()
 
-        mostrarG()
-        mostrarA()
-        mostrarB()
-        mostrarC()
-        mostrarD()
-        mostrarE()
-        mostrarFS()
+        mostrarTodas('B')
+        mostrarTodas('C#')
+        mostrarTodas('D#')
+        mostrarTodas('E')
+        mostrarTodas('F#')
+        mostrarTodas('G#')
+        mostrarTodas('A#')
+
 
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
