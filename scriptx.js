@@ -1181,8 +1181,18 @@ ex5.onclick = function () {
     video1.src = ''
     pdf.style.zIndex = '50'
     pdf.style.display = 'none'
-    video1.style.display = 'none'
-    base.style.display = 'block'
+    video1.style.display = ''
+    base.style.display = 'none'
+
+    video.src = 'https://www.youtube.com/embed/xgaO9X8-Bgc'
+    video.style.display = 'block'
+    mostrarTodas('B')
+    mostrarTodas('C#')
+    mostrarTodas('D#')
+    mostrarTodas('E')
+    mostrarTodas('F#')
+    mostrarTodas('G#')
+    mostrarTodas('A#')
 
 
 
@@ -1960,20 +1970,15 @@ ex3.onclick = function () {
     pdf.style.zIndex = '50'
     pdf.style.display = 'none'
     video1.style.display = 'none'
-    base.style.display = 'block'
+    base.style.display = 'none'
 
-    enarmonia('A#', 'Bb')
-    enarmonia('D#', 'Eb')
-
-    mostrarTodas('C')
-
-    mostrarTodas('Eb')
-
-    mostrarTodas('G')
-
-    mostrarTodas('Bb')
-
-    enarmonia('D#', 'Eb')
+    mostrarTodas('B')
+    mostrarTodas('C#')
+    mostrarTodas('D#')
+    mostrarTodas('E')
+    mostrarTodas('F#')
+    mostrarTodas('G#')
+    mostrarTodas('A#')
 
 
 
@@ -2018,19 +2023,15 @@ ex4.onclick = function () {
     pdf.style.zIndex = '50'
     pdf.style.display = 'none'
     video1.style.display = 'none'
-    base.style.display = 'block'
+    base.style.display = 'none'
 
-    enarmonia('D#', 'Eb')
-    mostrarTodas('C')
-
-    mostrarTodas('Eb')
-
-    mostrarTodas('G')
-    mostrarTodas('A')
-
-
-
-    enarmonia('A#', 'Bb')
+    mostrarTodas('B')
+    mostrarTodas('C#')
+    mostrarTodas('D#')
+    mostrarTodas('E')
+    mostrarTodas('F#')
+    mostrarTodas('G#')
+    mostrarTodas('A#')
 
 
 
