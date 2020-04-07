@@ -1827,8 +1827,8 @@ ex1.onclick = function () {
     base.currentTime = 0
 
     lista.style.top = '-580px'
-    pdf.src = 'precisao5.pdf'
-    video1.src = 'exPrecisao5.mp4'
+    pdf.src = 'precisao6.pdf'
+    video1.src = 'exPrecisao6.mp4'
     pdf.style.zIndex = '50'
     pdf.style.display = 'inline'
     video1.style.display = 'inline'
