@@ -6446,5 +6446,11 @@ cronograma.onchange = function () {
 
         window.location = 'fouraxis.html'
 
+
+    } else if(cronograma.value == 'semana8'){
+
+        window.location = 'semana8.html'
+
+
      }
 }

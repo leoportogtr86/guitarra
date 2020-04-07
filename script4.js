@@ -6724,6 +6724,12 @@ cronograma.onchange = function () {
         window.location = 'semana7.html'
 
 
-     }
+
+    } else if(cronograma.value == 'semana8'){
+
+       window.location = 'semana8.html'
+
+
+    }
 
 }

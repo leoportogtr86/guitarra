@@ -6406,40 +6406,11 @@ cronograma.onchange = function () {
         window.location = 'semana7.html'
 
 
+     } else if(cronograma.value == 'semana8'){
+
+        window.location = 'semana8.html'
+
+
      }
 
 }
-
-function quiz(questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, correta ) {
-
-
-    let element = document.createElement('ul')
-
-    element.classList.add('quiz')
-
-    let q = document.createElement('li')
-    let a = document.createElement('li')
-    let b = document.createElement('li')
-    let c = document.createElement('li')
-    let d = document.createElement('li')
-
-    q.innerHTML = questao
-    a.innerHTML = alternativa_a
-    b.innerHTML = alternativa_b
-    c.innerHTML = alternativa_c
-    d.innerHTML = alternativa_d
-
-    q.innerHTML = questao
-    element.appendChild(q)
-    element.appendChild(a)
-    element.appendChild(b)
-    element.appendChild(c)
-    element.appendChild(d)
-
-
-    body.appendChild(element)
-
-
-}
-
-quiz('Qual a terça menor de C?', 'E', 'Eb', 'D#', 'F', 'b')
