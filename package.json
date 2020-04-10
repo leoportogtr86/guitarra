@@ -1,27 +1,23 @@
 {
-  "name": "Eduardo",
+  "name": "eduardo",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "",
+  "main": "blues.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leoportogtr86/Eduardo.git"
   },
   "keywords": [],
-  "author": "Leo Porto",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leoportogtr86/Eduardo/issues"
   },
   "homepage": "https://github.com/leoportogtr86/Eduardo#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "mongodb": "^3.5.4"
-  },
-  "description": ""
+    "video.js": "^7.7.5"
+  }
 }

@@ -4,13 +4,6 @@
     margin-top: 0;
 }
 
-#soundslice {
-
-    left: 0;
-    position: absolute;
-    width: 95%;
-}
-
 
 #duracao{
 
@@ -33,7 +26,6 @@
 
 
 }
-
 #video1 {
 
     position: absolute;
@@ -236,7 +228,7 @@
     padding-top: 20px;
     padding-left: 0;
     margin: 0;
-    top: -630px;
+    top: -550px;
     left: 0px;
     background-image: linear-gradient(to top, rgb(39, 38, 38), rgb(99, 97, 97), rgb(70, 68, 68), rgb(20, 20, 20));
     border-radius: 10px;
@@ -283,7 +275,6 @@
     top: 10px;
     left: 20px;
     width: 50px;
-    display: none;
     cursor: pointer;
 }
 
@@ -425,7 +416,7 @@ h1{
     color: orangered;
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    animation: setas 1s linear infinite;
     cursor: pointer;
 
 
@@ -445,6 +436,7 @@ h1{
     top: 20px;
     left: 800px;
     text-shadow: 3px 2px 3px black;
+    z-index: 50;
 }
 
 
@@ -459,6 +451,27 @@ h1{
     left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+#alerta {
+
+    border-top: orangered 2px solid;
+    border-left: orangered 2px solid;
+    border-right: orangered 2px solid;
+    border-bottom: orangered 2px solid;
+    background-color: rgb(39, 37, 37);
+    color: orangered;
+    height: 80px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 2px;
+    position: absolute;
+    top: 450px;
+    left: 80px;
+
+    cursor: pointer;
+
 }
 
 
@@ -2675,7 +2688,6 @@ body{
     0%{
 
         top: -500px;
-
     }
 
 
@@ -2938,71 +2950,16 @@ body{
     cursor: pointer;
     z-index: 0;
 }
-#tab {
 
-    background-color: white;
-    box-shadow: 2px 2px 18px black;
-    width: 90%;
-    height: 160px;
-    border-radius: 2px;
-    position: absolute;
-    left: 5px;
-    top: 590px;
-    margin-left: 5px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:orangered;
-}
-
-#alvo {
-
-    z-index: 110;
-    display: block;
-}
-
-.card{
-
-    border-top: orangered 2px solid;
-    border-left: orangered 2px solid;
-    border-right: orangered 2px solid;
-    border-bottom: orangered 2px solid;
-    background-color: rgb(39, 37, 37);
-    color: orangered;
-
-
-    width: 300px;
-
-
-
-    font-size: 20px;
-    padding: 10px;
-    padding-left: 2px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
+.arpejos {
 
     cursor: pointer;
 }
 
-#cronograma{
+#video {
 
-    border-top: orangered 2px solid;
-    border-left: orangered 2px solid;
-    border-right: orangered 2px solid;
-    border-bottom: orangered 2px solid;
-    background-color: rgb(39, 37, 37);
-    color: orangered;
-    height: 50px;
-    width: 300px;
-    font-size: 20px;
-    padding: 10px;
-    padding-left: 2px;
     position: absolute;
-    top: 20px;
-    left: 0px;
-    margin-left: 0px;
-
-    cursor: pointer;
-
+    top:600px;
+    left: 0;
+    border-radius: 7px;
 }
