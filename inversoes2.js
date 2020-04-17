@@ -6905,7 +6905,7 @@ function arpejo1() {
 
     tab(6, 3)
     tab(4, 2)
-    tab(3, 4)
+    tab(3, 3)
     tab(2, 1)
 
 
@@ -6916,7 +6916,7 @@ function arpejo2() {
 
     apagar()
 
-    tab(6, 7)
+    tab(6, 6)
     tab(4, 5)
     tab(3, 5)
     tab(2, 5)
@@ -6929,7 +6929,7 @@ function arpejo3() {
     apagar()
 
     tab(6, 8)
-    tab(4, 9)
+    tab(4, 8)
     tab(3, 9)
     tab(2, 8)
 
@@ -6943,7 +6943,7 @@ function arpejo4() {
     tab(6, 12)
     tab(4, 10)
     tab(3, 12)
-    tab(2, 12)
+    tab(2, 11)
 
 
 }
@@ -6953,7 +6953,7 @@ function arpejo5() {
     apagar()
 
     tab(4, 2)
-    tab(3, 4)
+    tab(3, 3)
     tab(2, 1)
     tab(1, 3)
 
@@ -6967,7 +6967,7 @@ function arpejo6() {
     tab(4, 5)
     tab(3, 5)
     tab(2, 5)
-    tab(1, 7)
+    tab(1, 6)
 
 
 }
@@ -6976,7 +6976,7 @@ function arpejo7() {
 
     apagar()
 
-    tab(4, 9)
+    tab(4, 8)
     tab(3, 9)
     tab(2, 8)
     tab(1, 8)
@@ -6990,7 +6990,7 @@ function arpejo8() {
 
     tab(4, 10)
     tab(3, 12)
-    tab(2, 12)
+    tab(2, 11)
     tab(1, 12)
 
 
@@ -7216,10 +7216,13 @@ mostrar.style.display = 'none'
 posicao.style.display = 'none'
 botao0.style.display = 'none'
 video.style.display = 'block'
-video.src = 'https://www.youtube.com/embed/tjhWOgnGp-Q'
+video.src = 'https://www.youtube.com/embed/vKgQHSiUtlE'
 
 calendario.style.display = 'none'
 menuH.style.display = 'none'
 linha1.style.display = 'none'
 linha2.style.display = 'none'
 linha3.style.display = 'none'
+
+
+enarmonia('A#', 'Bb')
