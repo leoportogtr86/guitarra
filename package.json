@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/leoportogtr86/Eduardo#readme",
   "dependencies": {
-    "video.js": "^7.7.5"
+    "video.js": "^7.20.3"
   }
 }
